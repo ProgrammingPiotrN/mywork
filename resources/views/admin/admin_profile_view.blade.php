@@ -11,12 +11,12 @@
                 <div class="widget-user-header bg-black">
                   <h3 class="widget-user-username">Admin Name: {{ $adminData->name }}</h3>
 
-                  <a href="" style="float: right;" class="btn btn-rounded btn-success mb-5">Edit profile</a>
+                  <a href="{{ route('admin.profile.edit') }}" style="float: right;" class="btn btn-rounded btn-success mb-5">Edit profile</a>
 
                   <h6 class="widget-user-desc">Admin email: {{ $adminData->email }}</h6>
                 </div>
                 <div class="widget-user-image">
-                  <img class="rounded-circle" src="{{ (!empty($adminData->profile_photo_path))? url('upload/admin_photos'.$adminData->profile_photo_path):url('upload/admin.png') }}" alt="User Avatar">
+                  <img class="rounded-circle" src="{{ (!empty($adminData->profile_photo_path))? url('upload/admin_photos/'.$adminData->profile_photo_path):url('upload/admin.png') }}" alt="User Avatar">
                 </div>
                 <div class="box-footer">
                   <div class="row">

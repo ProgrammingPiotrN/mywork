@@ -44,7 +44,7 @@ File: scss
 .light-skin.sidebar-mini.sidebar-collapse .sidebar-menu > li > a > span {
   background-color: #f2f4f4 !important; }
 .light-skin .sidebar a {
-  color: #475f7b; }
+  color: #0982D6; }
   .light-skin .sidebar a:hover {
     text-decoration: none; }
 .light-skin .sidebar-form {
@@ -119,8 +119,8 @@ File: scss
 
 /*---Dark skin---*/
 body.dark-skin {
-  background-color: #1a233a;
-  color: #8a99b5; }
+  background-color: #0982D6;
+  color: #EBD880; }
   body.dark-skin .navbar-nav > .user-menu > .dropdown-menu > .user-body {
     border-color: rgba(255, 255, 255, 0.12); }
   body.dark-skin .navbar-nav > .dropdown > .dropdown-menu > li .menu > li > a {
@@ -147,11 +147,11 @@ body.dark-skin {
     color: #bdd1f8; }
 
 .dark-skin h1, .dark-skin h2, .dark-skin h3, .dark-skin h4, .dark-skin h5, .dark-skin h6 {
-  color: #bdd1f8; }
+  color: #0982D6; }
 .dark-skin a {
-  color: #8a99b5; }
+  color: #0982D6; }
   .dark-skin a.bg-light:hover, .dark-skin a.bg-light:focus {
-    background-color: #4963a4 !important; }
+    background-color: #000000 !important; }
 .dark-skin .form-control {
   background-color: #272e48;
   color: #8a99b5; }
@@ -221,11 +221,11 @@ body.dark-skin {
   border-color: rgba(255, 255, 255, 0.12);
   color: #8a99b5; }
 .dark-skin .box-controls li > a {
-  color: #8a99b5; }
+  color: #D69C02; }
 .dark-skin .box {
   background-color: #415892; }
   .dark-skin .box .box-header {
-    color: #8a99b5;
+    color: #D69C02;
     border-color: rgba(255, 255, 255, 0.12); }
     .dark-skin .box .box-header .box-subtitle {
       color: #8a99b5; }
@@ -698,13 +698,13 @@ body.dark-skin {
 .dark-skin .main-header li.user-header {
   background-color: #ffffff; }
 .dark-skin .main-header .navbar {
-  background: #272e48; }
+  background: #EBD880; }
   .dark-skin .main-header .navbar .sidebar-toggle {
     color: #ffffff; }
   .dark-skin .main-header .navbar .res-only-view {
     color: #ffffff; }
   .dark-skin .main-header .navbar .nav > li > a {
-    color: #8a99b5; }
+    color: #0982D6; }
     .dark-skin .main-header .navbar .nav > li > a:hover, .dark-skin .main-header .navbar .nav > li > a:active, .dark-skin .main-header .navbar .nav > li > a:focus {
       background-color: rgba(26, 35, 58, 0.05); }
   .dark-skin .main-header .navbar .nav .open > a {
@@ -714,7 +714,7 @@ body.dark-skin {
   .dark-skin .main-header .navbar .nav > .active > a {
     background-color: rgba(26, 35, 58, 0.05); }
 .dark-skin .main-footer {
-  background: #1a233a;
+  background: #D69C02;
   color: #8a99b5;
   border-color: rgba(255, 255, 255, 0.12); }
 .dark-skin .main-sidebar {
@@ -727,7 +727,7 @@ body.dark-skin {
   .dark-skin .user-panel > .info > a {
     color: #ffffff; }
 .dark-skin .sidebar-menu {
-  background: #1a233a; }
+  background: #EBD880; }
   .dark-skin .sidebar-menu > li.treeview.menu-open {
     background-color: rgba(26, 35, 58, 0) !important; }
     .dark-skin .sidebar-menu > li.treeview.menu-open > a {
@@ -778,7 +778,7 @@ body.dark-skin {
   .dark-skin.sidebar-mini.sidebar-collapse .sidebar-menu > li.active > a {
     background-color: rgba(73, 99, 164, 0) !important; } }
 .dark-skin .sidebar a {
-  color: #8a99b5;
+  color: #0982D6;
   opacity: 1; }
   .dark-skin .sidebar a:hover {
     text-decoration: none; }
@@ -799,14 +799,14 @@ body.dark-skin {
     border: 1px solid rgba(26, 35, 58, 0.59);
     color: #d5dfea; }
 .dark-skin .main-footer {
-  background-color: #1a233a;
+  background-color: #EBD880;
   color: #ffffff; }
 .dark-skin .nav-dot-separated .nav-item::after {
   color: #8a99b5; }
 .dark-skin .nav-dot-separated > .nav-link::after {
   color: #8a99b5; }
 .dark-skin .box {
-  background-color: #272e48;
+  background-color: #EBD880;
   box-shadow: -7.829px 11.607px 21px 0px rgba(25, 42, 70, 0.13); }
   .dark-skin .box.box-solid .box-title {
     color: #ffffff; }
@@ -840,13 +840,13 @@ body.dark-skin {
 .dark-skin .dropdown-grid {
   color: #8a99b5; }
 .dark-skin .text-muted {
-  color: #566f9e !important; }
+  color: #0982D6 !important; }
 .dark-skin .bg-light {
   background-color: #2b324f !important; }
 .dark-skin .bg-lighter {
   background-color: #303959 !important; }
 .dark-skin .bg-lightest {
-  background-color: #394369 !important; }
+  background-color: #0982D6 !important; }
 .dark-skin .table-hover tbody tr:hover {
   color: #bdd1f8; }
 .dark-skin .btn {
