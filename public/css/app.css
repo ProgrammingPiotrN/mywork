@@ -965,6 +965,17 @@ select {
 .prose > :where(:last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 0;
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 .fixed {
   position: fixed;
 }
@@ -1078,12 +1089,6 @@ select {
 .mb-3 {
   margin-bottom: 0.75rem;
 }
-.mb-0 {
-  margin-bottom: 0px;
-}
-.ml-5 {
-  margin-left: 1.25rem;
-}
 .-mt-px {
   margin-top: -1px;
 }
@@ -1095,6 +1100,9 @@ select {
 }
 .mt-20 {
   margin-top: 5rem;
+}
+.mb-0 {
+  margin-bottom: 0px;
 }
 .mr-20 {
   margin-right: 5rem;

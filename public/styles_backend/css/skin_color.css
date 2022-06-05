@@ -122,9 +122,9 @@ body.dark-skin {
   background-color: #0982D6;
   color: #EBD880; }
   body.dark-skin .navbar-nav > .user-menu > .dropdown-menu > .user-body {
-    border-color: rgba(255, 255, 255, 0.12); }
+    border-color: #D69C02; }
   body.dark-skin .navbar-nav > .dropdown > .dropdown-menu > li .menu > li > a {
-    border-color: rgba(255, 255, 255, 0.12);
+    border-color: #D69C02;
     color: #8a99b5; }
     body.dark-skin .navbar-nav > .dropdown > .dropdown-menu > li .menu > li > a > div > h4 {
       color: #bdd1f8; }
