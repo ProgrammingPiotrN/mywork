@@ -21,14 +21,14 @@ a {
   color: white;
 }
 .top-bar .cnt-block ul li a .caret {
-  color: #EBD880;
+  color: #0982D6;
 }
 .top-bar .cnt-block ul li .dropdown-menu li a:hover,
 .top-bar .cnt-block ul li .dropdown-menu li a:focus {
-  color: #EBD880;
+  color: #0982D6;
 }
 .main-header .top-search-holder .contact-row .icon {
-  color: #EBD880;
+  color: #0982D6;
 }
 .top-cart-row .dropdown-cart .lnk-cart .items-cart-inner .total-price-basket .total-price {
   color: #EBD880;
@@ -55,13 +55,13 @@ a {
   background: #0982D6;
 }
 .cnt-home .header-style-1 .header-nav .navbar .navbar-nav > li.active {
-  background: #D69C02;
+  background: #0982D6;
 }
 .cnt-home .header-style-1 .header-nav .navbar .navbar-nav > li > a:hover,
 .cnt-home .header-style-1 .header-nav .navbar .navbar-nav > li > a:focus {
-  background: #EBD880;
+  background: #0982D6;
   border-radius:3px 3px 0px 0px;
-  color:#333
+  color:white
 }
 .cnt-home .header-style-1.header-style-2 .header-nav .navbar .navbar-nav > li.active,
 .cnt-homepage .header-style-1.header-style-2 .header-nav .navbar .navbar-nav > li.active {
