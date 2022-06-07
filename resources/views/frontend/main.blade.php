@@ -10,7 +10,7 @@
 <meta name="robots" content="all">
 
 <!-- Bootstrap Core CSS -->
-<link rel="stylesheet" href="styles_frontend/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ asset('styles_frontend/assets/css/bootstrap.min.css') }}">
 
 <!-- Customizable CSS -->
 <link rel="stylesheet" href="{{ asset('styles_frontend/assets/css/main.css') }}">
