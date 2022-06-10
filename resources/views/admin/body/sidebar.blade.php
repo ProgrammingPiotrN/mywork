@@ -1,3 +1,8 @@
+@php 
+$prefix = Request::route()->getPrefix();
+$route = Route::current()->getName();
+@endphp <!-- sprawdzenie routingu -->
+
 <aside class="main-sidebar">
     <!-- sidebar-->
     <section class="sidebar">	
@@ -17,7 +22,7 @@
       <ul class="sidebar-menu" data-widget="tree">  
 		  
 		<li>
-          <a href="index.html">
+          <a href="{{ url('admin/dashboard') }}">
             <i data-feather="pie-chart"></i>
 			<span>Dashboard</span>
           </a>

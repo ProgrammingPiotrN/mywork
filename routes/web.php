@@ -56,17 +56,31 @@ Route::middleware(['auth:sanctum,web', 'verified'])->get('/dashboard', function(
 })->name('dashboard');
 
 Route::get('/', [IndexController::class, 'index']);
+
 Route::get('/user/logout', [IndexController::class, 'UserLogout'])->name('user.logout');
+
 Route::get('/user/profile', [IndexController::class, 'ProfileUser'])->name('user.profile');
+
 Route::post('/user/profile/store', [IndexController::class, 'StoreProfileUser'])->name('user.profile.store');
+
 Route::get('/user/change/password', [IndexController::class, 'ChangeUserPassword'])->name('change.password');
+
 Route::post('/user/password/update', [IndexController::class, 'PasswordUserUpdate'])->name('user.password.update');
 
 // All brands
 
 Route::prefix('brand')->group(function(){
 
-Route::get('view', [BrandController::class, 'Brand'])->name('all.brand');
+Route::get('/view', [BrandController::class, 'Brand'])->name('all.brand');
+
+Route::post('/store', [BrandController::class, 'BrandStore'])->name('brand.store');
+
+Route::get('/edit/{id}', [BrandController::class, 'EditBrand'])->name('brand.edit');
+
+Route::post('/update', [BrandController::class, 'UpdateBrand'])->name('brand.update');
+
+Route::post('/delete', [BrandController::class, 'DeleteBrand'])->name('brand.delete');
+
 
 });
 
