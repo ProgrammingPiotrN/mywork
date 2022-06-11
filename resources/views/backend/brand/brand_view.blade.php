@@ -26,12 +26,12 @@
           </thead>
           <tbody>
             @foreach($brands as $item)
-            <tr>
+            <tr id="brand-{{ $item->id}}">
               <td>{{ $item->name_brand }}</td>
               <td><img src="{{ asset($item->brand_photos) }}" style="width: 70px; height: 40px;"></td>
               <td>
-                <a href="{{ route('brand.edit', $item->id) }}" class="btn btn-info">Edit</a>
-                <a href="{{ route('brand.delete') }}" class="btn btn-danger">Delete</a>
+                <a href="{{ route('brand.edit', $item->id) }}" class="btn btn-info">Edit</a> 
+                <a href="{{ route('brand.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a>
 
               </td>
             </tr>

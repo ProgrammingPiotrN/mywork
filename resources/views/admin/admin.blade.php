@@ -18,6 +18,8 @@
 	<link rel="stylesheet" href="{{ asset('styles_backend/css/skin_color.css') }}">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">   
 
+  <script type="text/javascript" src="/js/app.js"></script>
+
   </head>
 
 <body class="hold-transition dark-skin sidebar-mini theme-primary fixed">
@@ -55,6 +57,7 @@
 	<script src="{{ asset('styles_backend/js/pages/dashboard.js') }}"></script>
   <script src="{{ asset('../assets/vendor_components/datatable/datatables.min.js') }}"></script>
 	<script src="{{ asset('styles_backend/js/pages/data-table.js') }}"></script>
+
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 <script>
@@ -76,6 +79,51 @@
  }
  @endif 
 </script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="text/javascript">
+  $(function(){
+    $(document).on('click', '#delete', function(e){
+      e.preventDefault();
+      var link = $(this).attr("href");
+      var id = $(this).data("id");
+
+
+      Swal.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, delete it!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+
+      window.axios.post($(this).attr("href"))
+      .then(function (response) {
+
+        $($("#brand-"+id)[0]).remove();
+          Swal.fire(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });
+    }
+  })
+    });
+  });
+
+  </script>
 
 
 </body>

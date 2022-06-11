@@ -79,8 +79,7 @@ Route::get('/edit/{id}', [BrandController::class, 'EditBrand'])->name('brand.edi
 
 Route::post('/update', [BrandController::class, 'UpdateBrand'])->name('brand.update');
 
-Route::post('/delete', [BrandController::class, 'DeleteBrand'])->name('brand.delete');
-
+Route::post('/delete/{id}', [BrandController::class, 'DeleteBrand'])->name('brand.delete');
 
 });
 
