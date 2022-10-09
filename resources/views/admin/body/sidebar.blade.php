@@ -28,7 +28,7 @@ $route = Route::current()->getName();
           </a>
         </li>  
 		
-        <li class="treeview">
+        <li class="treeview {{ ($prefix == '/brand')?'active':'' }}">
           <a href="#">
             <i data-feather="message-circle"></i>
             <span>Brands</span>
@@ -37,9 +37,23 @@ $route = Route::current()->getName();
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{{ route('all.brand') }}"><i class="ti-more"></i>All Brand</a></li>
+            <li class="{{ ($route == 'all.brand')? 'active':'' }}"><a href="{{ route('all.brand') }}">
+              <i class="ti-more"></i>All Brand</a></li>
           </ul>
-        </li>  		  		  
+        </li>  	
+        
+        <li class="treeview {{ ($prefix == '/category')?'active':'' }}">
+          <a href="#">
+            <i data-feather="message-circle"></i>
+            <span>Category</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ route('view.category') }}"><i class="ti-more"></i>All Category</a></li>
+          </ul>
+        </li>  
 	
 	<div class="sidebar-footer">
 		<!-- item-->

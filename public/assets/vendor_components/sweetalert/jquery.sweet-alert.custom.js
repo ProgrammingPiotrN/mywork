@@ -37,7 +37,7 @@
         });
     });
 
-    //Parameter
+    Parameter
     $('#sa-params').click(function(){
         swal({   
             title: "Are you sure?",   
@@ -49,14 +49,15 @@
             cancelButtonText: "No, cancel plx!",   
             closeOnConfirm: false,   
             closeOnCancel: false 
-        }, function(isConfirm){   
+        }.then(function(isConfirm){   
             if (isConfirm) {     
                 swal("Deleted!", "Your imaginary file has been deleted.", "success");   
             } else {     
                 swal("Cancelled", "Your imaginary file is safe :)", "error");   
             } 
-        });
+        }));
     });
+
 
     //Custom Image
     $('#sa-image').click(function(){
@@ -72,7 +73,7 @@
          swal({   
             title: "Auto close alert!",   
             text: "I will close in 2 seconds.",   
-            timer: 2000,   
+            timer: 5000,   
             showConfirmButton: false 
         });
     });

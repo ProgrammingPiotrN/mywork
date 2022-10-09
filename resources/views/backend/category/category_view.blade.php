@@ -11,7 +11,7 @@
 
      <div class="box">
       <div class="box-header with-border">
-        <h3 class="box-title">Brand</h3>
+        <h3 class="box-title">Categories</h3>
       </div>
       <!-- /.box-header -->
       <div class="box-body">
@@ -19,19 +19,17 @@
           <table id="example1" class="table table-bordered table-striped">
           <thead>
             <tr>
-              <th>Brand name</th>
-              <th>Brand photos</th>
+              <th>Category name</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
-            @foreach($brands as $item)
+            @foreach($category as $item)
             <tr>
-              <td>{{ $item->name_brand }}</td>
-              <td><img src="{{ asset($item->brand_photos) }}" style="width: 70px; height: 40px;"></td>
+                <td>{{ $item->name_category }}</td>
               <td>
-                <a href="{{ route('brand.edit', $item->id) }}" class="btn btn-info">Edit</a> 
-                <a href="{{ route('brand.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a>
+                <a href="{{ route('category.edit', $item->id) }}" class="btn btn-info">Edit</a> 
+                <a href="{{ route('category.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a>
 
               </td>
             </tr>
@@ -49,35 +47,25 @@
 
       <div class="box">
        <div class="box-header with-border">
-         <h3 class="box-title">Added brand</h3>
+         <h3 class="box-title">Added categories</h3>
        </div>
        <!-- /.box-header -->
        <div class="box-body">
          <div class="table-responsive">
-          <form method="post" action="{{ route('brand.store') }}" enctype="multipart/form-data">
+          <form method="post" action="{{ route('category.store') }}" enctype="multipart/form-data">
             @csrf					
                             <div class="form-group">
-                                 <h5>Name brand <span class="text-danger">*</span></h5>
+                                 <h5>Name category <span class="text-danger">*</span></h5>
                                  <div class="controls">
-                                     <input type="text" name="name_brand" class="form-control">
-                                     @error('name_brand')
-                                        <span class="text-danger">{{ $message }}</span> 
-                                     @enderror
-                                 </div>
-                             </div>
-
-                             <div class="form-group">
-                                 <h5>Photos brand <span class="text-danger">*</span></h5>
-                                 <div class="controls">
-                                     <input type="file" name="brand_photos" class="form-control">
-                                     @error('brand_photos')
+                                     <input type="text" name="name_category" class="form-control">
+                                     @error('name_category')
                                         <span class="text-danger">{{ $message }}</span> 
                                      @enderror
                                  </div>
                              </div>
 
                 <div class="text-xs-right">
-<input type="submit" class="btn btn-rounded btn-primary mb-5" value="add new brand">
+<input type="submit" class="btn btn-rounded btn-primary mb-5" value="add new category">
              </div>
             </form>
          </div>
@@ -137,13 +125,14 @@
          window.axios.post($(this).attr("href"))
          .then(function (response) {
    
-           $($("#brand-"+id)[0]).remove();
+           $($("#categories-"+id)[0]).remove();
              Swal.fire(
              'Deleted!',
              'Your file has been deleted.',
-             'success',             
+             'success'
            )
-           window.location = "{{ \URL::route('all.brand') }}"
+           window.location = "{{ \URL::route('view.category') }}"
+
          })
          .catch(function (error) {
            // handle error

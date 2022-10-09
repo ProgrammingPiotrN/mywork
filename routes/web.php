@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\AdminProfileController;
 use App\Http\Controllers\Backend\BrandController;
+use App\Http\Controllers\Backend\CategoryController;
+
 
 
 use App\Http\Controllers\Frontend\IndexController;
@@ -82,4 +84,20 @@ Route::post('/update', [BrandController::class, 'UpdateBrand'])->name('brand.upd
 Route::post('/delete/{id}', [BrandController::class, 'DeleteBrand'])->name('brand.delete');
 
 });
+
+// Admin category
+
+Route::prefix('category')->group(function(){
+
+    Route::get('/view', [CategoryController::class, 'Category'])->name('view.category');
+    
+    Route::post('/store', [CategoryController::class, 'CategoryStore'])->name('category.store');
+    
+    Route::get('/edit/{id}', [CategoryController::class, 'EditCategory'])->name('category.edit');
+    
+    Route::post('/update', [CategoryController::class, 'UpdateCategory'])->name('category.update');
+    
+    Route::post('/delete/{id}', [CategoryController::class, 'DeleteCategory'])->name('category.delete');
+    
+    });
 
