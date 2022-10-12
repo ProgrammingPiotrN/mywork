@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Category;
 
+
 class CategoryController extends Controller
 {
     public function Category(){
@@ -22,7 +23,7 @@ class CategoryController extends Controller
 
         ],
         [
-            'name_category.required' => 'Category name',
+            'name_category.required' => 'Please enter the name of the category',
         ]);
 
         Category::insert([

@@ -19,7 +19,7 @@
           <table id="example1" class="table table-bordered table-striped">
           <thead>
             <tr>
-              <th>Category name</th>
+              <th>Category</th>
               <th>Action</th>
             </tr>
           </thead>

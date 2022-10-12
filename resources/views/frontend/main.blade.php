@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="{{ asset('styles_frontend/assets/css/animate.min.css') }}">
 <link rel="stylesheet" href="{{ asset('styles_frontend/assets/css/rateit.css') }}">
 <link rel="stylesheet" href="{{ asset('styles_frontend/assets/css/bootstrap-select.min.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.css" integrity="sha512-oe8OpYjBaDWPt2VmSFR+qYOdnTjeV9QPLJUeqZyprDEQvQLJ9C5PCFclxwNuvb/GQgQngdCXzKSFltuHD3eCxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Icons/Glyphs -->
 <link rel="stylesheet" href="{{ asset('styles_frontend/assets/css/font-awesome.css') }}">
@@ -46,6 +47,8 @@
 <!-- For demo purposes – can be removed on production : End --> 
 
 <!-- JavaScripts placed at the end of the document so the pages load faster --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js" integrity="sha512-lbwH47l/tPXJYG9AcFNoJaTMhGvYWhVM9YI43CT+uteTRRaiLCui8snIgyAN8XWgNjNhCqlAUdzZptso6OCoFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script src="{{ asset('styles_frontend/assets/js/jquery-1.11.1.min.js') }}"></script> 
 <script src="{{ asset('styles_frontend/assets/js/bootstrap.min.js') }}"></script> 
 <script src="{{ asset('styles_frontend/assets/js/bootstrap-hover-dropdown.min.js') }}"></script> 
@@ -58,7 +61,6 @@
 <script src="{{ asset('styles_frontend/assets/js/bootstrap-select.min.js') }}"></script> 
 <script src="{{ asset('styles_frontend/assets/js/wow.min.js') }}"></script> 
 <script src="{{ asset('styles_frontend/assets/js/scripts.js') }}"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 <script>
  @if(Session::has('message'))

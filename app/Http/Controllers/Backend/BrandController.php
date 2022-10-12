@@ -22,7 +22,7 @@ class BrandController extends Controller
 
         ],
         [
-            'name_brand.required' => 'Brand name',
+            'name_brand.required' => 'Please enter the name of the brand',
         ]);
 
         $image = $request->file('brand_photos');

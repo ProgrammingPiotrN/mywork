@@ -8,6 +8,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\AdminProfileController;
 use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Backend\CategoryController;
+use App\Http\Controllers\Backend\SubcategoryController;
 
 
 
@@ -98,6 +99,22 @@ Route::prefix('category')->group(function(){
     Route::post('/update', [CategoryController::class, 'UpdateCategory'])->name('category.update');
     
     Route::post('/delete/{id}', [CategoryController::class, 'DeleteCategory'])->name('category.delete');
-    
+
     });
+
+Route::prefix('subcategory')->group(function(){
+
+    Route::get('/view', [SubcategoryController::class, 'Subcategory'])->name('view.subcategory');
+        
+    Route::post('/store', [SubcategoryController::class, 'SubcategoryStore'])->name('subcategory.store');
+        
+    Route::get('/edit/{id}', [SubcategoryController::class, 'EditSubcategory'])->name('subcategory.edit');
+        
+    Route::post('/update', [SubcategoryController::class, 'UpdateSubcategory'])->name('subcategory.update');
+        
+    Route::post('/delete/{id}', [SubcategoryController::class, 'DeleteSubcategory'])->name('subcategory.delete');
+    
+        });
+
+
 

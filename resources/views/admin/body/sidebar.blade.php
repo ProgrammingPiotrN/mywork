@@ -23,14 +23,14 @@ $route = Route::current()->getName();
 		  
 		<li>
           <a href="{{ url('admin/dashboard') }}">
-            <i data-feather="pie-chart"></i>
+            <i data-feather="monitor"></i>
 			<span>Dashboard</span>
           </a>
         </li>  
 		
         <li class="treeview {{ ($prefix == '/brand')?'active':'' }}">
           <a href="#">
-            <i data-feather="message-circle"></i>
+            <i data-feather="package"></i>
             <span>Brands</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
@@ -44,14 +44,15 @@ $route = Route::current()->getName();
         
         <li class="treeview {{ ($prefix == '/category')?'active':'' }}">
           <a href="#">
-            <i data-feather="message-circle"></i>
+            <i data-feather="package"></i>
             <span>Category</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{{ route('view.category') }}"><i class="ti-more"></i>All Category</a></li>
+            <li class="{{ ($route == 'all.category')? 'active':'' }}"><a href="{{ route('view.category') }}"><i class="ti-more"></i>All Category</a></li>
+            <li class="{{ ($route == 'all.subcategory')? 'active':'' }}"><a href="{{ route('view.subcategory') }}"><i class="ti-more"></i>All Subcategory</a></li>
           </ul>
         </li>  
 	
