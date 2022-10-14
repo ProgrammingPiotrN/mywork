@@ -38,14 +38,14 @@ $route = Route::current()->getName();
           </a>
           <ul class="treeview-menu">
             <li class="{{ ($route == 'all.brand')? 'active':'' }}"><a href="{{ route('all.brand') }}">
-              <i class="ti-more"></i>All Brand</a></li>
+              <i class="ti-more"></i>All brand</a></li>
           </ul>
         </li>  	
         
         <li class="treeview {{ ($prefix == '/category')?'active':'' }}">
           <a href="#">
             <i data-feather="package"></i>
-            <span>Category</span>
+            <span>Categories</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
@@ -55,6 +55,20 @@ $route = Route::current()->getName();
             <li class="{{ ($route == 'view.subcategory')? 'active':'' }}"><a href="{{ route('view.subcategory') }}"><i class="ti-more"></i>All subcategory</a></li>
           </ul>
         </li>  
+
+        <li class="treeview {{ ($prefix == '/product')?'active':'' }}">
+          <a href="#">
+            <i data-feather="package"></i>
+            <span>Products</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="{{ ($route == 'view.category')? 'active':'' }}"><a href="{{ route('view.category') }}"><i class="ti-more"></i>Add products</a></li>
+            <li class="{{ ($route == 'view.subcategory')? 'active':'' }}"><a href="{{ route('view.subcategory') }}"><i class="ti-more"></i>Manage products</a></li>
+          </ul>
+        </li> 
 	
 	<div class="sidebar-footer">
 		<!-- item-->
