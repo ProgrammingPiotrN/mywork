@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Category;
+use App\Models\Subcategory;
+
 
 
 class CategoryController extends Controller
@@ -58,7 +60,7 @@ class CategoryController extends Controller
 
         $notification = array(
 			'message' => 'Category updated successfully',
-			'alert-type' => 'success'
+			'alert-type' => 'info'
 		);
 
         return redirect()->route('view.category')->with($notification);

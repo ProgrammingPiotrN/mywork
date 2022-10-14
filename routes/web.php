@@ -10,8 +10,6 @@ use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\SubcategoryController;
 
-
-
 use App\Http\Controllers\Frontend\IndexController;
 
 
@@ -34,7 +32,7 @@ Route::group(['prefix'=> 'admin', 'middleware'=>['admin:admin']], function(){
 
 Route::middleware(['auth:sanctum,admin', 'verified'])->get('/admin/dashboard', function() {
     return view('admin.index');
-})->name('dashboard');
+})->name('admindashboard');
 
 //Admin all routes
 
@@ -70,7 +68,7 @@ Route::get('/user/change/password', [IndexController::class, 'ChangeUserPassword
 
 Route::post('/user/password/update', [IndexController::class, 'PasswordUserUpdate'])->name('user.password.update');
 
-// All brands
+// Admin brands
 
 Route::prefix('brand')->group(function(){
 
@@ -100,21 +98,20 @@ Route::prefix('category')->group(function(){
     
     Route::post('/delete/{id}', [CategoryController::class, 'DeleteCategory'])->name('category.delete');
 
+// Admin subcategory
+
+    Route::get('/subcategory/view', [SubcategoryController::class, 'Subcategory'])->name('view.subcategory');
+    
+    Route::post('/subcategory/store', [SubcategoryController::class, 'SubcategoryStore'])->name('subcategory.store');
+
+    Route::get('/subcategory/edit/{id}', [SubcategoryController::class, 'EditSubcategory'])->name('subcategory.edit');
+
+    Route::post('/subcategory/update', [SubcategoryController::class, 'UpdateSubcategory'])->name('subcategory.update');
+
+    Route::post('/subcategory/delete/{id}', [SubcategoryController::class, 'DeleteSubcategory'])->name('subcategory.delete');
+
     });
 
-Route::prefix('subcategory')->group(function(){
-
-    Route::get('/view', [SubcategoryController::class, 'Subcategory'])->name('view.subcategory');
-        
-    Route::post('/store', [SubcategoryController::class, 'SubcategoryStore'])->name('subcategory.store');
-        
-    Route::get('/edit/{id}', [SubcategoryController::class, 'EditSubcategory'])->name('subcategory.edit');
-        
-    Route::post('/update', [SubcategoryController::class, 'UpdateSubcategory'])->name('subcategory.update');
-        
-    Route::post('/delete/{id}', [SubcategoryController::class, 'DeleteSubcategory'])->name('subcategory.delete');
-    
-        });
 
 
 

@@ -39,7 +39,7 @@
                             <div class="form-group">
                                  <h5>Name subcategory <span class="text-danger">*</span></h5>
                                  <div class="controls">
-                                     <input type="text" name="name_subcategory" class="form-control">
+                                     <input type="text" name="name_subcategory" class="form-control" value="{{ $subcategory->name_subcategory }}">
                                      @error('name_subcategory')
                                         <span class="text-danger">{{ $message }}</span> 
                                      @enderror
@@ -47,7 +47,7 @@
                              </div>
 
                 <div class="text-xs-right">
-<input type="submit" class="btn btn-rounded btn-primary mb-5" value="add new subcategory">
+<input type="submit" class="btn btn-rounded btn-primary mb-5" value="Update">
              </div>
             </form>
          </div>
