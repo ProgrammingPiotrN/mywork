@@ -58,6 +58,8 @@ Route::middleware(['auth:sanctum,web', 'verified'])->get('/dashboard', function(
 
 Route::get('/', [IndexController::class, 'index']);
 
+Route::get('/user/login', [IndexController::class, 'UserLogin'])->name('user.login');
+
 Route::get('/user/logout', [IndexController::class, 'UserLogout'])->name('user.logout');
 
 Route::get('/user/profile', [IndexController::class, 'ProfileUser'])->name('user.profile');

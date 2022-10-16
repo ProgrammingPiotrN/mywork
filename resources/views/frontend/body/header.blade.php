@@ -16,7 +16,9 @@
               <a href="{{ route('login') }}"><i class="icon fa fa-user"></i>User Profile</a>
               </li>
               @else
-              <a href="{{ route('login') }}"><i class="icon fa fa-lock"></i>Login & Register</a>
+              <a href="{{ route('login') }}"><i class="icon fa fa-lock"></i>Login</a>
+              <a href="{{ route('register') }}"><i class="icon fa fa-lock"></i>Register</a>
+
               @endauth
             </ul>
           </div>
