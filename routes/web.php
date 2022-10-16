@@ -5,10 +5,12 @@ use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AdminController;
+
 use App\Http\Controllers\Backend\AdminProfileController;
 use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\SubcategoryController;
+use App\Http\Controllers\Backend\ProductController;
 
 use App\Http\Controllers\Frontend\IndexController;
 
@@ -112,6 +114,14 @@ Route::prefix('category')->group(function(){
 
     Route::post('/subcategory/delete/{id}', [SubcategoryController::class, 'DeleteSubcategory'])->name('subcategory.delete');
 
+    });
+
+    // Admin products
+
+Route::prefix('product')->group(function(){
+
+    Route::get('/add', [ProductController::class, 'ProductAdd'])->name('add.product');
+    
     });
 
 
