@@ -140,7 +140,7 @@
 				<div class="form-group">
 					<h5>Product tags <span class="text-danger">*</span></h5>
 					<div class="controls">
-						<input type="text" name="tags_product" class="form-control"> </div>
+						<input type="text" name="tags_product" class="form-control" value="Lorem,Ipsum,Amet" data-role="tagsinput"> </div>
 						@error('tags_product') 
 	 					<span class="text-danger">{{ $message }}</span>
 	 					@enderror 
@@ -153,7 +153,7 @@
 				<div class="form-group">
 					<h5>Weight product  <span class="text-danger">*</span></h5>
 					<div class="controls">
-						<input type="text" name="weight_product" class="form-control"> </div>
+						<input type="text" name="weight_product" class="form-control" value="Small,Midium,Large" data-role="tagsinput"> </div>
 						@error('weight_product') 
 	 					<span class="text-danger">{{ $message }}</span>
 	 					@enderror 
@@ -200,33 +200,9 @@
 
 			</div>
 			
-			<div class="col-md-4">
-
-				
-				<div class="form-group">
-					<h5>Description short <span class="text-danger">*</span></h5>
-					<div class="controls">
-						<input type="text" name="description_short" class="form-control"> </div>
-						@error('description_short') 
-	 					<span class="text-danger">{{ $message }}</span>
-	 					@enderror 
-				</div>
-
-			</div> <!-- end col md 4 -->
-
-			<div class="col-md-4">
-
-				<div class="form-group">
-					<h5>Description long  <span class="text-danger">*</span></h5>
-					<div class="controls">
-						<input type="text" name="description_long" class="form-control"> </div>
-						@error('description_long') 
-	 					<span class="text-danger">{{ $message }}</span>
-	 					@enderror 
-				</div>
+			 <!-- end col md 4 -->
 
 
-			</div>
 
 		</div> <!-- end 5th row  -->
 
@@ -239,13 +215,27 @@
 				<div class="form-group">
 					<h5>Product thambnail <span class="text-danger">*</span></h5>
 					<div class="controls">
-						<input type="text" name="thambnail_product" class="form-control"> </div>
+						<input type="file" name="thambnail_product" class="form-control"> </div>
 						@error('thambnail_product') 
 	 					<span class="text-danger">{{ $message }}</span>
 	 					@enderror 
 				</div>
 
 			</div> <!-- end col md 4 -->
+
+			<div class="col-md-4">
+
+				
+				<div class="form-group">
+					<h5>Multi image <span class="text-danger">*</span></h5>
+					<div class="controls">
+						<input type="file" name="multi_img[]" class="form-control"> </div>
+						@error('multi_img') 
+	 					<span class="text-danger">{{ $message }}</span>
+	 					@enderror 
+				</div>
+
+			</div>
 
 			<div class="col-md-4">
 
@@ -320,6 +310,36 @@
 	 					<span class="text-danger">{{ $message }}</span>
 	 					@enderror 
 				</div>
+
+			</div>
+
+			<div class="col-md-4">
+
+				
+				<div class="form-group">
+					<h5>Description short <span class="text-danger">*</span></h5>
+					<div class="controls">
+						<textarea type="text" id="editor1" name="description_short" required placeholder="Textarea text" class="form-control" required placeholder="Textarea text"></textarea> 
+					</div>
+						@error('description_short') 
+	 					<span class="text-danger">{{ $message }}</span>
+	 					@enderror 
+				</div>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<div class="form-group">
+					<h5>Description long  <span class="text-danger">*</span></h5>
+					<div class="controls">
+						<textarea type="text" id="editor2" name="description_long" class="form-control" required placeholder="Textarea text"></textarea> 
+					</div>
+						@error('description_long') 
+	 					<span class="text-danger">{{ $message }}</span>
+	 					@enderror 
+				</div>
+
 
 			</div>
 
