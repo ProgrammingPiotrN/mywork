@@ -11,7 +11,7 @@
 
      <div class="box">
       <div class="box-header with-border">
-        <h3 class="box-title">Subcategories</h3>
+        <h3 class="box-title">Subsubcategories</h3>
       </div>
       <!-- /.box-header -->
       <div class="box-body">
@@ -21,14 +21,15 @@
             <tr>
               <th>Category</th>
               <th>Subcategory</th>
+              <th>Subsubcategory</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
-            @foreach($subcategory as $item)
+            @foreach($subsubcategory as $item)
             <tr>
               <td>{{ $item['category']['name_category'] }}</td>
-                <td>{{ $item->name_subcategory }}</td>
+                <td>{{ $item['category']['name_subsubcategory' ]}}</td>
               <td>
                 <a href="{{ route('subcategory.edit', $item->id) }}" class="btn btn-info">Edit</a> 
                 <a href="{{ route('subcategory.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a>
