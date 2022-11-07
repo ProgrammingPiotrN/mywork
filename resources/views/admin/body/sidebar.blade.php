@@ -53,12 +53,10 @@ $route = Route::current()->getName();
           <ul class="treeview-menu">
             <li class="{{ ($route == 'view.category')? 'active':'' }}"><a href="{{ route('view.category') }}"><i class="ti-more"></i>All category</a></li>
             <li class="{{ ($route == 'view.subcategory')? 'active':'' }}"><a href="{{ route('view.subcategory') }}"><i class="ti-more"></i>All subcategory</a></li>
-            <li class="{{ ($route == 'view.subsubcategory')? 'active':'' }}"><a href="{{ route('view.subsubcategory') }}"><i class="ti-more"></i>All Sub subcategory</a></li>
-
           </ul>
         </li>  
 
-        <li class="treeview {{ ($prefix == '/product')?'active':'' }}">
+        {{-- <li class="treeview {{ ($prefix == '/product')?'active':'' }}">
           <a href="#">
             <i data-feather="package"></i>
             <span>Products</span>
@@ -70,7 +68,7 @@ $route = Route::current()->getName();
             <li class="{{ ($route == 'add.product')? 'active':'' }}"><a href="{{ route('add.product') }}"><i class="ti-more"></i>Add products</a></li>
             <li class="{{ ($route == 'add.product')? 'active':'' }}"><a href="{{ route('add.product') }}"><i class="ti-more"></i>Manage products</a></li>
           </ul>
-        </li> 
+        </li>  --}}
 	
 	<div class="sidebar-footer">
 		<!-- item-->
