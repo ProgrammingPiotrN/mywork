@@ -29,7 +29,7 @@
             @foreach($subsubcategory as $item)
             <tr>
               <td>{{ $item['category']['name_category'] }}</td>
-                <td>{{ $item['category']['name_subsubcategory' ]}}</td>
+                <td>{{ $item['subcategory']['name_subsubcategory' ]}}</td>
               <td>
                 <a href="{{ route('subcategory.edit', $item->id) }}" class="btn btn-info">Edit</a> 
                 <a href="{{ route('subcategory.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a>
