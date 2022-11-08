@@ -1,6 +1,8 @@
 @extends('admin.admin')
 @section('admin')
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <div class="container-full">
     <!-- Main content -->
     <section class="content">
@@ -10,7 +12,7 @@
   
        <div class="box">
         <div class="box-header with-border">
-          <h3 class="box-title">SubCategories LIST</h3>
+          <h3 class="box-title">SubSubCategories LIST</h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -20,17 +22,19 @@
               <tr>
                 <th>Category</th>
                 <th>SubCategory</th>
+                <th>SubSubCategory</th>
                 <th>Action</th>
               </tr>
             </thead>
             <tbody>
-              @foreach($subcategory as $item)
+              @foreach($subsubcategory as $item)
               <tr>
                   <td>{{ $item['CategoryCRUD']['name_category'] }}</td>
-                  <td>{{ $item->name_subcategory }}</td>
+                  <td>{{ $item['SubCategoryCRUD']['name_subcategory'] }}</td>
+                  <td>{{ $item->name_subsubcategory }}</td>
                 <td>
-                  <a href="{{ route('subcategory.edit', $item->id) }}" class="btn btn-info">Edit</a> 
-                  <a href="{{ route('subcategory.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a> 
+                  <a href="{{ route('subsubcategory.edit', $item->id) }}" class="btn btn-info">Edit</a> 
+                  <a href="{{ route('subsubcategory.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a> 
                 </td>
               </tr>
               @endforeach
@@ -47,12 +51,12 @@
   
         <div class="box">
          <div class="box-header with-border">
-           <h3 class="box-title">Added SubCategory</h3>
+           <h3 class="box-title">Added SubSubCategory</h3>
          </div>
          <!-- /.box-header -->
          <div class="box-body">
            <div class="table-responsive">
-            <form method="post" action="{{ route('subcategory.store') }}">
+            <form method="post" action="{{ route('subsubcategory.store') }}">
               @csrf					
                               <div class="form-group">
                                    <h5>Select category <span class="text-danger">*</span></h5>
@@ -70,17 +74,30 @@
                                </div>
 
                                <div class="form-group">
-                                <h5>Name Subcategory <span class="text-danger">*</span></h5>
+                                <h5>Select SubCategory <span class="text-danger">*</span></h5>
                                 <div class="controls">
-                                 <input type="text" name="name_subcategory" class="form-control">
-                                 @error('name_subcategory')
+                                 <select name="subcategory_id" class="form-control">
+                                     <option value="">Select SubCategory</option>
+                                    
+                                 </select>
+                                 @error('subcategory_id')
+                                       <span class="text-danger">{{ $message }}</span> 
+                                    @enderror
+                                </div>
+                            </div>
+
+                               <div class="form-group">
+                                <h5>Name SubSubCategory <span class="text-danger">*</span></h5>
+                                <div class="controls">
+                                 <input type="text" name="name_subsubcategory" class="form-control">
+                                 @error('name_subsubcategory')
                                        <span class="text-danger">{{ $message }}</span> 
                                     @enderror
                                 </div>
                             </div>
   
                   <div class="text-xs-right">
-  <input type="submit" class="btn btn-rounded btn-primary mb-5" value="add new subcategory">
+  <input type="submit" class="btn btn-rounded btn-primary mb-5" value="add new SubSubCategory">
                </div>
               </form>
            </div>
@@ -114,7 +131,7 @@
          break; 
       }
       @endif 
-     </script>
+    </script>
      
      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
      
@@ -140,13 +157,13 @@
            window.axios.post($(this).attr("href"))
            .then(function (response) {
      
-             $($("#subcategories-"+id)[0]).remove();
+             $($("#sub_subcategories-"+id)[0]).remove();
                Swal.fire(
                'Deleted!',
                'Your file has been deleted.',
                'success'
              )
-             window.location = "{{ \URL::route('view.subcategory') }}"
+             window.location = "{{ \URL::route('view.subsubcategory') }}"
   
            })
            .catch(function (error) {
@@ -162,5 +179,28 @@
        });
      
        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('select[name="category_id"]').on('change', function() {
+                    var category_id = $(this).val();
+                    if(category_id) {
+                        $.ajax({
+                            url: "{{ url('/category/subcategory/crud') }}/"+category_id,
+                            type:"GET",
+                            dataType:"json",
+                            success:function(data) {
+                                var p =$('select[name="subcategory_id"]').empty();
+                                $.each(data, function(key, value){
+                                    $('select[name="subcategory_id"]').append('<option value="'+value.id + '">' + value.name_subcategory + '</option>');
+                                });
+                            },
+                        });
+                    } else {
+                        alert('danger');
+                    }
+                });
+            });
+        </script>
 
 @endsection

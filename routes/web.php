@@ -114,6 +114,20 @@ Route::prefix('category')->group(function(){
 
     Route::post('/subcategory/delete/{id}', [SubcategoryController::class, 'DeleteSubcategory'])->name('subcategory.delete');
 
+// Admin subsubcategory
+
+    Route::get('/subsubcategory/view', [SubcategoryController::class, 'SubSubcategory'])->name('view.subsubcategory');
+
+    Route::get('/subcategory/crud/{category_id}', [SubcategoryController::class, 'GetAjaxSubCategory']);
+
+    Route::post('/subsubcategory/store', [SubcategoryController::class, 'SubSubCategoryStore'])->name('subsubcategory.store');
+
+    Route::get('/subsubcategory/edit/{id}', [SubcategoryController::class, 'EditSubSubCategory'])->name('subsubcategory.edit');
+
+    Route::post('/subsubcategory/update', [SubcategoryController::class, 'UpdateSubSubCategory'])->name('subsubcategory.update');
+
+    Route::post('/subsubcategory/delete/{id}', [SubcategoryController::class, 'DeleteSubSubCategory'])->name('subsubcategory.delete');
+
     });
 
     // Admin products
