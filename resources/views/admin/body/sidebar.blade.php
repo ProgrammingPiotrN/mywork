@@ -51,8 +51,8 @@ $route = Route::current()->getName();
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="{{ ($route == 'view.category')? 'active':'' }}"><a href="{{ route('view.category') }}"><i class="ti-more"></i>All category</a></li>
-            <li class="{{ ($route == 'view.subcategory')? 'active':'' }}"><a href="{{ route('view.subcategory') }}"><i class="ti-more"></i>All subcategory</a></li>
+            <li class="{{ ($route == 'view.category')? 'active':'' }}"><a href="{{ route('view.category') }}"><i class="ti-more"></i>All categories</a></li>
+            <li class="{{ ($route == 'view.subcategory')? 'active':'' }}"><a href="{{ route('view.subcategory') }}"><i class="ti-more"></i>All subcategories</a></li>
           </ul>
         </li>  
 

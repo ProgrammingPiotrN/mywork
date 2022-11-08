@@ -85,12 +85,6 @@ class SubcategoryController extends Controller
 
     }
 
-    public function Subsubcategory(){
-
-        $categories = Category::orderBy('name_category','ASC')->get();
-           $subsubcategory = Subsubcategory::latest()->get();
-           return view('backend.category.subsubcategory_view',compact('subsubcategory','categories'));
    
-        }
 
 }

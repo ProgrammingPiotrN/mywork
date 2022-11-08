@@ -114,12 +114,6 @@ Route::prefix('category')->group(function(){
 
     Route::post('/subcategory/delete/{id}', [SubcategoryController::class, 'DeleteSubcategory'])->name('subcategory.delete');
 
-// Admin Subsubcategory   
-
-    Route::get('/subsubcategory/view', [SubcategoryController::class, 'Subsubcategory'])->name('view.subsubcategory');
-
-    Route::get('/subcategory/ajax/{category_id}', [SubCategoryController::class, 'GetSubCategory']);
-
     });
 
     // Admin products
