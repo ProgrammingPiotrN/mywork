@@ -13,5 +13,4 @@ class MultiImage extends Model
         'product_id',
         'name_photo',
     ];
-
 }

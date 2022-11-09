@@ -31,9 +31,9 @@
                                           <span class="text-danger">{{ $message }}</span> 
                                        @enderror
                                    </div>
-                               </div>
+                              </div>
 
-                               <div class="form-group">
+                            <div class="form-group">
                                 <h5>Name Subcategory <span class="text-danger">*</span></h5>
                                 <div class="controls">
                                  <input type="text" name="name_subcategory" class="form-control" value="{{ $subcategory->name_subcategory }}">

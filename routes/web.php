@@ -120,6 +120,8 @@ Route::prefix('category')->group(function(){
 
     Route::get('/subcategory/crud/{category_id}', [SubcategoryController::class, 'GetAjaxSubCategory']);
 
+    Route::get('/subsubcategory/crud/{subcategory_id}', [SubcategoryController::class, 'GetAjaxSubSubCategory']);
+
     Route::post('/subsubcategory/store', [SubcategoryController::class, 'SubSubCategoryStore'])->name('subsubcategory.store');
 
     Route::get('/subsubcategory/edit/{id}', [SubcategoryController::class, 'EditSubSubCategory'])->name('subsubcategory.edit');
@@ -134,7 +136,7 @@ Route::prefix('category')->group(function(){
 
 Route::prefix('product')->group(function(){
 
-    Route::get('/add', [ProductController::class, 'ProductAdd'])->name('add.product');
+    Route::get('/addprod', [ProductController::class, 'ProductAdd'])->name('add.product');
     
     });
 

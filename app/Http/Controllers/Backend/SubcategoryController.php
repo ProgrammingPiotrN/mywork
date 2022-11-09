@@ -104,6 +104,13 @@ class SubcategoryController extends Controller
 
     }
 
+    public function GetAjaxSubSubCategory($subcategory_id){
+
+        $subsubc = SubSubcategory::where('subcategory_id', $subcategory_id)->orderBy('name_subsubcategory', 'ASC')->get();
+        return json_encode($subsubc);
+
+    }
+
     public function SubSubCategoryStore(Request $request){
 
         $request->validate([

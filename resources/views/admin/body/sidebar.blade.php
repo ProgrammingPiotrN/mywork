@@ -57,7 +57,7 @@ $route = Route::current()->getName();
           </ul>
         </li>  
 
-        {{-- <li class="treeview {{ ($prefix == '/product')?'active':'' }}">
+        <li class="treeview {{ ($prefix == '/product')?'active':'' }}">
           <a href="#">
             <i data-feather="package"></i>
             <span>Products</span>
@@ -69,7 +69,7 @@ $route = Route::current()->getName();
             <li class="{{ ($route == 'add.product')? 'active':'' }}"><a href="{{ route('add.product') }}"><i class="ti-more"></i>Add products</a></li>
             <li class="{{ ($route == 'add.product')? 'active':'' }}"><a href="{{ route('add.product') }}"><i class="ti-more"></i>Manage products</a></li>
           </ul>
-        </li>  --}}
+        </li> 
 	
 	<div class="sidebar-footer">
 		<!-- item-->
