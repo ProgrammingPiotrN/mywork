@@ -10,8 +10,10 @@ use App\Models\Subcategory;
 use App\Models\SubSubcategory;
 use App\Models\Brand;
 use App\Models\Product;
+use App\Models\MultiImage;
 
 use Carbon\Carbon;
+use Image;
 
 
 
@@ -33,7 +35,7 @@ class ProductController extends Controller
         Image::make($imageprod)->resize(900,1000)->save('upload/product/thamb/'.$nameprod_generate);
         $saveprod_url = 'upload/product/thamb/'.$nameprod_generate;
 
-        Product::insert([
+        $product_id = Product::insert([
 
             'brand_id' => $request->brand_id,
             'category_id' => $request->category_id,
@@ -58,6 +60,37 @@ class ProductController extends Controller
             'created_at' => Carbon::now()
 
         ]);
+
+        $imagesprod = $request->file('multi_image');
+        foreach($imagesprod as $img){
+
+            $prodname_generate = hexdec(uniqid()).''.$img->getClientOriginalExtension();
+            Image::make($img)->resize(900,1000)->save('upload/product/multiImg/'.$prodname_generate);
+            $prodsave_url = 'upload/product/multiImg/'.$prodname_generate;
+
+            MultiImage::insert([
+
+                'product_id' => $product_id,
+                'name_photo' => $prodsave_url,
+                'created_at' => Carbon::now()
+
+            ]);
+
+        }
+     
+        $notification = array(
+            'message' => 'Product inserted successfully',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->back()->with($notification);
+
+    }
+
+    public function ProductList(){
+
+        $products = Product::latest()->get();
+        return view('backend.product.view_product', compact('products'));
 
     }
 

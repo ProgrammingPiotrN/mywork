@@ -31,4 +31,5 @@ class Product extends Model
         'special_offer',
         'status',      
     ];
+
 }
