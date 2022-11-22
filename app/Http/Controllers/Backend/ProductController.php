@@ -35,7 +35,7 @@ class ProductController extends Controller
         Image::make($imageprod)->resize(900,1000)->save('upload/product/thamb/'.$nameprod_generate);
         $saveprod_url = 'upload/product/thamb/'.$nameprod_generate;
 
-        $product_id = Product::insert([
+        $product_id = Product::insertGetId([
 
             'brand_id' => $request->brand_id,
             'category_id' => $request->category_id,
@@ -96,12 +96,13 @@ class ProductController extends Controller
 
     public function EditProduct($id){
 
+        $multi = MultiImage::where('product_id', $id)->get();
         $categories = Category::latest()->get();
         $brands = Brand::latest()->get();
         $subcategory = Subcategory::latest()->get();
         $subsubcategory = SubSubcategory::latest()->get();
         $products = Product::findOrFail($id);
-        return view('backend.product.edit_product', compact('categories', 'brands', 'subcategory', 'subsubcategory', 'products'));
+        return view('backend.product.edit_product', compact('categories', 'brands', 'subcategory', 'subsubcategory', 'products', 'multi'));
 
     }
 
