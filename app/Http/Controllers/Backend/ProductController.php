@@ -83,7 +83,7 @@ class ProductController extends Controller
             'alert-type' => 'success'
         );
 
-        return redirect()->back()->with($notification);
+        return redirect()->route('product.list')->with($notification);
 
     }
 
@@ -91,6 +91,17 @@ class ProductController extends Controller
 
         $products = Product::latest()->get();
         return view('backend.product.view_product', compact('products'));
+
+    }
+
+    public function EditProduct($id){
+
+        $categories = Category::latest()->get();
+        $brands = Brand::latest()->get();
+        $subcategory = Subcategory::latest()->get();
+        $subsubcategory = SubSubcategory::latest()->get();
+        $products = Product::findOrFail($id);
+        return view('backend.product.edit_product', compact('categories', 'brands', 'subcategory', 'subsubcategory', 'products'));
 
     }
 

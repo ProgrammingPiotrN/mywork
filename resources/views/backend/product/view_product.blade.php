@@ -26,12 +26,14 @@
             </tr>
           </thead>
           <tbody>
-            @foreach($category as $item)
+            @foreach($products as $item)
             <tr>
-                <td>{{ $item->name_category }}</td>
+                <td><img src="{{ asset($item->thambnail_product) }}" style="width: 80px; height: 70px"></td>
+                <td>{{ $item->name_product }}</td>
+                <td>{{ $item->quantity_product }}</td>
               <td>
-                <a href="{{ route('category.edit', $item->id) }}" class="btn btn-info">Edit</a> 
-                <a href="{{ route('category.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a>
+                <a href="{{ route('product.edit', $item->id) }}" class="btn btn-info">Edit</a> 
+                <a href="{{ route('product.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a>
 
               </td>
             </tr>

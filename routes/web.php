@@ -138,9 +138,13 @@ Route::prefix('product')->group(function(){
 
     Route::get('/addprod', [ProductController::class, 'ProductAdd'])->name('add.product');
 
+    Route::get('/listprod', [ProductController::class, 'ProductList'])->name('product.list');
+
     Route::post('/store', [ProductController::class, 'ProductStore'])->name('product.store');
 
-    Route::get('/listprod', [ProductController::class, 'ProductList'])->name('product.list');
+    Route::get('/edit/{id}', [ProductController::class, 'EditProduct'])->name('product.edit');
+
+    Route::post('/delete/{id}', [ProductController::class, 'DeleteProduct'])->name('product.delete');
     
     });
 
