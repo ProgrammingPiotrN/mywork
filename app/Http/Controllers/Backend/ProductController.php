@@ -105,4 +105,42 @@ class ProductController extends Controller
 
     }
 
+    public function UpdateProduct(Request $request){
+
+        $product_id = $request->id;
+
+        Product::findOrFail($product_id)->update([
+
+            'brand_id' => $request->brand_id,
+            'category_id' => $request->category_id,
+            'subcategory_id' => $request->subcategory_id,
+            'subsubcategory_id' => $request->subsubcategory_id,
+            'name_product' => $request->name_product,
+            'slug_product' => strtolower(str_replace(' ', '-', $request->name_product)),
+            'code_product' => $request->code_product,
+            'quantity_product' => $request->quantity_product,
+            'tags_product' => $request->tags_product,
+            'weight_product' => $request->weight_product,
+            'price_selling' => $request->price_selling,
+            'price_discount' => $request->price_discount,
+            'description_short' => $request->description_short,
+            'description_long' => $request->description_long,
+            'deals' => $request->deals,
+            'featured' => $request->featured,
+            'special_deals' => $request->special_deals,
+            'special_offer' => $request->special_offer,
+            'status' => 1,
+            'created_at' => Carbon::now()
+
+        ]);
+
+        $notification = array(
+            'message' => 'Product updated successfully',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->route('product.list')->with($notification);
+
+    }
+
 }
