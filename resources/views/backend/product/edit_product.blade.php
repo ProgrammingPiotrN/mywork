@@ -280,10 +280,10 @@
 
       </section>
 
-      <section class="content">
+    <section class="content">
         <div class="row">
    
-   <div class="col-md-12">
+        <div class="col-md-12">
                    <div class="box bt-4 border-info">
                      <div class="box-header">
                         <h4 class="box-title">Product Multiple Image <strong>Update</strong></h4>
@@ -300,7 +300,7 @@
                                  <img src="{{ asset($img->name_photo) }}" class="card-img-top" style="height: 130px; width: 280px;">
                                  <div class="card-body">
                                  <h5 class="card-title">
-                                     <a href="" class="btn btn-sm btn-danger" id="delete" title="Delete Data">Delete</a>
+                                     <a href="{{ route('productmulti.delete', $img->id) }}" class="btn btn-sm btn-danger" id="delete" title="Delete Data">Delete</a>
                                      </h5>
                                  <p class="card-text"> 
                                      <div class="form-group">
@@ -314,6 +314,56 @@
                 
                                 </div>	
                                 @endforeach               
+                            </div>			               
+                            <div class="text-xs-right">
+                               <input type="submit" class="btn btn-rounded btn-primary mb-5" value="Update">
+                         </div>
+                         <br><br>               
+                        </form>		
+                     </div>
+                   </div>
+                 </div>
+   
+   
+   
+        </div> 
+   
+    </section>
+
+    <section class="content">
+        <div class="row">
+   
+        <div class="col-md-12">
+                   <div class="box bt-4 border-info">
+                     <div class="box-header">
+                        <h4 class="box-title">Product Thambnail Image <strong>Update</strong></h4>
+                     </div>
+                     <div>
+                        <form method="post" action="{{ route('product_thamb.update') }}" enctype="multipart/form-data" style="margin-left: 30px; margin-right: 30px">
+                            @csrf
+
+                            <input type="hidden" name="id" value="{{ $products->id }}">
+                            <input type="hidden" name="image_old" value="{{ $products->thambnail_product }}">
+
+                            <div class="row row-sm">
+                                <div class="col-md-3">
+                
+                             <div class="card" style="text-align: center">
+                                 <img src="{{ asset($products->thambnail_product) }}" class="card-img-top" style="height: 130px; width: 280px;">
+                                 <div class="card-body">
+                               
+                                 <p class="card-text"> 
+                                     <div class="form-group">
+                                         <label class="form-control-label">Change Image <span class="tx-danger">*</span></label>
+                                         <input type="file" name="thambnail_product" class="form-control" onChange="ThamURL(this)"> 
+                                         <img src="" id="MainThmb">
+                                        </div> 
+                                 </p>
+                             
+                                 </div>
+                             </div> 		
+                
+                                </div>	
                             </div>			               
                             <div class="text-xs-right">
                                <input type="submit" class="btn btn-rounded btn-primary mb-5" value="Update">

@@ -172,6 +172,49 @@ class ProductController extends Controller
             'alert-type' => 'info'
         );
 
+        return redirect()->route('product.list')->with($notification);
+
+    }
+
+    public function UpdateThambImage(Request $request){
+
+        $prod = $request->id;
+        $oldImg = $request->image_old;
+
+        unlink($oldImg);
+
+        $imageprod = $request->file('thambnail_product');
+        $nameprod_generate = hexdec(uniqid()).''.$imageprod->getClientOriginalExtension();
+        Image::make($imageprod)->resize(900,1000)->save('upload/product/thamb/'.$nameprod_generate);
+        $saveprod_url = 'upload/product/thamb/'.$nameprod_generate;
+
+        Product::findOrFail($prod)->update([
+
+            'thambnail_product' => $saveprod_url,
+            'updated_at' => Carbon::now(),
+
+        ]);
+
+        $notification = array(
+            'message' => 'Product image thambnail updated successfully',
+            'alert-type' => 'info'
+        );
+
+        return redirect()->route('product.list')->with($notification);
+
+    }
+
+    public function DeleteMultiImage($id){
+
+        $imgOld = MultiImage::findOrFail($id);
+        unlink($imgOld->name_photo);
+        MultiImage::findOrFail($id)->delete();
+
+        $notification = array(
+            'message' => 'Product image deleted successfully',
+            'alert-type' => 'success'
+        );
+
         return redirect()->back()->with($notification);
 
     }

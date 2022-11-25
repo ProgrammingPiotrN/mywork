@@ -19,7 +19,10 @@
             <tr>
               <th>Product Image</th>
               <th>Name product</th>
+              <th>Product price</th>
               <th>Product quantity</th>
+              <th>Product discount</th>
+              <th>Status</th>
               <th>Action</th>
             </tr>
           </thead>
