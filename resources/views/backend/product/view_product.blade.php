@@ -31,22 +31,37 @@
             <tr>
                 <td><img src="{{ asset($item->thambnail_product) }}" style="width: 80px; height: 70px"></td>
                 <td>{{ $item->name_product }}</td>
-                <td>{{ $item->price_selling }}</td>
-                <td>{{ $item->quantity_product }}</td>
-                <td>{{ $item->price_discount }}</td>
+                <td>{{ $item->price_selling }} PLN</td>
+                <td>{{ $item->quantity_product }} sztuk</td>
+                <td>  
+                  @if($item->price_discount == NULL)
+                      <span class="badge badge-pill badge-danger">No discount</span>
+                  @else
+                  @php
+                   $price = $item->price_selling - $item->price_discount;
+                   $discount = ($price/$item->price_selling) * 100;   
+                  @endphp
+                      <span class="badge badge-pill badge-success">{{ round($discount) }}%</span>
+                  @endif               
+                </td>
                 <th>
 
                   @if($item->status == 1)
                     <span class="badge badge-pill badge-success">Active</span>
                   @else
-                    <span class="badge badge-pill badge-success">InActive</span>
+                    <span class="badge badge-pill badge-danger">InActive</span>
                   @endif
   
                 </th>
-                <td>
+                <td width="30%">
+                <a href="{{ route('product.edit', $item->id) }}" class="btn btn-primary">Details</a> 
                 <a href="{{ route('product.edit', $item->id) }}" class="btn btn-info">Edit</a> 
                 <a href="{{ route('product.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a>
-
+                  @if($item->status == 1)
+                  <a href="{{ route('product.inactive', $item->id) }}" class="btn btn-danger" title="Inactive"><i class="fa fa-arrow-down"></i></a> 
+                  @else
+                  <a href="{{ route('product.active', $item->id) }}" class="btn btn-success" title="Active"><i class="fa fa-arrow-up"></i></a> 
+                  @endif
               </td>
             </tr>
             @endforeach
@@ -104,7 +119,7 @@
          window.axios.post($(this).attr("href"))
          .then(function (response) {
    
-           $($("#products-"+id)[0]).remove();
+           $($("#product-"+id)[0]).remove();
              Swal.fire(
              'Deleted!',
              'Your file has been deleted.',

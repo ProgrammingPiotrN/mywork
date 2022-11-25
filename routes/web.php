@@ -153,6 +153,10 @@ Route::prefix('product')->group(function(){
     Route::post('/update/thamb', [ProductController::class, 'UpdateThambImage'])->name('product_thamb.update');
 
     Route::get('/multi/delete/{id}', [ProductController::class, 'DeleteMultiImage'])->name('productmulti.delete');
+
+    Route::get('/inactive/{id}', [ProductController::class, 'ProductInactive'])->name('product.inactive');
+
+    Route::get('/active/{id}', [ProductController::class, 'ProductActive'])->name('product.active');
     
     });
 
