@@ -49,6 +49,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-3 logo-holder"> 
             <div class="logo"> <a href="{{ url('/') }}"> <img src="{{ asset('styles_backend/images/logo/logo.svg') }}" style="width: 200px; height: 200px;" alt="logo"> </a> </div>
+          </div>
           
           <div class="col-xs-12 col-sm-12 col-md-7 top-search-holder"> 
             <div class="search-area">
@@ -69,6 +70,7 @@
                   <a class="search-button" href="#" ></a> </div>
               </form>
             </div>
+             </div>
           
           <div class="col-xs-12 col-sm-12 col-md-2 animate-dropdown top-cart-row"> 
             
@@ -102,12 +104,10 @@
                   
                 </li>
               </ul>
-            </div>
-            
-        </div>
-        
+            </div>           
+           </div>
+        </div>        
       </div>
-      
     </div>
     
     <div class="header-nav animate-dropdown">

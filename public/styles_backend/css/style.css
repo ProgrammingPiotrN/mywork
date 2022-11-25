@@ -13479,7 +13479,7 @@ Height property
     -webkit-transition: margin-left 0.3s ease-in-out;
     transition: margin-left 0.3s ease-in-out;
     margin-left: 280px;
-    background: #FFB129;
+    background: #272e48;
     min-height: 70px;
     padding: 0;
     -webkit-box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
@@ -16746,13 +16746,13 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
       color: #ffffff; }
     .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
       cursor: not-allowed;
-      color: #FFB144;
-      border: 1px solid #FFB144;
+      color: #737373;
+      border: 1px solid transparent;
       background: 0 0;
       -webkit-box-shadow: none;
       box-shadow: none; }
     .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-      color: #FFB144;
+      color: #ffffff;
       background-color: #0F5EF7; }
     .dataTables_wrapper .dataTables_paginate .paginate_button:active {
       outline: 0;
