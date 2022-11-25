@@ -11,8 +11,11 @@ use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\SubcategoryController;
 use App\Http\Controllers\Backend\ProductController;
+use App\Http\Controllers\Backend\SliderController;
 
 use App\Http\Controllers\Frontend\IndexController;
+use App\Http\Controllers\Frontend\LanguageController;
+
 
 
 
@@ -32,9 +35,11 @@ Route::group(['prefix'=> 'admin', 'middleware'=>['admin:admin']], function(){
     Route::post('/login', [AdminController::class, 'store'])->name('admin.login');
 });
 
+Route::middleware(['auth:admin'])->group(function(){
+
 Route::middleware(['auth:sanctum,admin', 'verified'])->get('/admin/dashboard', function() {
     return view('admin.index');
-})->name('admindashboard');
+})->name('dashboard')->middleware('auth:admin');
 
 //Admin all routes
 
@@ -46,9 +51,11 @@ Route::get('/admin/profile/edit', [AdminProfileController::class, 'AdminProfileE
 
 Route::post('/admin/profile/store', [AdminProfileController::class, 'AdminProfileStore'])->name('admin.profile.store');
 
-Route::get('/admin/change/password', [AdminProfileController::class, 'AdminChangePassword'])->name('admin.change.password');
+Route::get('/admin/change/password', [AdminProfileController::class, 'AdminChangePassword'])->name('admin.change.password')->middleware('auth:admin');
 
 Route::post('/update/change/password', [AdminProfileController::class, 'AdminUpdatePassword'])->name('update.change.password');
+
+});
 
 //User all routes
 
@@ -159,6 +166,32 @@ Route::prefix('product')->group(function(){
     Route::get('/active/{id}', [ProductController::class, 'ProductActive'])->name('product.active');
     
     });
+
+Route::prefix('slider')->group(function(){
+
+    Route::get('/view', [SliderController::class, 'Slider'])->name('slider.view');
+
+    Route::post('/store', [SliderController::class, 'SliderStore'])->name('slider.store');
+
+    Route::get('/edit/{id}', [SliderController::class, 'EditSlider'])->name('slider.edit');
+
+    Route::post('/update', [SliderController::class, 'SliderUpdate'])->name('slider.update');
+
+    Route::post('/delete/{id}', [SliderController::class, 'DeleteSlider'])->name('slider.delete');
+
+    Route::get('/inactive/{id}', [SliderController::class, 'SliderInactive'])->name('slider.inactive');
+
+    Route::get('/active/{id}', [SliderController::class, 'SliderActive'])->name('slider.active');
+        
+        });
+
+//Language
+
+    Route::get('/language/english', [LanguageController::class, 'English'])->name('language.english');
+            
+    Route::get('/language/polish', [LanguageController::class, 'Polish'])->name('language.polish');
+            
+                  
 
 
 

@@ -70,7 +70,7 @@ $route = Route::current()->getName();
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="{{ ($route == 'slider.store')? 'active':'' }}"><a href="{{ route('slider.store') }}"><i class="ti-more"></i>Add to slider</a></li>
+            <li class="{{ ($route == 'slider.view')? 'active':'' }}"><a href="{{ route('slider.view') }}"><i class="ti-more"></i>Add to slider</a></li>
           </ul>
         </li> 
 	<div class="sidebar-footer">
