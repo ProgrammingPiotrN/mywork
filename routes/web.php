@@ -147,6 +147,8 @@ Route::prefix('product')->group(function(){
     Route::post('/delete/{id}', [ProductController::class, 'DeleteProduct'])->name('product.delete');
 
     Route::post('/update', [ProductController::class, 'UpdateProduct'])->name('product.update');
+
+    Route::post('/update/image', [ProductController::class, 'UpdateMultiImage'])->name('product_image.update');
     
     });
 

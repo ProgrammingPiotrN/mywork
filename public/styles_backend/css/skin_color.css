@@ -153,27 +153,26 @@ body.dark-skin {
   .dark-skin a.bg-light:hover, .dark-skin a.bg-light:focus {
     background-color: #000000 !important; }
 .dark-skin .form-control {
-  background-color: #272e48;
-  color: #8a99b5; }
+  background-color: #0982D6;
+  color: white; }
 .dark-skin .search-box .app-search .srh-btn {
-  background-color: #415892; }
+  background-color: white; }
 .dark-skin .content-header .breadcrumb {
   color: #0982D6; }
   .dark-skin .content-header .breadcrumb .breadcrumb-item a {
     color: #0982D6; }
   .dark-skin .content-header .breadcrumb .breadcrumb-item.active {
-    color: #566f9e; }
+    color: white; }
 .dark-skin .dropdown-menu {
-  background-color: #222e4c;
-  border-color: rgba(255, 255, 255, 0.12); }
+  background-color: #FFCF44;}
   .dark-skin .dropdown-menu > li > a {
-    color: #8a99b5; }
+    color: #0982D6; }
 .dark-skin .dropdown-grid {
-  border-color: rgba(255, 255, 255, 0.12); }
+  border-color: white; }
   .dark-skin .dropdown-grid .dropdown-item:hover {
     border-color: #4963a4; }
 .dark-skin .dropdown-divider {
-  border-color: rgba(255, 255, 255, 0.12); }
+  border-color: white; }
 .dark-skin .dropdown-item:hover, .dark-skin .dropdown-item:focus {
   background-color: #2a385d;
   color: #8a99b5; }
@@ -230,8 +229,7 @@ body.dark-skin {
     .dark-skin .box .box-header .box-subtitle {
       color: #8a99b5; }
   .dark-skin .box .box-footer {
-    background-color: #272e48;
-    border-color: rgba(255, 255, 255, 0.12); }
+    background-color: #FFCF44; }
   .dark-skin .box .box-transparent {
     background-color: transparent !important;
     box-shadow: none !important; }
@@ -375,20 +373,19 @@ body.dark-skin {
 .dark-skin .table-separated tbody tr {
   background-color: #0982D6; }
 .dark-skin .dataTable input {
-  border-color: rgba(255, 255, 255, 0.12);
   color: #0982D6;
-  background-color: #32436f; }
+  background-color: #FFCF44; }
 .dark-skin .dataTable select {
   border-color: rgba(255, 255, 255, 0.12);
-  color: #778cc2;
-  background-color: #32436f; }
+  color: #0982D6;
+  background-color: #FFCF44; }
 .dark-skin .page-item.disabled .page-link {
   color: #0982D6;
-  background-color: #1a233a;
+  background-color: #FFCF44;
   border-color: rgba(255, 255, 255, 0.12); }
 .dark-skin .pagination > li > a {
-  background-color: #475f7b;
-  color: #8a99b5; }
+  background-color: #FFCF44;
+  color: #0982D6; }
 .dark-skin .paging_simple_numbers .pagination .paginate_button {
   background-color: transparent; }
   .dark-skin .paging_simple_numbers .pagination .paginate_button:hover {

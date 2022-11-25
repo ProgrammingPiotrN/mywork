@@ -428,10 +428,9 @@ Theme Primary Color
 .theme-primary.light-skin .sidebar-menu > li.treeview .treeview-menu li a {
   color: #475f7b; }
 .theme-primary.light-skin.sidebar-mini.sidebar-collapse .sidebar-menu > li.active > a > span {
-  background: linear-gradient(45deg, #0F5EF7, #7a15f7) !important;
+  background: #F5273C;
   color: #ffffff !important; }
 .theme-primary.dark-skin .sidebar-menu > li.active.treeview > a {
-  background: linear-gradient(45deg, #0F5EF7, #7a15f7);
   color: #ffffff !important;
   -webkit-box-shadow: 0px 0px 12px 0px rgba(15, 94, 247, 0.35);
   box-shadow: 0px 0px 12px 0px rgba(15, 94, 247, 0.35); }
@@ -441,19 +440,13 @@ Theme Primary Color
     color: #ffffff; }
   .theme-primary.dark-skin .sidebar-menu > li.active.treeview > a:after {
     border-color: transparent #333333 transparent transparent !important; }
-.theme-primary.dark-skin .sidebar-menu > li.active.treeview.treeview > a {
-  background: linear-gradient(45deg, #0F5EF7, #7a15f7);
-  color: #ffffff !important; }
   .theme-primary.dark-skin .sidebar-menu > li.active.treeview.treeview > a > i {
     color: #ffffff; }
   .theme-primary.dark-skin .sidebar-menu > li.active.treeview.treeview > a > svg {
     color: #ffffff; }
-  .theme-primary.dark-skin .sidebar-menu > li.active.treeview.treeview > a:after {
-    border-color: transparent #fafafa transparent transparent !important; }
 .theme-primary.dark-skin .sidebar-menu > li.active.treeview.treeview .treeview-menu li a {
   color: #8a99b5; }
 .theme-primary.light-skin .sidebar-menu > li.active {
-  background: linear-gradient(45deg, #0F5EF7, #7a15f7);
   color: white;
   -webkit-box-shadow: 0px 0px 12px 0px rgba(15, 94, 247, 0.35);
   box-shadow: 0px 0px 12px 0px rgba(15, 94, 247, 0.35); }
@@ -474,7 +467,6 @@ Theme Primary Color
     -webkit-box-shadow: none;
     box-shadow: none; }
 .theme-primary.dark-skin .sidebar-menu > li.active {
-  background: linear-gradient(45deg, #2E9E38, #D66000);
   color: white;
   -webkit-box-shadow: 0px 0px 12px 0px rgba(15, 94, 247, 0.35);
   box-shadow: 0px 0px 12px 0px rgba(15, 94, 247, 0.35); }
