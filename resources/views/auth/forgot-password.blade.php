@@ -7,15 +7,14 @@
 				<li><a href="{{ url('/') }}">Home</a></li>
 				<li class='active'>Forget password</li>
 			</ul>
-		</div><!-- /.breadcrumb-inner -->
-	</div><!-- /.container -->
-</div><!-- /.breadcrumb -->
+		</div>
+	</div>
+</div>
 
 <div class="body-content">
 	<div class="container">
 		<div class="sign-in-page">
 			<div class="row">
-				<!-- Sign-in -->			
 <div class="col-md-6 col-sm-6 sign-in">
 	<h4 class="">Forget password</h4>
 	<p class="">Forgot your password? No problem</p>
@@ -23,7 +22,7 @@
 	<div class="mb-4 font-medium text-sm text-green-600">
 		{{ session('status') }}
 	</div>
-@endif
+	@endif
 	<form method="POST" action="{{ route('password.email') }}">
 		@csrf
 		<div class="form-group">
@@ -35,13 +34,10 @@
 		</div>
 	</form>					
 </div>
-<!-- Sign-in -->
 <br/>
-<!-- create a new account -->
 	
-<!-- create a new account -->			</div><!-- /.row -->
-		</div><!-- /.sigin-in-->
-		<!-- ============================================== BRANDS CAROUSEL ============================================== -->
+		</div>
+		</div>
 <div>
 		<div class="logo-slider-inner">	
 		</div>

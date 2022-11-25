@@ -3,18 +3,15 @@
 
 
   <div class="container-full">
-  <!-- Main content -->
   <section class="content">
     <div class="row">
 
-    <!-- /.col -->
     <div class="col-12">
 
       <div class="box">
        <div class="box-header with-border">
          <h3 class="box-title">Edit brand</h3>
        </div>
-       <!-- /.box-header -->
        <div class="box-body">
          <div class="table-responsive">
           <form method="post" action="{{ route('brand.update', $brand->id) }}" enctype="multipart/form-data">
@@ -47,16 +44,11 @@
              </div>
             </form>
          </div>
+        </div>
        </div>
-       <!-- /.box-body -->
-       </div>
-       <!-- /.box -->
      </div>
     </div>
-    <!-- /.row -->
-  </section>
-  <!-- /.content -->
-  
+  </section>  
   </div>
 
 

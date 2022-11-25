@@ -2,7 +2,6 @@
 @section('admin')
 
 <div class="container-full">
-    <!-- Main content -->
     <section class="content">
       <div class="row">
   
@@ -12,7 +11,6 @@
          <div class="box-header with-border">
            <h3 class="box-title">Edit SubCategory</h3>
          </div>
-         <!-- /.box-header -->
          <div class="box-body">
            <div class="table-responsive">
             <form method="post" action="{{ route('subcategory.update') }}">
@@ -49,15 +47,10 @@
               </form>
            </div>
          </div>
-         <!-- /.box-body -->
          </div>
-         <!-- /.box -->
        </div>
       </div>
-      <!-- /.row -->
-    </section>
-    <!-- /.content -->
-    
+    </section>    
     </div>
   
      

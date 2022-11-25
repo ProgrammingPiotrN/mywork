@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="description" content="">
@@ -9,10 +8,8 @@
 <meta name="keywords" content="MediaCenter, Template, eCommerce">
 <meta name="robots" content="all">
 
-<!-- Bootstrap Core CSS -->
 <link rel="stylesheet" href="{{ asset('styles_frontend/assets/css/bootstrap.min.css') }}">
 
-<!-- Customizable CSS -->
 <link rel="stylesheet" href="{{ asset('styles_frontend/assets/css/main.css') }}">
 <link rel="stylesheet" href="{{ asset('styles_frontend/assets/css/blue.css') }}">
 <link rel="stylesheet" href="{{ asset('styles_frontend/assets/css/owl.carousel.css') }}">
@@ -22,31 +19,19 @@
 <link rel="stylesheet" href="{{ asset('styles_frontend/assets/css/bootstrap-select.min.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.css" integrity="sha512-oe8OpYjBaDWPt2VmSFR+qYOdnTjeV9QPLJUeqZyprDEQvQLJ9C5PCFclxwNuvb/GQgQngdCXzKSFltuHD3eCxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- Icons/Glyphs -->
 <link rel="stylesheet" href="{{ asset('styles_frontend/assets/css/font-awesome.css') }}">
 
-<!-- Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">   
 </head>
 <body class="cnt-home">
-<!-- ============================================== HEADER ============================================== -->
 @include('frontend.body.header')
-<!-- ============================================== HEADER : END ============================================== -->
 @yield('content')
-<!-- /#top-banner-and-menu --> 
 
-<!-- ============================================================= FOOTER ============================================================= -->
 @include('frontend.body.footer')
-<!-- ============================================================= FOOTER : END============================================================= --> 
 
-<!-- For demo purposes – can be removed on production --> 
-
-<!-- For demo purposes – can be removed on production : End --> 
-
-<!-- JavaScripts placed at the end of the document so the pages load faster --> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js" integrity="sha512-lbwH47l/tPXJYG9AcFNoJaTMhGvYWhVM9YI43CT+uteTRRaiLCui8snIgyAN8XWgNjNhCqlAUdzZptso6OCoFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script src="{{ asset('styles_frontend/assets/js/jquery-1.11.1.min.js') }}"></script> 

@@ -1,6 +1,5 @@
 <header class="header-style-1"> 
   
-    <!-- ============================================== TOP MENU ============================================== -->
     <div class="top-bar animate-dropdown">
       <div class="container">
         <div class="header-top-inner">
@@ -22,7 +21,6 @@
               @endauth
             </ul>
           </div>
-          <!-- /.cnt-account -->
           
           <div class="cnt-block">
             <ul class="list-unstyled list-inline">
@@ -41,30 +39,18 @@
                 </ul>
               </li>
             </ul>
-            <!-- /.list-unstyled --> 
           </div>
-          <!-- /.cnt-cart -->
           <div class="clearfix"></div>
         </div>
-        <!-- /.header-top-inner --> 
       </div>
-      <!-- /.container --> 
     </div>
-    <!-- /.header-top --> 
-    <!-- ============================================== TOP MENU : END ============================================== -->
     <div class="main-header">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-3 logo-holder"> 
-            <!-- ============================================================= LOGO ============================================================= -->
             <div class="logo"> <a href="{{ url('/') }}"> <img src="{{ asset('styles_backend/images/logo/logo.svg') }}" style="width: 200px; height: 200px;" alt="logo"> </a> </div>
-            <!-- /.logo --> 
-            <!-- ============================================================= LOGO : END ============================================================= --> </div>
-          <!-- /.logo-holder -->
           
           <div class="col-xs-12 col-sm-12 col-md-7 top-search-holder"> 
-            <!-- /.contact-row --> 
-            <!-- ============================================================= SEARCH AREA ============================================================= -->
             <div class="search-area">
               <form>
                 <div class="control-group">
@@ -83,12 +69,8 @@
                   <a class="search-button" href="#" ></a> </div>
               </form>
             </div>
-            <!-- /.search-area --> 
-            <!-- ============================================================= SEARCH AREA : END ============================================================= --> </div>
-          <!-- /.top-search-holder -->
           
           <div class="col-xs-12 col-sm-12 col-md-2 animate-dropdown top-cart-row"> 
-            <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
             
             <div class="dropdown dropdown-cart"> <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
               <div class="items-cart-inner">
@@ -111,33 +93,23 @@
                       <div class="col-xs-1 action"> <a href="#"><i class="fa fa-trash"></i></a> </div>
                     </div>
                   </div>
-                  <!-- /.cart-item -->
                   <div class="clearfix"></div>
                   <hr>
                   <div class="clearfix cart-total">
                     <div class="pull-right"> <span class="text">Sub Total :</span><span class='price'>$600.00</span> </div>
                     <div class="clearfix"></div>
                     <a href="checkout.html" class="btn btn-upper btn-primary btn-block m-t-20">Checkout</a> </div>
-                  <!-- /.cart-total--> 
                   
                 </li>
               </ul>
-              <!-- /.dropdown-menu--> 
             </div>
-            <!-- /.dropdown-cart --> 
             
-            <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= --> </div>
-          <!-- /.top-cart-row --> 
         </div>
-        <!-- /.row --> 
         
       </div>
-      <!-- /.container --> 
       
     </div>
-    <!-- /.main-header --> 
     
-    <!-- ============================================== NAVBAR ============================================== -->
     <div class="header-nav animate-dropdown">
       <div class="container">
         <div class="yamm navbar navbar-default" role="navigation">
@@ -164,7 +136,6 @@
                               </ul>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4 col-menu banner-image"> <img class="img-responsive" src="assets/images/banners/top-menu-banner.jpg" alt=""> </div>
-                            <!-- /.yamm-content --> 
                           </div>
                         </div>
                       </li>

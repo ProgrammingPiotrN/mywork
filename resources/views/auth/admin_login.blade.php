@@ -10,10 +10,8 @@
 
     <title>Sweet dream - Log in </title>
   
-	<!-- Vendors Style-->
 	<link rel="stylesheet" href="{{ asset('styles_backend/css/vendors_css.css') }}">
 	  
-	<!-- Style-->  
 	<link rel="stylesheet" href="{{ asset('styles_backend/css/style.css') }}">
 	<link rel="stylesheet" href="{{ asset('styles_backend/css/skin_color.css') }}">	
 
@@ -58,17 +56,14 @@
 										<label for="basic_checkbox_1">Remember Me</label>
 									  </div>
 									</div>
-									<!-- /.col -->
 									<div class="col-6">
 									 <div class="fog-pwd text-right">
 										<a href="{{ route('password.request') }}" class="text-white hover-info"><i class="ion ion-locked"></i> Forgot pwd?</a><br>
 									  </div>
 									</div>
-									<!-- /.col -->
 									<div class="col-12 text-center">
 									  <button type="submit" class="btn btn-info btn-rounded mt-10">SIGN IN</button>
 									</div>
-									<!-- /.col -->
 								  </div>
 							</form>														
 							
@@ -79,8 +74,6 @@
 		</div>
 	</div>
 
-
-	<!-- Vendor JS -->
 	<script src="{{ asset('styles_backend/js/vendors.min.js') }}"></script>
     <script src="{{ asset('../assets/icons/feather-icons/feather.min.js') }}"></script>	
 

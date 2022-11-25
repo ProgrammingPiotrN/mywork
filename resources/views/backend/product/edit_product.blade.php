@@ -5,16 +5,12 @@
 
     <div class="container-full">
     	  
-
-      <!-- Main content -->
       <section class="content">
 
-       <!-- Basic Forms -->
         <div class="box">
           <div class="box-header with-border">
             <h4 class="box-title">Edit product</h4>
           </div>
-          <!-- /.box-header -->
           <div class="box-body">
             <div class="row">
               <div class="col">
@@ -315,7 +311,7 @@
                                  </div>
                              </div> 		
                 
-                                </div><!--  end col md 3		 -->	
+                                </div>	
                                 @endforeach               
                             </div>			               
                             <div class="text-xs-right">
@@ -329,7 +325,7 @@
    
    
    
-        </div> <!-- // end row  -->
+        </div> 
    
     </section>
 
@@ -412,27 +408,27 @@
 <script type="text/javascript">
  
     $(document).ready(function(){
-     $('#MultiImage').on('change', function(){ //on file input change
-        if (window.File && window.FileReader && window.FileList && window.Blob) //check File API supported browser
+     $('#MultiImage').on('change', function(){ 
+        if (window.File && window.FileReader && window.FileList && window.Blob) 
         {
-            var data = $(this)[0].files; //this file data
+            var data = $(this)[0].files; 
              
-            $.each(data, function(index, file){ //loop though each file
-                if(/(\.|\/)(gif|jpe?g|png)$/i.test(file.type)){ //check supported file type
-                    var fRead = new FileReader(); //new filereader
-                    fRead.onload = (function(file){ //trigger function on successful read
+            $.each(data, function(index, file){ 
+                if(/(\.|\/)(gif|jpe?g|png)$/i.test(file.type)){ 
+                    var fRead = new FileReader(); 
+                    fRead.onload = (function(file){ 
                     return function(e) {
                         var img = $('<img/>').addClass('thumb').attr('src', e.target.result) .width(100)
-                    .height(100); //create image element 
-                        $('#prev_image').append(img); //append image to output element
+                    .height(100); 
+                        $('#prev_image').append(img); 
                     };
                     })(file);
-                    fRead.readAsDataURL(file); //URL representing the file's data.
+                    fRead.readAsDataURL(file); 
                 }
             });
              
         }else{
-            alert("Your browser doesn't support File API!"); //if File API is absent
+            alert("Your browser doesn't support File API!"); 
         }
      });
     });

@@ -7,7 +7,6 @@
     <section class="content">
         <div class="row">
             <div class="box box-widget widget-user">
-                <!-- Add the bg color to the header using any of the bg-* classes -->
                 <div class="widget-user-header bg-black">
                   <h3 class="widget-user-username">Admin Name: {{ $adminData->name }}</h3>
 
@@ -25,27 +24,20 @@
                         <h5 class="description-header"></h5>
                         <span class="description-text"></span>
                       </div>
-                      <!-- /.description-block -->
                     </div>
-                    <!-- /.col -->
                     <div class="col-sm-4 br-1 bl-1">
                       <div class="description-block">
                         <h5 class="description-header"></h5>
                         <span class="description-text"></span>
                       </div>
-                      <!-- /.description-block -->
                     </div>
-                    <!-- /.col -->
                     <div class="col-sm-4">
                       <div class="description-block">
                         <h5 class="description-header"></h5>
                         <span class="description-text"></span>
                       </div>
-                      <!-- /.description-block -->
                     </div>
-                    <!-- /.col -->
                   </div>
-                  <!-- /.row -->
                 </div>
               </div>
         </div>

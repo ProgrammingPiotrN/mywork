@@ -1,7 +1,5 @@
 <header class="main-header">
-    <!-- Header Navbar -->
     <nav class="navbar navbar-static-top pl-30">
-      <!-- Sidebar toggle button-->
 	  <div>
 		  <ul class="nav">
 			<li class="btn-group nav-item">
@@ -25,23 +23,19 @@
 			    </a>
 			</li>
 		  </ul>
-	  </div>
-		
+	  </div>		
       <div class="navbar-custom-menu r-side">
         <ul class="nav navbar-nav">
-		  <!-- full Screen -->
 	      <li class="search-bar">		  
 			  <div class="lookup lookup-circle lookup-right">
 			     <input type="text" name="s">
 			  </div>
 		  </li>			
-		  <!-- Notifications -->
 		  <li class="dropdown notifications-menu">
 			<a href="#" class="waves-effect waves-light rounded dropdown-toggle" data-toggle="dropdown" title="Notifications">
 			  <i class="ti-bell"></i>
 			</a>
 			<ul class="dropdown-menu animated bounceIn">
-
 			  <li class="header">
 				<div class="p-20">
 					<div class="flexbox">
@@ -49,7 +43,6 @@
 					</div>
 				</div>
 			  </li>
-
 			</ul>
 		  </li>	
 		  
@@ -57,7 +50,6 @@
 			$adminData = DB::table('admins')->first();
 		  @endphp
 
-	      <!-- User Account-->
           <li class="dropdown user user-menu">	
 			<a href="#" class="waves-effect waves-light rounded dropdown-toggle p-0" data-toggle="dropdown" title="User">
 				<img src="{{ (!empty($adminData->profile_photo_path))? url('upload/admin_photos/'.$adminData->profile_photo_path):url('upload/no_image.jpg') }}" alt="avatar">

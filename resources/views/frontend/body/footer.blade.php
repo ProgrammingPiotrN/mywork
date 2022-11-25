@@ -4,7 +4,6 @@
         <div class="row">
           <div class="col-xs-8 col-sm-4 col-md-2">
           </div>
-          <!-- /.col -->
           
           <div class="col-xs-8 col-sm-4 col-md-2" style="position: relative; left: 300px;">
             <div class="module-heading">

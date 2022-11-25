@@ -3,18 +3,15 @@
 
 
   <div class="container-full">
-  <!-- Main content -->
   <section class="content">
     <div class="row">
 
-    <!-- /.col -->
     <div class="col-12">
 
       <div class="box">
        <div class="box-header with-border">
          <h3 class="box-title">Edit category</h3>
        </div>
-       <!-- /.box-header -->
        <div class="box-body">
          <div class="table-responsive">
           <form method="post" action="{{ route('category.update', $category->id) }}" enctype="multipart/form-data">
@@ -36,15 +33,10 @@
             </form>
          </div>
        </div>
-       <!-- /.box-body -->
        </div>
-       <!-- /.box -->
      </div>
     </div>
-    <!-- /.row -->
-  </section>
-  <!-- /.content -->
-  
+  </section>  
   </div>
 
 

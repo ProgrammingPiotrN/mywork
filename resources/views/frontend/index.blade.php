@@ -3,15 +3,12 @@
 <div class="body-content outer-top-xs" id="top-banner-and-menu">
     <div class="container">
       <div class="row"> 
-        <!-- ============================================== SIDEBAR ============================================== -->
         <div class="col-xs-12 col-sm-12 col-md-3 sidebar"> 
           
-          <!-- ================================== TOP NAVIGATION ================================== -->
           <div class="side-menu animate-dropdown outer-bottom-xs">
             <div class="head"><i class="icon fa fa-align-justify fa-fw"></i> Categories</div>
             <nav class="yamm megamenu-horizontal">
               <ul class="nav">
-                {{-- torty --}}
                 <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cakes</a>
                   <ul class="dropdown-menu mega-menu">
                     <li class="yamm-content">
@@ -28,9 +25,7 @@
                     </li>
                   </ul>
                 </li>
-                {{-- placki i naleśniki--}}
                 <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pies</a> 
-                  <!-- ================================== MEGAMENU VERTICAL ================================== -->
                   <ul class="dropdown-menu mega-menu">
                     <li class="yamm-content">
                       <div class="row">

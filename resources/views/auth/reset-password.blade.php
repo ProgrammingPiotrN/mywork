@@ -7,15 +7,14 @@
 				<li><a href="home.html">Home</a></li>
 				<li class='active'>Reset password</li>
 			</ul>
-		</div><!-- /.breadcrumb-inner -->
-	</div><!-- /.container -->
-</div><!-- /.breadcrumb -->
+		</div>
+	</div>
+</div>
 
 <div class="body-content">
 	<div class="container">
 		<div class="sign-in-page">
 			<div class="row">
-				<!-- Sign-in -->			
 <div class="col-md-6 col-sm-6 sign-in">
 	<h4 class="">Reset password</h4>
 	@if (session('status'))
@@ -44,13 +43,10 @@
 		</div>
 	</form>					
 </div>
-<!-- Sign-in -->
 <br/>
-<!-- create a new account -->
 	
-<!-- create a new account -->			</div><!-- /.row -->
-		</div><!-- /.sigin-in-->
-		<!-- ============================================== BRANDS CAROUSEL ============================================== -->
+		</div>
+		</div>
 <div>
 		<div class="logo-slider-inner">	
 		</div>

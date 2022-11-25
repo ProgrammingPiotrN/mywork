@@ -7,15 +7,14 @@
 				<li><a href="home.html">Home</a></li>
 				<li class='active'>Login</li>
 			</ul>
-		</div><!-- /.breadcrumb-inner -->
-	</div><!-- /.container -->
-</div><!-- /.breadcrumb -->
+		</div>
+	</div>
+</div>
 
 <div class="body-content">
 	<div class="container">
 		<div class="sign-in-page">
 			<div class="row">
-				<!-- Sign-in -->			
 <div class="col-md-6 col-sm-6 sign-in">
 	<h4 class="">Sign in</h4>
 	<p class="">welcome to the registration panel</p>
@@ -25,9 +24,7 @@
 	</div>
 @endif				
 </div>
-<!-- Sign-in -->
 <br/>
-<!-- create a new account -->
 <div class="col-md-6 col-sm-6 create-new-account">
 	<h4 class="checkout-subtitle">Create a new account</h4>
 	<p class="text title-tag-line">Create your new account.</p>
@@ -83,17 +80,14 @@
 	
 	
 </div>	
-<!-- create a new account -->			</div><!-- /.row -->
-		</div><!-- /.sigin-in-->
-		<!-- ============================================== BRANDS CAROUSEL ============================================== -->
+		</div>
+		</div>
 <div>
 
 		<div class="logo-slider-inner">	
 			
-		</div><!-- /.logo-slider-inner -->
+		</div>
 	
-</div><!-- /.logo-slider -->
-<!-- ============================================== BRANDS CAROUSEL : END ============================================== -->	</div><!-- /.container -->
-</div><!-- /.body-content -->
-<!-- ============================================================= FOOTER ============================================================= -->
+</div>
+</div>
 @endsection

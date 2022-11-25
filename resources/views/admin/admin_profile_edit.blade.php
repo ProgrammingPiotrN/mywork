@@ -6,13 +6,10 @@
 <div class="container-full">
 
     <section class="content">
-
-        <!-- Basic Forms -->
          <div class="box">
            <div class="box-header with-border">
              <h4 class="box-title">Edit Admin Profile</h4>
            </div>
-           <!-- /.box-header -->
            <div class="box-body">
              <div class="row">
                <div class="col">
@@ -63,14 +60,9 @@
                    </form>
 
                </div>
-               <!-- /.col -->
              </div>
-             <!-- /.row -->
            </div>
-           <!-- /.box-body -->
          </div>
-         <!-- /.box -->
-
        </section>
    
 </div>    
