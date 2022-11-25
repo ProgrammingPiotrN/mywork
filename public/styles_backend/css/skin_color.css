@@ -142,7 +142,7 @@ body.dark-skin {
     color: #8a99b5;
     background-color: #222e4c; }
   body.dark-skin .main-sidebar .sidebar-footer {
-    background-color: #272e48; }
+    background-color: #FFB129; }
   body.dark-skin .user-profile .ulogo h3 {
     color: #bdd1f8; }
 
@@ -153,8 +153,8 @@ body.dark-skin {
   .dark-skin a.bg-light:hover, .dark-skin a.bg-light:focus {
     background-color: #000000 !important; }
 .dark-skin .form-control {
-  background-color: #272e48;
-  color: #8a99b5; }
+  background-color: #0982D6;
+  color: white; }
 .dark-skin .search-box .app-search .srh-btn {
   background-color: #415892; }
 .dark-skin .content-header .breadcrumb {
@@ -190,7 +190,7 @@ body.dark-skin {
   border-color: rgba(255, 255, 255, 0.12);
   color: #8a99b5; }
 .dark-skin .btn-default {
-  background-color: #272e48;
+  background-color: #FFB129;
   color: #8a99b5;
   border-color: rgba(255, 255, 255, 0.12); }
   .dark-skin .btn-default.hover {
@@ -230,7 +230,7 @@ body.dark-skin {
     .dark-skin .box .box-header .box-subtitle {
       color: #8a99b5; }
   .dark-skin .box .box-footer {
-    background-color: #272e48;
+    background-color: #FFB129;
     border-color: rgba(255, 255, 255, 0.12); }
   .dark-skin .box .box-transparent {
     background-color: transparent !important;
@@ -238,7 +238,7 @@ body.dark-skin {
   .dark-skin .box[class*=bg-pale] > .box-header {
     color: #475f7b; }
   .dark-skin .box.box-solid .box-body {
-    background-color: #272e48 !important;
+    background-color: #FFB129 !important;
     color: #8a99b5; }
   .dark-skin .box.box-solid.box-default > .box-header {
     color: #475f7b;
@@ -301,7 +301,7 @@ body.dark-skin {
 .dark-skin .box-comments .box-comment {
   border-color: rgba(255, 255, 255, 0.12); }
 .dark-skin .card {
-  background-color: #272e48; }
+  background-color: #FFB129; }
   .dark-skin .card .card-header {
     background-color: transparent !important;
     border-color: rgba(255, 255, 255, 0.12); }
@@ -326,9 +326,9 @@ body.dark-skin {
 .dark-skin .overlay-wrapper .overlay {
   background: rgba(255, 255, 255, 0.7); }
 .dark-skin .info-box {
-  background-color: #272e48; }
+  background-color: #FFB129; }
 .dark-skin .badge-default {
-  background-color: #272e48; }
+  background-color: #FFB129; }
 .dark-skin code {
   border-color: rgba(255, 255, 255, 0.12);
   background-color: #1a233a; }
@@ -384,15 +384,15 @@ body.dark-skin {
   background-color: #32436f; }
 .dark-skin .page-item.disabled .page-link {
   color: #0982D6;
-  background-color: #1a233a;
+  background-color: #FFB129;
   border-color: rgba(255, 255, 255, 0.12); }
 .dark-skin .pagination > li > a {
-  background-color: #475f7b;
-  color: #8a99b5; }
+  background-color: #FFB129;
+  color: #0982D6; }
 .dark-skin .paging_simple_numbers .pagination .paginate_button {
-  background-color: transparent; }
+  background-color: #FFB129; }
   .dark-skin .paging_simple_numbers .pagination .paginate_button:hover {
-    background-color: transparent; }
+    background-color: #FFB129; }
 .dark-skin .nav > li > a:hover, .dark-skin .nav > li > a:active, .dark-skin .nav > li > a:focus {
   color: #879fba; }
 .dark-skin .nav-tabs-custom > .nav-tabs > li > a.active {
@@ -450,13 +450,13 @@ body.dark-skin {
 .dark-skin .mailbox-attachments li {
   border-color: rgba(255, 255, 255, 0.12); }
 .dark-skin .callout .highlight {
-  background-color: #272e48; }
+  background-color: #FFB129; }
 .dark-skin .callout code {
-  background-color: #272e48; }
+  background-color: #FFB129; }
 .dark-skin .wysihtml5-toolbar .btn-default {
-  background-color: #272e48; }
+  background-color: #FFB129; }
 .dark-skin .wysihtml5-sandbox {
-  background-color: #272e48 !important;
+  background-color: #FFB129 !important;
   border-color: rgba(255, 255, 255, 0.12) !important; }
   .dark-skin .wysihtml5-sandbox body.placeholder {
     background-color: #32436f !important;
@@ -660,7 +660,7 @@ body.dark-skin {
 .dark-skin .product-list-in-box > .item {
   border-color: rgba(255, 255, 255, 0.12); }
 .dark-skin .list-group-item {
-  background-color: #272e48;
+  background-color: #FFB129;
   border: 1px solid rgba(255, 255, 255, 0.12); }
 .dark-skin .list-style-none li.divider {
   background-color: #4963a4; }
@@ -718,7 +718,7 @@ body.dark-skin {
   color: #8a99b5;
   border-color: rgba(255, 255, 255, 0.12); }
 .dark-skin .main-sidebar {
-  background-color: #272e48; }
+  background-color: #FFB129; }
 .dark-skin .left-side {
   box-shadow: 0 10px 15px -5px rgba(103, 133, 167, 0.07);
   background-color: rgba(73, 99, 164, 0.75); }
