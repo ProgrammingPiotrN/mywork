@@ -19,7 +19,7 @@
             <tr>
               <th>Product Image</th>
               <th>Name product</th>
-              <th>Product price</th>
+              <th>Product selling price</th>
               <th>Product quantity</th>
               <th>Product discount</th>
               <th>Status</th>
@@ -31,8 +31,19 @@
             <tr>
                 <td><img src="{{ asset($item->thambnail_product) }}" style="width: 80px; height: 70px"></td>
                 <td>{{ $item->name_product }}</td>
+                <td>{{ $item->price_selling }}</td>
                 <td>{{ $item->quantity_product }}</td>
-              <td>
+                <td>{{ $item->price_discount }}</td>
+                <th>
+
+                  @if($item->status == 1)
+                    <span class="badge badge-pill badge-success">Active</span>
+                  @else
+                    <span class="badge badge-pill badge-success">InActive</span>
+                  @endif
+  
+                </th>
+                <td>
                 <a href="{{ route('product.edit', $item->id) }}" class="btn btn-info">Edit</a> 
                 <a href="{{ route('product.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a>
 
