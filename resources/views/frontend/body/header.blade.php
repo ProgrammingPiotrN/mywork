@@ -50,7 +50,7 @@
                 <ul class="dropdown-menu">
                   @if(session()->get('language') == 'polish')
                   <li><a href="{{ route('language.english') }}">English</a></li>
-                  @else
+                  @else 
                   <li><a href="{{ route('language.polish') }}">Polish</a></li>
                   @endif
                 </ul>

@@ -190,6 +190,8 @@ Route::prefix('slider')->group(function(){
     Route::get('/language/english', [LanguageController::class, 'English'])->name('language.english');
             
     Route::get('/language/polish', [LanguageController::class, 'Polish'])->name('language.polish');
+
+
             
                   
 

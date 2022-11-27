@@ -366,7 +366,7 @@
         if(input.files && input.files[0]) {
             var reader = new FileReader();
             reader.onload = function(e){
-                $('#MainThmb').attr('src', e.target.result).width(100).height(100);
+                $('#MainThmb').attr('src', e.target.result).width(400).height(300);
             };
             reader.readAsDataURL(input.files[0]);
         }
@@ -387,8 +387,8 @@
                     var fRead = new FileReader(); 
                     fRead.onload = (function(file){ 
                     return function(e) {
-                        var img = $('<img/>').addClass('thumb').attr('src', e.target.result) .width(100)
-                    .height(100); 
+                        var img = $('<img/>').addClass('thumb').attr('src', e.target.result) .width(400)
+                    .height(300); 
                         $('#prev_image').append(img); 
                     };
                     })(file);
