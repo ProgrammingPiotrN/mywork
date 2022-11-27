@@ -5,13 +5,19 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
+
 use App\Models\User;
+use App\Models\Category;
+use App\Models\Slider;
+
 use Illuminate\Support\Facades\Hash;
 
 class IndexController extends Controller
 {
     public function index(){
-        return view('frontend.index');
+        $slider = Slider::where('status', 1)->orderBy('id', 'DESC')->limit(10)->get();
+        $cat = Category::orderBy('name_category', 'ASC')->get();   
+        return view('frontend.index', compact('cat', 'slider'));
     }
     public function UserLogout(){
         Auth::logout();

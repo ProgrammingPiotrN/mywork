@@ -150,131 +150,49 @@
             <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
               <div class="nav-outer">
                 <ul class="nav navbar-nav">
-                  <li class="active dropdown yamm-fw"> <a href="home.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Home</a> </li>
-                  <li class="dropdown yamm mega-menu"> <a href="home.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Cakes</a>
+                  <li class="active dropdown yamm-fw"> <a href="{{ url('/') }}" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">
+                    @if(session()->get('language') == 'polish') Strona główna @else Home @endif
+                  </a> </li>
+
+                    @php
+                     $cat = App\Models\Category::orderBy('name_category', 'ASC')->get();   
+                    @endphp
+
+                  @foreach ($cat as $category)                 
+                  <li class="dropdown yamm mega-menu"> <a href="home.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">
+                    @if(session()->get('language') == 'polish') {{ $category->name_category }} @else {{ $category->name_category }} @endif
+                    </a>
                     <ul class="dropdown-menu container">
                       <li>
                         <div class="yamm-content ">
                           <div class="row">
+
+                            @php
+                            $subcat = App\Models\Subcategory::where('category_id', $category->id)->orderBy('name_subcategory', 'ASC')->get();   
+                           @endphp
+
+                            @foreach ($subcat as $subcategory)                                                        
                             <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                              <h2 class="title">{{ $subcategory->name_subcategory }}</h2>
                               <ul class="links">
-                                <li><a href="#">Birthday cakes</a></li>
-                                <li><a href="#">Themed cakes </a></li>
-                                <li><a href="#">Wedding anniversary cakes</a></li>
-                                <li><a href="#">Communion cakes</a></li>
+
+                                @php
+                                $subsubcat = App\Models\SubSubcategory::where('subcategory_id', $subcategory->id)->orderBy('name_subsubcategory', 'ASC')->get();   
+                               @endphp
+
+                                @foreach ($subsubcat as $subsubcategory)                                                                
+                                <li><a href="#">{{ $subsubcategory->name_subsubcategory }}</a></li>
+                                @endforeach
                               </ul>
                             </div>
+                            @endforeach
                             <div class="col-xs-12 col-sm-6 col-md-4 col-menu banner-image"> <img class="img-responsive" src="assets/images/banners/top-menu-banner.jpg" alt=""> </div>
                           </div>
                         </div>
                       </li>
                     </ul>
                   </li>
-                  <li class="dropdown mega-menu"> 
-                  <a href="category.html"  data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Pies</a>
-                    <ul class="dropdown-menu container">
-                      <li>
-                        <div class="yamm-content">
-                          <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-                              <ul class="links">
-                                <li><a href="#">Cheese cake</a></li>
-                                <li><a href="#">Shrek</a></li>
-                                <li><a href="#">Chocolate cake</a></li>
-                                <li><a href="#">Poppy seed cake</a></li>
-                                <li><a href="#">Cow</a></li>
-                              </ul>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-4 col-menu custom-banner"> <a href="#"><img alt="" src="assets/images/banners/banner-side.png"></a> </div>
-                          </div>
-                        </div>
-                       </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown mega-menu"> 
-                    <a href="category.html"  data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Pancakes</a>
-                      <ul class="dropdown-menu container">
-                        <li>
-                          <div class="yamm-content">
-                            <div class="row">
-                              <div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-                                <ul class="links">
-                                  <li><a href="#">Pancakes with chocolate</a></li>
-                                  <li><a href="#">Pancakes with whipped cream</a></li>
-                                  <li><a href="#">Pancakes with powdered sugar</a></li>
-                                  <li><a href="#">Fruit pancakes</a></li>
-                                </ul>
-                              </div>
-                              <div class="col-xs-12 col-sm-12 col-md-4 col-menu custom-banner"> <a href="#"><img alt="" src="assets/images/banners/banner-side.png"></a> </div>
-                            </div>
-                          </div>
-                         </li>
-                      </ul>
-                    </li>
-                    <li class="dropdown mega-menu"> 
-                      <a href="category.html"  data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Donuts</a>
-                        <ul class="dropdown-menu container">
-                          <li>
-                            <div class="yamm-content">
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-                                  <ul class="links">
-                                    <li><a href="#">Donuts with jam</a></li>
-                                    <li><a href="#">Donuts with pudding</a></li>
-                                    <li><a href="#">Donuts with fudge</a></li>
-                                    <li><a href="#">Donuts with marmalade</a></li>
-                                  </ul>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-4 col-menu custom-banner"> <a href="#"><img alt="" src="assets/images/banners/banner-side.png"></a> </div>
-                              </div>
-                            </div>
-                           </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown mega-menu"> 
-                        <a href="category.html"  data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Muffins</a>
-                          <ul class="dropdown-menu container">
-                            <li>
-                              <div class="yamm-content">
-                                <div class="row">
-                                  <div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-                                    <ul class="links">
-                                      <li><a href="#">Muffins with chocolate</a></li>
-                                      <li><a href="#">Muffins with fruits</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="col-xs-12 col-sm-12 col-md-4 col-menu custom-banner"> <a href="#"><img alt="" src="assets/images/banners/banner-side.png"></a> </div>
-                                </div>
-                              </div>
-                             </li>
-                          </ul>
-                        </li>
-                    <ul class="dropdown-menu pages">
-                      <li>
-                        <div class="yamm-content">
-                          <div class="row">
-                            <div class="col-xs-12 col-menu">
-                              <ul class="links">
-                                <li><a href="home.html">Home</a></li>
-                                <li><a href="category.html">Category</a></li>
-                                <li><a href="detail.html">Detail</a></li>
-                                <li><a href="shopping-cart.html">Shopping Cart Summary</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="sign-in.html">Sign In</a></li>
-                                <li><a href="my-wishlist.html">Wishlist</a></li>
-                                <li><a href="terms-conditions.html">Terms and Condition</a></li>
-                                <li><a href="track-orders.html">Track Orders</a></li>
-                                <li><a href="product-comparison.html">Product-Comparison</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="404.html">404</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
+                  @endforeach
                   <li class="dropdown  navbar-right special-menu"> <a href="#">Todays offer</a> </li>
                 </ul>
                 <div class="clearfix"></div>
