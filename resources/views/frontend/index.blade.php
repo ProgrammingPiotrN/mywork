@@ -407,7 +407,7 @@
               <div class="products">
                 <div class="product">
                   <div class="product-image">
-                    <div class="image"> <a href="{{ url('product/details/'.$product->id.'/'.$product->slug_product) }}"><img  src="{{ asset($product->thambnail_product) }}" alt="" style="height: 700px; weight: 300px"></a> </div>
+                    <div class="image"> <a href="{{ url('product/details/'.$product->id.'/'.$product->slug_product) }}"><img  src="{{ asset($product->thambnail_product) }}" alt=""></a> </div>
                     <!-- /.image -->
                     @php
                       $amount = $product->price_selling - $product->price_discount;
@@ -458,7 +458,7 @@
               <div class="products">
                 <div class="product">
                   <div class="product-image">
-                    <div class="image"> <a href="{{ url('product/details/'.$product->id.'/'.$product->slug_product) }}"><img  src="{{ asset($product->thambnail_product) }}" alt="" style="height: 700px; weight: 300px"></a> </div>
+                    <div class="image"> <a href="{{ url('product/details/'.$product->id.'/'.$product->slug_product) }}"><img  src="{{ asset($product->thambnail_product) }}" alt=""></a> </div>
                     <!-- /.image -->
                     @php
                       $amount = $product->price_selling - $product->price_discount;
