@@ -49,7 +49,52 @@
               </ul>                             
             </nav>
           </div>
+
+          <div class="sidebar-widget hot-deals wow fadeInUp outer-bottom-xs">
+            <h3 class="section-title">hot deals</h3>
+            <div class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-ss">
+
+              @foreach($hotdeals as $product)
+              <div class="item item-carousel">
+                <div class="products">
+                  <div class="product">
+                    <div class="product-image">
+                      <div class="image"> <a href="{{ url('product/details/'.$product->id.'/'.$product->slug_product) }}"><img  src="{{ asset($product->thambnail_product) }}" alt=""></a> </div>
+
+                      @php
+                        $amount = $product->price_selling - $product->price_discount;
+                        $disc = ($amount/$product->price_selling) * 100;
+                      @endphp
+    
+                      <div>
+                        @if($product->price_discount == NULL)
+                        <div class="tag new">
+                          @if(session()->get('language') == 'polish') Nowe @else New @endif
+                        </div>
+                        @else
+                        <div class="tag hot"><span>{{ round($disc) }}%</span></div>
+                        @endif
+                      </div>    
+                    </div>
+                    <div class="product-info text-left">
+                      <h3 class="name"><a href="{{ url('product/details/'.$product->id.'/'.$product->slug_product) }}">{{ $product->name_product }}</a></h3>
+                      <div class="rating rateit-small"></div>
+                      <div class="description"></div>   
+                      @if($product->price_discount == NULL)
+                      <div class="product-price"> <span class="price"> {{ $product->price_selling }} PLN</span> </div>
+                      @else
+                      <div class="product-price"> <span class="price"> {{ $product->price_discount }} PLN</span> <span class="price-before-discount"> {{ $product->price_selling }} PLN</span> </div>
+                      @endif
+                    </div>
+                  </div>
+                </div>
+              </div>
+              @endforeach
+            </div>
+          </div>
+
         </div>
+
         <div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder">           
           <div id="hero">
             <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
@@ -85,6 +130,7 @@
               </ul>
               <!-- /.nav-tabs --> 
             </div>
+
             <div class="tab-content outer-top-xs">
               <div class="tab-pane in active" id="all">
                 <div class="product-slider">
@@ -223,6 +269,7 @@
           </div>                  
         </div>
       </div>
+
       <section class="section featured-product wow fadeInUp">
         <h3 class="section-title">Featured products</h3>
         <div class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs">
@@ -285,6 +332,169 @@
           @endforeach
         </div>
       </section>
+
+      <section class="section featured-product wow fadeInUp">
+        <h3 class="section-title">Featured products</h3>
+        <div class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs">
+
+          @foreach($featured as $product)
+          <div class="item item-carousel">
+            <div class="products">
+              <div class="product">
+                <div class="product-image">
+                  <div class="image"> <a href="{{ url('product/details/'.$product->id.'/'.$product->slug_product) }}"><img  src="{{ asset($product->thambnail_product) }}" alt=""></a> </div>
+                  <!-- /.image -->
+                  @php
+                    $amount = $product->price_selling - $product->price_discount;
+                    $disc = ($amount/$product->price_selling) * 100;
+                  @endphp
+
+                  <div>
+                    @if($product->price_discount == NULL)
+                    <div class="tag new">
+                      @if(session()->get('language') == 'polish') Nowe @else New @endif
+                    </div>
+                    @else
+                    <div class="tag hot"><span>{{ round($disc) }}%</span></div>
+                    @endif
+                  </div>
+
+                </div>
+                <!-- /.product-image -->
+                
+                <div class="product-info text-left">
+                  <h3 class="name"><a href="{{ url('product/details/'.$product->id.'/'.$product->slug_product) }}">{{ $product->name_product }}</a></h3>
+                  <div class="rating rateit-small"></div>
+                  <div class="description"></div>
+
+                  @if($product->price_discount == NULL)
+                  <div class="product-price"> <span class="price"> {{ $product->price_selling }} PLN</span> </div>
+                  @else
+                  <div class="product-price"> <span class="price"> {{ $product->price_discount }} PLN</span> <span class="price-before-discount"> {{ $product->price_selling }} PLN</span> </div>
+                  @endif
+
+                  <!-- /.product-price --> 
+                  
+                </div>
+                <!-- /.product-info -->
+                <div class="cart clearfix animate-effect">
+                  <div class="action">
+                    <ul class="list-unstyled">
+                      <li class="add-cart-button btn-group">
+                        <button data-toggle="tooltip" class="btn btn-primary icon" type="button" title="Add Cart"> <i class="fa fa-shopping-cart"></i> </button>
+                        <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                      </li>
+                      <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                      <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          @endforeach
+        </div>
+      </section>
+
+      <section>
+        <div class="sidebar-widget outer-bottom-small wow fadeInUp">
+        <h3 class="section-title">Special Offer</h3>
+        <div class="sidebar-widget-body outer-top-xs">
+          <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
+
+            @foreach($specialoffer as $product)
+            <div class="item item-carousel">
+              <div class="products">
+                <div class="product">
+                  <div class="product-image">
+                    <div class="image"> <a href="{{ url('product/details/'.$product->id.'/'.$product->slug_product) }}"><img  src="{{ asset($product->thambnail_product) }}" alt="" style="height: 700px; weight: 300px"></a> </div>
+                    <!-- /.image -->
+                    @php
+                      $amount = $product->price_selling - $product->price_discount;
+                      $disc = ($amount/$product->price_selling) * 100;
+                    @endphp
+  
+                    <div>
+                      @if($product->price_discount == NULL)
+                      <div class="tag new">
+                        @if(session()->get('language') == 'polish') Nowe @else New @endif
+                      </div>
+                      @else
+                      <div class="tag hot"><span>{{ round($disc) }}%</span></div>
+                      @endif
+                    </div>
+  
+                  </div>
+
+                  <div class="product-info text-left">
+                    <h3 class="name"><a href="{{ url('product/details/'.$product->id.'/'.$product->slug_product) }}">{{ $product->name_product }}</a></h3>
+                    <div class="rating rateit-small"></div>
+                    <div class="description"></div>
+  
+                    @if($product->price_discount == NULL)
+                    <div class="product-price"> <span class="price"> {{ $product->price_selling }} PLN</span> </div>
+                    @else
+                    <div class="product-price"> <span class="price"> {{ $product->price_discount }} PLN</span> <span class="price-before-discount"> {{ $product->price_selling }} PLN</span> </div>
+                    @endif
+                  </div>
+                </div>
+              </div>
+            </div>
+            @endforeach
+          </div>
+        </div>
+      </div>
+      </section>
+
+      
+
+      <div class="sidebar-widget outer-bottom-small wow fadeInUp">
+        <h3 class="section-title">Special Deals</h3>
+        <div class="sidebar-widget-body outer-top-xs">
+          <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
+
+            @foreach($specialdeals as $product)
+            <div class="item item-carousel">
+              <div class="products">
+                <div class="product">
+                  <div class="product-image">
+                    <div class="image"> <a href="{{ url('product/details/'.$product->id.'/'.$product->slug_product) }}"><img  src="{{ asset($product->thambnail_product) }}" alt="" style="height: 700px; weight: 300px"></a> </div>
+                    <!-- /.image -->
+                    @php
+                      $amount = $product->price_selling - $product->price_discount;
+                      $disc = ($amount/$product->price_selling) * 100;
+                    @endphp
+  
+                    <div>
+                      @if($product->price_discount == NULL)
+                      <div class="tag new">
+                        @if(session()->get('language') == 'polish') Nowe @else New @endif
+                      </div>
+                      @else
+                      <div class="tag hot"><span>{{ round($disc) }}%</span></div>
+                      @endif
+                    </div>
+  
+                  </div>
+
+                  <div class="product-info text-left">
+                    <h3 class="name"><a href="{{ url('product/details/'.$product->id.'/'.$product->slug_product) }}">{{ $product->name_product }}</a></h3>
+                    <div class="rating rateit-small"></div>
+                    <div class="description"></div>
+  
+                    @if($product->price_discount == NULL)
+                    <div class="product-price"> <span class="price"> {{ $product->price_selling }} PLN</span> </div>
+                    @else
+                    <div class="product-price"> <span class="price"> {{ $product->price_discount }} PLN</span> <span class="price-before-discount"> {{ $product->price_selling }} PLN</span> </div>
+                    @endif
+                  </div>
+                </div>
+              </div>
+            </div>
+            @endforeach
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   @endsection

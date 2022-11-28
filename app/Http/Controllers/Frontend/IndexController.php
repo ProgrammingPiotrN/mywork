@@ -21,7 +21,18 @@ class IndexController extends Controller
         $slider = Slider::where('status', 1)->orderBy('id', 'DESC')->limit(10)->get();
         $cat = Category::orderBy('name_category', 'ASC')->get();   
         $featured = Product::where('featured', 1)->orderBy('id', 'DESC')->limit(100)->get();
-        return view('frontend.index', compact('cat', 'slider', 'prod', 'featured'));
+        $hotdeals = Product::where('deals', 1)->orderBy('id', 'DESC')->limit(100)->get();
+        $specialoffer = Product::where('special_offer', 1)->orderBy('id', 'DESC')->limit(100)->get();
+        $specialdeals = Product::where('special_deals', 1)->orderBy('id', 'DESC')->limit(100)->get();
+
+        $category_skip_0 = Category::skip(0)->first();
+        $product_skip_0 = Product::where('status', 1)->where('category_id', $category_skip_0->id)->orderBy('id', 'DESC')->get();
+
+        // return $category_skip->id;
+        // die();
+
+        return view('frontend.index', compact('cat', 'slider', 'prod', 'featured', 'hotdeals', 'specialoffer', 'specialdeals', 'category_skip_0', 'product_skip_0'));
+
     }
     public function UserLogout(){
         Auth::logout();
@@ -93,8 +104,9 @@ class IndexController extends Controller
     public function DetailsProduct($id,$slug){
 
         $product = Product::findOrFail($id);
+        $hotdeals = Product::where('deals', 1)->orderBy('id', 'DESC')->limit(100)->get();
         $multiImg = MultiImage::where('product_id', $id)->get(); 
-        return view('frontend.product.details_product', compact('product', 'multiImg'));
+        return view('frontend.product.details_product', compact('product', 'multiImg', 'hotdeals'));
     }
 
 }
