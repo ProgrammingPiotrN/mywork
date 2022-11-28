@@ -2305,7 +2305,6 @@ header{background:#EBD880}
   height: 370px;
 }
 #owl-main .item .caption {
-  color: #636363;
   left: 50px;
   position: absolute;
   top: 24%;
@@ -2363,7 +2362,7 @@ header{background:#EBD880}
 #owl-main .item .caption.bg-color .big-text {
   background: rgba(0, 0, 0, 0);
   padding: 0px;
-  color: #000;
+  color: rgb(247, 232, 22);
 }
 #owl-main .item .caption.bg-color .excerpt,
 #owl-main .item .caption.bg-color .small {

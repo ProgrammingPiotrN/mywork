@@ -9,15 +9,17 @@ use Auth;
 use App\Models\User;
 use App\Models\Category;
 use App\Models\Slider;
+use App\Models\Product;
 
 use Illuminate\Support\Facades\Hash;
 
 class IndexController extends Controller
 {
     public function index(){
+        $prod = Product::where('status', 1)->orderBy('id', 'DESC')->limit(100)->get();
         $slider = Slider::where('status', 1)->orderBy('id', 'DESC')->limit(10)->get();
         $cat = Category::orderBy('name_category', 'ASC')->get();   
-        return view('frontend.index', compact('cat', 'slider'));
+        return view('frontend.index', compact('cat', 'slider', 'prod'));
     }
     public function UserLogout(){
         Auth::logout();

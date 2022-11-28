@@ -78,19 +78,13 @@
                       <b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu" >
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- 
+                          @if(session()->get('language') == 'polish') Drożdżówki @else Buns @endif
+                        </a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- 
+                          @if(session()->get('language') == 'polish') Rogaliki @else Croissants @endif
+                        </a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- 
                           @if(session()->get('language') == 'polish') Torty @else Cakes @endif
-                        </a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- 
-                          @if(session()->get('language') == 'polish') Ciasta @else Pies @endif
-                        </a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- 
-                          @if(session()->get('language') == 'polish') Naleśniki @else Pancakes @endif
-                        </a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- 
-                          @if(session()->get('language') == 'polish') Pączki @else Donuts @endif
-                        </a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- 
-                          @if(session()->get('language') == 'polish') Babeczki @else Muffins @endif
                         </a></li>
                       </ul>
                     </li>
@@ -107,7 +101,8 @@
               <div class="items-cart-inner">
                 <div class="basket"> <i class="glyphicon glyphicon-shopping-cart"></i> </div>
                 <div class="basket-item-count"><span class="count">2</span></div>
-                <div class="total-price-basket"> <span class="lbl">cart -</span> <span class="total-price"> <span class="sign">$</span><span class="value">600.00</span> </span> </div>
+                <div class="total-price-basket"> <span class="lbl">
+                  @if(session()->get('language') == 'polish') Koszyk @else Cart @endif</span> <span class="total-price"> <span class="sign">$</span><span class="value">600.00</span> </span> </div>
               </div>
               </a>
               <ul class="dropdown-menu">
@@ -193,7 +188,9 @@
                     </ul>
                   </li>
                   @endforeach
-                  <li class="dropdown  navbar-right special-menu"> <a href="#">Todays offer</a> </li>
+                  <li class="dropdown  navbar-right special-menu"> <a href="#">
+                    @if(session()->get('language') == 'polish') Dzisiejsza oferta @else Todays offer @endif
+                    </a> </li>
                 </ul>
                 <div class="clearfix"></div>
               </div>
