@@ -10,6 +10,7 @@ use App\Models\User;
 use App\Models\Category;
 use App\Models\Slider;
 use App\Models\Product;
+use App\Models\MultiImage;
 
 use Illuminate\Support\Facades\Hash;
 
@@ -19,7 +20,8 @@ class IndexController extends Controller
         $prod = Product::where('status', 1)->orderBy('id', 'DESC')->limit(100)->get();
         $slider = Slider::where('status', 1)->orderBy('id', 'DESC')->limit(10)->get();
         $cat = Category::orderBy('name_category', 'ASC')->get();   
-        return view('frontend.index', compact('cat', 'slider', 'prod'));
+        $featured = Product::where('featured', 1)->orderBy('id', 'DESC')->limit(100)->get();
+        return view('frontend.index', compact('cat', 'slider', 'prod', 'featured'));
     }
     public function UserLogout(){
         Auth::logout();
@@ -76,7 +78,6 @@ class IndexController extends Controller
 			return redirect()->back();
 		}
 
-
     }
 
     public function UserLogin(array $input)
@@ -87,6 +88,13 @@ class IndexController extends Controller
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['accepted', 'required'] : '',
         ])->validate();
 
+    }
+
+    public function DetailsProduct($id,$slug){
+
+        $product = Product::findOrFail($id);
+        $multiImg = MultiImage::where('product_id', $id)->get(); 
+        return view('frontend.product.details_product', compact('product', 'multiImg'));
     }
 
 }

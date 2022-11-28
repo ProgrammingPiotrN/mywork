@@ -39,7 +39,7 @@ Route::middleware(['auth:admin'])->group(function(){
 
 Route::middleware(['auth:sanctum,admin', 'verified'])->get('/admin/dashboard', function() {
     return view('admin.index');
-})->name('dashboard')->middleware('auth:admin');
+})->name('admindashboard')->middleware('auth:admin');
 
 //Admin all routes
 
@@ -190,6 +190,10 @@ Route::prefix('slider')->group(function(){
     Route::get('/language/english', [LanguageController::class, 'English'])->name('language.english');
             
     Route::get('/language/polish', [LanguageController::class, 'Polish'])->name('language.polish');
+
+// Product details frontend    
+    Route::get('/product/details/{id}/{slug}', [IndexController::class, 'DetailsProduct']);
+
 
 
             

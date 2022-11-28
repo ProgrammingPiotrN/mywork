@@ -187,7 +187,7 @@
                                 <div class="form-group">
                                     <h5>Product price discount <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <input type="text" name="price_discount" class="form-control" style="text-align: center" required="">
+                                        <input type="text" name="price_discount" class="form-control" style="text-align: center">
                                      </div>
                                         @error('price_discount')
                                            <span class="text-danger">{{ $message }}</span> 
@@ -233,7 +233,7 @@
                                 <div class="form-group">
                                     <h5>Description-short <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <textarea name="description_short" id="editor1" class="form-control" required placeholder="Textarea text" required=""></textarea>
+                                        <textarea name="description_short" id="descshort" class="form-control" required placeholder="Textarea text" required=""></textarea>
                                     </div>
                                 </div>
 
@@ -244,7 +244,7 @@
                                 <div class="form-group">
                                     <h5>Description-long <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <textarea name="description_long" id="editor2" class="form-control" required placeholder="Textarea text" required=""></textarea>
+                                        <textarea name="description_long" id="desclong" class="form-control" required placeholder="Textarea text" required=""></textarea>
                                     </div>
                                 </div>
 

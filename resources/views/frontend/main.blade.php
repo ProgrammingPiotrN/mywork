@@ -7,6 +7,7 @@
 <meta name="author" content="">
 <meta name="keywords" content="MediaCenter, Template, eCommerce">
 <meta name="robots" content="all">
+<title>@yield('title')</title>
 
 <link rel="stylesheet" href="{{ asset('styles_frontend/assets/css/bootstrap.min.css') }}">
 

@@ -50,10 +50,6 @@
 
   <script src="{{ asset('../assets/vendor_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js') }}"></script>
 
-  <script src="{{ asset('../assets/vendor_components/ckeditor/ckeditor.js') }}"></script>
-  <script src="{{ asset('../assets/vendor_plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js') }}"></script>
-  <script src="{{ asset('styles_backend/js/pages/editor.js') }}"></script>
-
 	<script src="{{ asset('styles_backend/js/template.js') }}"></script>
 	<script src="{{ asset('styles_backend/js/pages/dashboard.js') }}"></script>
 	
