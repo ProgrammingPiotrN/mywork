@@ -44,15 +44,10 @@
                   <li><a href="#">GBP</a></li>
                 </ul>
               </li>
-              <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">
-                @if(session()->get('language') == 'polish') Język @else Language @endif
-                </span><b class="caret"></b></a>
+              <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">{{ __('header.Language') }}</span><b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  @if(session()->get('language') == 'polish')
-                  <li><a href="{{ route('language.english') }}">English</a></li>
-                  @else 
-                  <li><a href="{{ route('language.polish') }}">Polish</a></li>
-                  @endif
+                  <li><a href="#">English</a></li>
+                  <li><a href="#">Polish</a></li>
                 </ul>
               </li>
             </ul>

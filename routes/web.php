@@ -14,7 +14,8 @@ use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\SliderController;
 
 use App\Http\Controllers\Frontend\IndexController;
-use App\Http\Controllers\Frontend\LanguageController;
+use App\Http\Controllers\Frontend\TransController;
+
 
 
 
@@ -187,12 +188,11 @@ Route::prefix('slider')->group(function(){
 
 //Language
 
-    Route::get('/language/english', [LanguageController::class, 'English'])->name('language.english');
-            
-    Route::get('/language/polish', [LanguageController::class, 'Polish'])->name('language.polish');
 
 // Product details frontend    
     Route::get('/product/details/{id}/{slug}', [IndexController::class, 'DetailsProduct']);
+
+
 
 
 
