@@ -444,10 +444,10 @@
                   </div>
                 </div>
               </div>
-            </div>         
+            </div>       
           </div>
 
-          <div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp">
+          {{-- <div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp">
             <div class="more-info-tab clearfix ">
               <h3 class="new-product-title pull-left">{{ $category_skip_0->name_category }}</h3>
             </div>
@@ -646,7 +646,7 @@
                 </div>
               </div>
             </div>         
-          </div>
+          </div> --}}
         </div>
       </div>
     </div>     
