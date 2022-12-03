@@ -5,31 +5,17 @@
         <div class="header-top-inner">
           <div class="cnt-account">
             <ul class="list-unstyled">
-              <li><a href="#"><i class="icon fa fa-user"></i>
-                @if(session()->get('language') == 'polish') Moje konto @else My Account @endif
-                </a></li>
-              <li><a href="#"><i class="icon fa fa-heart"></i>
-                @if(session()->get('language') == 'polish') Lista życzeń @else Wishlist @endif
-               </a></li>
-              <li><a href="#"><i class="icon fa fa-shopping-cart"></i>
-                @if(session()->get('language') == 'polish') Mój koszyk @else My cart @endif
-              </a></li>
-              <li><a href="#"><i class="icon fa fa-check"></i>
-                @if(session()->get('language') == 'polish') Sprawdź zamówienie @else Checkout @endif
-              </a></li>
+              <li><a href="#"><i class="icon fa fa-user"></i>{{ __('My Account') }}</a></li>
+              <li><a href="#"><i class="icon fa fa-heart"></i>{{ __('Wishlist') }}</a></li>
+              <li><a href="#"><i class="icon fa fa-shopping-cart"></i>{{ __('My cart') }}</a></li>
+              <li><a href="#"><i class="icon fa fa-check"></i>{{ __('Checkout') }}</a></li>
               
               <li>
               @auth
-              <a href="{{ route('login') }}"><i class="icon fa fa-user"></i>
-                @if(session()->get('language') == 'polish') Profil użytkownika @else User profile @endif
-              </a></li>
+              <a href="{{ route('login') }}"><i class="icon fa fa-user"></i>{{ __('User profile') }}</a></li>
               @else
-              <a href="{{ route('login') }}"><i class="icon fa fa-lock"></i>
-                @if(session()->get('language') == 'polish') Logowanie @else Login @endif
-              </a>
-              <a href="{{ route('register') }}"><i class="icon fa fa-lock"></i>
-                @if(session()->get('language') == 'polish') Rejestracja @else Register @endif
-              </a>
+              <a href="{{ route('login') }}"><i class="icon fa fa-lock"></i>{{ __('Login') }}</a>
+              <a href="{{ route('register') }}"><i class="icon fa fa-lock"></i>{{ __('Register') }}</a>
 
               @endauth
             </ul>
@@ -44,10 +30,10 @@
                   <li><a href="#">GBP</a></li>
                 </ul>
               </li>
-              <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">{{ __('header.Language') }}</span><b class="caret"></b></a>
+              <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">{{ __('Język') }}</span><b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">English</a></li>
-                  <li><a href="#">Polish</a></li>
+                  <li><a href="/lang/en">{{ __('English') }}</a></li>
+                  <li><a href="/lang/pl">{{ __('Polish') }}</a></li>
                 </ul>
               </li>
             </ul>

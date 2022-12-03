@@ -188,6 +188,10 @@ Route::prefix('slider')->group(function(){
 
 //Language
 
+    Route::get('/lang/{locale}', function ($locale) {
+        session()->put('locale', $locale);
+        return redirect()->back();
+    });
 
 // Product details frontend    
     Route::get('/product/details/{id}/{slug}', [IndexController::class, 'DetailsProduct']);

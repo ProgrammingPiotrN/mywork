@@ -1,6 +1,6 @@
 {
-    "english":"angielski",
-    "polish":"polski",
+    "English":"angielski",
+    "Polish":"polski",
     "Language":"język",
     "My Account":"Moje konto",
     "Wishlist":"Lista życzeń",
@@ -21,7 +21,9 @@
     "Profile update":"Aktualizacja profilu",
     "Change password":"Zmiana hasła",
     "Logout":"Wyloguj",
-    "WELCOME":"Witaj"
+    "WELCOME":"Witaj",
+    "Język":"Język",
+    "User profile":"Profil użytkownika"
 
 
 
