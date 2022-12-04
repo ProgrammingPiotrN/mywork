@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="breadcrumb-inner">
 			<ul class="list-inline list-unstyled">
-				<li><a href="#">{{ __('Home') }}</a></li>
+				<li><a href="{{ '/' }}">{{ __('Home') }}</a></li>
 			</ul>
 		</div>
 	</div>

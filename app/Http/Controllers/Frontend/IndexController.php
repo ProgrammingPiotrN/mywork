@@ -25,16 +25,17 @@ class IndexController extends Controller
         $specialoffer = Product::where('special_offer', 1)->orderBy('id', 'DESC')->limit(100)->get();
         $specialdeals = Product::where('special_deals', 1)->orderBy('id', 'DESC')->limit(100)->get();
 
-        // $category_skip_0 = Category::skip(0)->first();
-        // $product_skip_0 = Product::where('status', 1)->where('category_id', $category_skip_0->id)->orderBy('id', 'DESC')->get();
+        $category_skip_0 = Category::skip(0)->first();
+        $product_skip_0 = Product::where('status', 1)->where('category_id', $category_skip_0->id)->orderBy('id', 'DESC')->get();
 
-        // $category_skip_1 = Category::skip(1)->first();
-        // $product_skip_1 = Product::where('status', 1)->where('category_id', $category_skip_1->id)->orderBy('id', 'DESC')->get();
+        $category_skip_1 = Category::skip(1)->first();
+        $product_skip_1 = Product::where('status', 1)->where('category_id', $category_skip_1->id)->orderBy('id', 'DESC')->get();
 
-        // $category_skip_2 = Category::skip(2)->first();
-        // $product_skip_2 = Product::where('status', 1)->where('category_id', $category_skip_2->id)->orderBy('id', 'DESC')->get();
+        $category_skip_2 = Category::skip(2)->first();
+        $product_skip_2 = Product::where('status', 1)->where('category_id', $category_skip_2->id)->orderBy('id', 'DESC')->get();
 
-        return view('frontend.index', compact('cat', 'slider', 'prod', 'featured', 'hotdeals', 'specialoffer', 'specialdeals'));
+        return view('frontend.index', compact('cat', 'slider', 'prod', 'featured', 'hotdeals', 'specialoffer', 'specialdeals',
+    'category_skip_0', 'product_skip_0', 'category_skip_1', 'product_skip_1', 'category_skip_2', 'product_skip_2'));
 
     }
     public function UserLogout(){
@@ -109,6 +110,14 @@ class IndexController extends Controller
         $product = Product::findOrFail($id);
         $multiImg = MultiImage::where('product_id', $id)->get(); 
         return view('frontend.product.details_product', compact('product', 'multiImg'));
+    }
+
+    public function TagsProduct($tag){
+
+        $products = Product::where('status', 1)->where('tags_product', $tag)->orderBy('id', 'DESC')->get();
+        $cat = Category::orderBy('name_category', 'ASC')->get();   
+        return view('frontend.tags.tags_view', compact('products', 'cat'));
+
     }
 
 }

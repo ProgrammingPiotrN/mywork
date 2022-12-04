@@ -23,13 +23,6 @@
           
           <div class="cnt-block">
             <ul class="list-unstyled list-inline">
-              <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">USD </span><b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">USD</a></li>
-                  <li><a href="#">INR</a></li>
-                  <li><a href="#">GBP</a></li>
-                </ul>
-              </li>
               <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">{{ __('Language') }}</span><b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="/lang/en">{{ __('English') }}</a></li>
@@ -117,8 +110,7 @@
             <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
               <div class="nav-outer">
                 <ul class="nav navbar-nav">
-                  <li class="active dropdown yamm-fw"> <a href="{{ url('/') }}" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">{{ __('Home') }}</a> </li>
-
+                  
                     @php
                      $cat = App\Models\Category::orderBy('name_category', 'ASC')->get();   
                     @endphp

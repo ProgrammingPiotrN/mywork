@@ -196,6 +196,9 @@ Route::prefix('slider')->group(function(){
 // Product details frontend    
     Route::get('/product/details/{id}/{slug}', [IndexController::class, 'DetailsProduct']);
 
+// Product tags frontend    
+    Route::get('/product/tags/{tag}', [IndexController::class, 'TagsProduct']);    
+
 
 
 

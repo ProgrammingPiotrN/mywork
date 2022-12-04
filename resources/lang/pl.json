@@ -19,7 +19,7 @@
 
     "DESCRIPTION":"OPIS",
 
-    "English":"angielski",
+    "English":"eng",
     "Email":"Email",
 
     "Featured products":"Wyróżnione produkty",
@@ -40,11 +40,12 @@
     "New password":"Nowe hasło",
     "Name":"Imię i Nazwisko",
 
-    "Polish":"polski",
+    "Polish":"pl",
     "Profile update":"Aktualizacja profilu",
     "Price":"Cena",
     "Product Tags":"Tagi produktów",
     "Phone":"Telefon",
+    "Product tags":"Tagi produktów",
 
     "Register":"Rejestracja",
     "REVIEW":"RECENZJA",
@@ -56,10 +57,12 @@
     "Search here...":"Szukaj tutaj...",
     "Summary":"Streszczenie",
     "SUBMIT REVIEW":"PODSUMOWANIE RECENZJI",
+    "Sweet dream shop":"Sklep sweet dream",
 
     "Toddays offer":"Dzisiejsza oferta",
     "Toggle navigation":"Przełącz nawigację",
     "TAGS":"TAGI",
+    "Tags Product":"Tagi produktów",
 
     "User profile":"Profil użytkownika",
     "Update":"Zaktualizuj",

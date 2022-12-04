@@ -19,7 +19,7 @@
 
     "DESCRIPTION":"DESCRIPTION",
 
-    "English":"english",
+    "English":"eng",
     "Email":"Email",
 
     "Featured products":"Featured products",
@@ -40,11 +40,12 @@
     "New password":"New password",
     "Name":"Name and Surrname",
 
-    "Polish":"polish",
+    "Polish":"pl",
     "Profile update":"Profile update",
     "Price":"Price",
     "Product Tags":"Product Tags",
     "Phone":"Phone",
+    "Product tags":"Product tags",
 
     "Register":"Register",
     "REVIEW":"REVIEW",
@@ -56,10 +57,12 @@
     "Search here...":"Search here....",
     "Summary":"Summary",
     "SUBMIT REVIEW":"SUBMIT REVIEW",
+    "Sweet dream shop":"Shop sweet dream",
 
     "Toddays offer":"Toddays offer",
     "Toggle navigation":"oggle navigation",
     "TAGS":"TAGS",
+    "Tags Product":"Tags Product",
 
     "User profile":"User profile",
     "Update":"Update",
