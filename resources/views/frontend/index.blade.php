@@ -11,9 +11,7 @@
         <div class="col-xs-12 col-sm-12 col-md-3 sidebar"> 
           
           <div class="side-menu animate-dropdown outer-bottom-xs">
-            <div class="head"><i class="icon fa fa-align-justify fa-fw"></i>                     
-              @if(session()->get('language') == 'polish') Kategorie @else Categories @endif
-            </div>
+            <div class="head"><i class="icon fa fa-align-justify fa-fw"></i>{{ __('Categories') }}</div>
             <nav class="yamm megamenu-horizontal">
               <ul class="nav">
 
@@ -51,7 +49,7 @@
           </div>
 
           <div class="sidebar-widget hot-deals wow fadeInUp outer-top-vs">
-            <h3 class="section-title">hot deals</h3>
+            <h3 class="section-title">{{ __('Hot deals') }}</h3>
             <div class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-xs">
               
                   @foreach($hotdeals as $product)
@@ -94,7 +92,7 @@
                             <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
                               <i class="fa fa-shopping-cart"></i>													
                             </button>
-                            <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                            <button class="btn btn-primary cart-btn" type="button">{{ __('ADD TO CART') }}</button>
                                         
                           </div>
                           
@@ -107,7 +105,7 @@
           </div>
           
           <div class="sidebar-widget outer-bottom-small wow fadeInUp">
-            <h3 class="section-title">Special Offer</h3>
+            <h3 class="section-title">{{ __('Special offer') }}</h3>
             <div class="sidebar-widget-body outer-top-xs">
               <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
                 <div class="item">
@@ -161,19 +159,12 @@
 
           <div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp">
             <div class="more-info-tab clearfix ">
-              <h3 class="new-product-title pull-left">                    
-                @if(session()->get('language') == 'polish') Nowe produkty @else New products @endif
-              </h3>
+              <h3 class="new-product-title pull-left">{{ __('New products') }}</h3>
               <ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-1">
-                <li class="active"><a data-transition-type="backSlide" href="#all" data-toggle="tab">
-                  @if(session()->get('language') == 'polish') Wszystko @else All @endif
-                </a></li>
+                <li class="active"><a data-transition-type="backSlide" href="#all" data-toggle="tab">{{ __('All') }}</a></li>
                 @foreach($cat as $category)
                 <li><a data-transition-type="backSlide" href="#category{{ $category->id }}" data-toggle="tab">{{ $category->name_category }}</a></li>
                 @endforeach
-                {{-- <li><a data-transition-type="backSlide" href="#laptop" data-toggle="tab">Electronics</a></li>
-
-                <li><a data-transition-type="backSlide" href="#apple" data-toggle="tab">Shoes</a></li> --}}
               </ul>
             </div>
 
@@ -310,9 +301,7 @@
 
           <div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp">
             <div class="more-info-tab clearfix ">
-              <h3 class="new-product-title pull-left">                    
-                @if(session()->get('language') == 'polish') Wyróżnione produkty @else Featured products @endif
-              </h3>
+              <h3 class="new-product-title pull-left">{{ __('Featured products') }}</h3>
             </div>
 
             <div class="tab-content outer-top-xs">
@@ -380,9 +369,7 @@
           
           <div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp">
             <div class="more-info-tab clearfix ">
-              <h3 class="new-product-title pull-left">                    
-                @if(session()->get('language') == 'polish') Specialne produkty @else Special deals @endif
-              </h3>
+              <h3 class="new-product-title pull-left">{{ __('Special deals') }}</h3>
             </div>
 
             <div class="tab-content outer-top-xs">
@@ -430,7 +417,7 @@
                               <ul class="list-unstyled">
                                 <li class="add-cart-button btn-group">
                                   <button data-toggle="tooltip" class="btn btn-primary icon" type="button" title="Add Cart"> <i class="fa fa-shopping-cart"></i> </button>
-                                  <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                                  <button class="btn btn-primary cart-btn" type="button">{{ __('ADD TO CART') }}</button>
                                 </li>
                                 <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
                                 <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>

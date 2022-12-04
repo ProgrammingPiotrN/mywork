@@ -9,9 +9,7 @@
 	<div class="container">
 		<div class="breadcrumb-inner">
 			<ul class="list-inline list-unstyled">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Clothing</a></li>
-				<li class='active'>Floral Print Buttoned</li>
+				<li><a href="#">{{ __('Home') }}</a></li>
 			</ul>
 		</div>
 	</div>
@@ -77,12 +75,12 @@
 								<div class="row">
 									<div class="col-sm-2">
 										<div class="stock-box">
-											<span class="label">Availability :</span>
+											<span class="label">{{ __('Availability') }} :</span>
 										</div>	
 									</div>
 									<div class="col-sm-9">
 										<div class="stock-box">
-											<span class="value">In Stock</span>
+											<span class="value">{{ __('In Stock') }}</span>
 										</div>	
 									</div>
 								</div>
@@ -127,7 +125,7 @@
 								<div class="row">
 									
 									<div class="col-sm-2">
-										<span class="label">Qty :</span>
+										<span class="label">{{ __('Quantity') }} :</span>
 									</div>
 									
 									<div class="col-sm-2">
@@ -143,7 +141,7 @@
 									</div>
 
 									<div class="col-sm-7">
-										<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> ADD TO CART</a>
+										<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> {{ __('ADD TO CART') }}</a>
 									</div>								
 								</div>
 							</div>				
@@ -156,9 +154,9 @@
 					<div class="row">
 						<div class="col-sm-3">
 							<ul id="product-tabs" class="nav nav-tabs nav-tab-cell">
-								<li class="active"><a data-toggle="tab" href="#description">DESCRIPTION</a></li>
-								<li><a data-toggle="tab" href="#review">REVIEW</a></li>
-								<li><a data-toggle="tab" href="#tags">TAGS</a></li>
+								<li class="active"><a data-toggle="tab" href="#description">{{ __('DESCRIPTION') }}</a></li>
+								<li><a data-toggle="tab" href="#review">{{ __('REVIEW') }}</a></li>
+								<li><a data-toggle="tab" href="#tags">{{ __('TAGS') }}</a></li>
 							</ul>
 						</div>
 						<div class="col-sm-9">
@@ -175,7 +173,7 @@
 									<div class="product-tab">
 																				
 										<div class="product-reviews">
-											<h4 class="title">Customer Reviews</h4>
+											<h4 class="title">{{ __('Customer Reviews') }}</h4>
 
 											<div class="reviews">
 												<div class="review">
@@ -186,7 +184,7 @@
 										</div>
 
 										<div class="product-add-review">
-											<h4 class="title">Write your own review</h4>
+											<h4 class="title">{{ __('Write your own review') }}</h4>
 											<div class="review-table">
 												<div class="table-responsive">
 													<table class="table">	
@@ -202,7 +200,7 @@
 														</thead>	
 														<tbody>
 															<tr>
-																<td class="cell-label">Quality</td>
+																<td class="cell-label">{{ __('Quality') }}</td>
 																<td><input type="radio" name="quality" class="radio" value="1"></td>
 																<td><input type="radio" name="quality" class="radio" value="2"></td>
 																<td><input type="radio" name="quality" class="radio" value="3"></td>
@@ -210,7 +208,7 @@
 																<td><input type="radio" name="quality" class="radio" value="5"></td>
 															</tr>
 															<tr>
-																<td class="cell-label">Price</td>
+																<td class="cell-label">{{ __('Price') }}</td>
 																<td><input type="radio" name="quality" class="radio" value="1"></td>
 																<td><input type="radio" name="quality" class="radio" value="2"></td>
 																<td><input type="radio" name="quality" class="radio" value="3"></td>
@@ -218,7 +216,7 @@
 																<td><input type="radio" name="quality" class="radio" value="5"></td>
 															</tr>
 															<tr>
-																<td class="cell-label">Value</td>
+																<td class="cell-label">{{ __('Value') }}</td>
 																<td><input type="radio" name="quality" class="radio" value="1"></td>
 																<td><input type="radio" name="quality" class="radio" value="2"></td>
 																<td><input type="radio" name="quality" class="radio" value="3"></td>
@@ -237,24 +235,24 @@
 														<div class="row">
 															<div class="col-sm-6">
 																<div class="form-group">
-																	<label for="exampleInputName">Your Name <span class="astk">*</span></label>
+																	<label for="exampleInputName">{{ __('Your Name') }} <span class="astk">*</span></label>
 																	<input type="text" class="form-control txt" id="exampleInputName" placeholder="">
 																</div>
 																<div class="form-group">
-																	<label for="exampleInputSummary">Summary <span class="astk">*</span></label>
+																	<label for="exampleInputSummary">{{ __('Summary') }} <span class="astk">*</span></label>
 																	<input type="text" class="form-control txt" id="exampleInputSummary" placeholder="">
 																</div>
 															</div>
 
 															<div class="col-md-6">
 																<div class="form-group">
-																	<label for="exampleInputReview">Review <span class="astk">*</span></label>
+																	<label for="exampleInputReview">{{ __('REVIEW') }} <span class="astk">*</span></label>
 																	<textarea class="form-control txt txt-review" id="exampleInputReview" rows="4" placeholder=""></textarea>
 																</div>
 															</div>
 														</div>														
 														<div class="action text-right">
-															<button class="btn btn-primary btn-upper">SUBMIT REVIEW</button>
+															<button class="btn btn-primary btn-upper">{{ __('SUBMIT REVIEW') }}</button>
 														</div>
 													</form>
 												</div>
@@ -264,14 +262,14 @@
 								</div>
 								<div id="tags" class="tab-pane">
 									<div class="product-tag">										
-										<h4 class="title">Product Tags</h4>
+										<h4 class="title">{{ __('Product Tags') }}</h4>
 										<form role="form" class="form-inline form-cnt">
 											<div class="form-container">									
 												<div class="form-group">
-													<label for="exampleInputTag">Add Your Tags: </label>
+													<label for="exampleInputTag">{{ __('Add Your Tags:') }} </label>
 													<input type="email" id="exampleInputTag" class="form-control txt">
 												</div>
-												<button class="btn btn-upper btn-primary" type="submit">ADD TAGS</button>
+												<button class="btn btn-upper btn-primary" type="submit">{{ __('ADD TAGS') }}</button>
 											</div>
 										</form>
 										<form role="form" class="form-inline form-cnt">

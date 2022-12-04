@@ -1,33 +1,79 @@
 {
-    "English":"angielski",
-    "Polish":"polski",
-    "Language":"język",
-    "My Account":"Moje konto",
-    "Wishlist":"Lista życzeń",
-    "My cart":"Mój koszyk",
+    "Availability":"Dostępność",
+    "ADD TO CART":"DODAJ DO KOSZYKA",
+    "Add Your Tags:":"Dodaj swoje tagi:",
+    "ADD TAGS":"DODAJ TAG",
+    "All":"Wszystko",
+
+    "Buns":"Drożdżówki",
+
     "Checkout":"Sprawdź status",
-    "Login":"Logowanie",
-    "Register":"Rejestracja",
-    "Home":"Strona główna",
     "Categories":"Kategorie",
-    "Simple product":"Jeden produkt",
-    "Sub total":"Podsumowanie",
-    "Toddays offer":"Dzisiejsza oferta",
-    "Hot deals":"Gorące okazje",
-    "Special offer":"Specjalna oferta",
-    "New products":"Nowe produkty",
-    "Featured Products":"Wyróżnione produkty",
-    "Special deals":"Specjalne okazje",
-    "Profile update":"Aktualizacja profilu",
     "Change password":"Zmiana hasła",
+    "Croissants":"Rogaliki",
+    "Cakes":"Torty",
+    "Cart":"Koszyk",
+    "Customer Reviews":"Opinie klientów",
+    "Current password":"Aktualne hasło",
+    "Confirm password":"Potwierdź hasło",
+
+    "DESCRIPTION":"OPIS",
+
+    "English":"angielski",
+    "Email":"Email",
+
+    "Featured products":"Wyróżnione produkty",
+
+    "Home":"Strona główna",
+    "Hot deals":"Gorące okazje",
+
+    "In Stock":"w magazynie",
+
+    "Language":"język",
+    "Login":"Logowanie",
     "Logout":"Wyloguj",
+
+    "My Account":"Moje konto",
+    "My cart":"Mój koszyk",
+
+    "New products":"Nowe produkty",
+    "New password":"Nowe hasło",
+    "Name":"Imię i Nazwisko",
+
+    "Polish":"polski",
+    "Profile update":"Aktualizacja profilu",
+    "Price":"Cena",
+    "Product Tags":"Tagi produktów",
+    "Phone":"Telefon",
+
+    "Register":"Rejestracja",
+    "REVIEW":"RECENZJA",
+
+    "Simple product":"Jeden produkt",
+    "Special offer":"Specjalna oferta",
+    "Special deals":"Specjalne okazje",
+    "Sub total":"Podsumowanie",
+    "Search here...":"Szukaj tutaj...",
+    "Summary":"Streszczenie",
+    "SUBMIT REVIEW":"PODSUMOWANIE RECENZJI",
+
+    "Toddays offer":"Dzisiejsza oferta",
+    "Toggle navigation":"Przełącz nawigację",
+    "TAGS":"TAGI",
+
+    "User profile":"Profil użytkownika",
+    "Update":"Zaktualizuj",
+    "Update your profile":"Zaktualizuj swój profil",
+    "User photos":"Zdjęcie użytkownika",
+
+    "Quantity":"Ilość",
+    "Quality":"Jakość",
+
+    "Value":"Wartość",
+
+    "Wishlist":"Lista życzeń",
     "WELCOME":"Witaj",
-    "Język":"Język",
-    "User profile":"Profil użytkownika"
+    "Write your own review":"Napisz swoją własną recenzję",
 
-
-
-
-
-
+    "Your Name":"Twoje imię"
 }

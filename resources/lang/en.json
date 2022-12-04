@@ -1,21 +1,80 @@
 {
-    "english":"english",
-    "polish":"polish",
-    "Language":"language",
-    "My Account":"My Account",
-    "Wishlist":"Wishlist",
-    "My cart":"My cart",
+    "Availability":"Availability",
+    "ADD TO CART":"DADD TO CART:",
+    "Add Your Tags:":"Add Your Tags:",
+    "ADD TAGS":"ADD TAGS",
+    "All":"All",
+
+    "Buns":"Buns",
+
     "Checkout":"Checkout",
-    "Login":"Login",
-    "Register":"Register",
-    "Home":"Home",
     "Categories":"Categories",
-    "Simple product":"Simple product",
-    "Sub total":"Sub total",
-    "Toddays offer":"Toddays offer",
+    "Change password":"Change password",
+    "Croissants":"Croissants",
+    "Cakes":"Cakes",
+    "Cart":"Cart",
+    "Customer Reviews":"Customer Reviews",
+    "Current password":"Current password",
+    "Confirm password":"Confirm password",
+
+    "DESCRIPTION":"DESCRIPTION",
+
+    "English":"english",
+    "Email":"Email",
+
+    "Featured products":"Featured products",
+
+    "Home":"Home",
     "Hot deals":"Hot deals",
-    "Special offer":"Special offer",
+
+    "In Stock":"In Stock",
+
+    "Language":"Language",
+    "Login":"Login",
+    "Logout":"Logout",
+
+    "My Account":"My Account",
+    "My cart":"My cart",
+
     "New products":"New products",
-    "Featured Products":"Featured products",
-    "Special deals":"Special deals"
+    "New password":"New password",
+    "Name":"Name and Surrname",
+
+    "Polish":"polish",
+    "Profile update":"Profile update",
+    "Price":"Price",
+    "Product Tags":"Product Tags",
+    "Phone":"Phone",
+
+    "Register":"Register",
+    "REVIEW":"REVIEW",
+
+    "Simple product":"Simple product",
+    "Special offer":"Special offer",
+    "Special deals":"Special deals",
+    "Sub total":"Sub total",
+    "Search here...":"Search here....",
+    "Summary":"Summary",
+    "SUBMIT REVIEW":"SUBMIT REVIEW",
+
+    "Toddays offer":"Toddays offer",
+    "Toggle navigation":"oggle navigation",
+    "TAGS":"TAGS",
+
+    "User profile":"User profile",
+    "Update":"Update",
+    "Update your profile":"Update your profile",
+    "User photos":"User photos",
+
+
+    "Quantity":"Quantity",
+    "Quality":"Quality",
+
+    "Value":"Value",
+
+    "Wishlist":"Wishlist",
+    "WELCOME":"Welcome",
+    "Write your own review":"Write your own review",
+
+    "Your Name":"Your Name"
 }

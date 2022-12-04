@@ -30,7 +30,7 @@
                   <li><a href="#">GBP</a></li>
                 </ul>
               </li>
-              <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">{{ __('Język') }}</span><b class="caret"></b></a>
+              <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">{{ __('Language') }}</span><b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="/lang/en">{{ __('English') }}</a></li>
                   <li><a href="/lang/pl">{{ __('Polish') }}</a></li>
@@ -54,23 +54,15 @@
               <form>
                 <div class="control-group">
                   <ul class="categories-filter animate-dropdown">
-                    <li class="dropdown"> <a class="dropdown-toggle"  data-toggle="dropdown" href="category.html">
-                      @if(session()->get('language') == 'polish') Kategorie @else Categories @endif
-                      <b class="caret"></b></a>
+                    <li class="dropdown"> <a class="dropdown-toggle"  data-toggle="dropdown" href="category.html">{{ __('Categories') }}<b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu" >
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- 
-                          @if(session()->get('language') == 'polish') Drożdżówki @else Buns @endif
-                        </a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- 
-                          @if(session()->get('language') == 'polish') Rogaliki @else Croissants @endif
-                        </a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- 
-                          @if(session()->get('language') == 'polish') Torty @else Cakes @endif
-                        </a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- {{ __('Buns') }}</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- {{ __('Croissants') }}</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- {{ __('Cakes') }}</a></li>
                       </ul>
                     </li>
                   </ul>
-                  <input class="search-field" placeholder="Search here..." />
+                  <input class="search-field" placeholder="{{ __('Search here...') }}" />
                   <a class="search-button" href="#" ></a> </div>
               </form>
             </div>
@@ -82,8 +74,7 @@
               <div class="items-cart-inner">
                 <div class="basket"> <i class="glyphicon glyphicon-shopping-cart"></i> </div>
                 <div class="basket-item-count"><span class="count">2</span></div>
-                <div class="total-price-basket"> <span class="lbl">
-                  @if(session()->get('language') == 'polish') Koszyk @else Cart @endif</span> <span class="total-price"> <span class="sign">$</span><span class="value">600.00</span> </span> </div>
+                <div class="total-price-basket"> <span class="lbl">{{ __('Cart') }}</span> <span class="total-price"> <span class="sign">$</span><span class="value">600.00</span> </span> </div>
               </div>
               </a>
               <ul class="dropdown-menu">
@@ -94,7 +85,7 @@
                         <div class="image"> <a href="detail.html"><img src="assets/images/cart.jpg" alt=""></a> </div>
                       </div>
                       <div class="col-xs-7">
-                        <h3 class="name"><a href="index.php?page-detail">Simple Product</a></h3>
+                        <h3 class="name"><a href="index.php?page-detail">{{ __('Simple product') }}</a></h3>
                         <div class="price">$600.00</div>
                       </div>
                       <div class="col-xs-1 action"> <a href="#"><i class="fa fa-trash"></i></a> </div>
@@ -103,9 +94,9 @@
                   <div class="clearfix"></div>
                   <hr>
                   <div class="clearfix cart-total">
-                    <div class="pull-right"> <span class="text">Sub Total :</span><span class='price'>$600.00</span> </div>
+                    <div class="pull-right"> <span class="text">{{ __('Sub total') }} :</span><span class='price'>$600.00</span> </div>
                     <div class="clearfix"></div>
-                    <a href="checkout.html" class="btn btn-upper btn-primary btn-block m-t-20">Checkout</a> </div>
+                    <a href="checkout.html" class="btn btn-upper btn-primary btn-block m-t-20">{{ __('Checkout') }}</a> </div>
                   
                 </li>
               </ul>
@@ -120,15 +111,13 @@
         <div class="yamm navbar navbar-default" role="navigation">
           <div class="navbar-header">
          <button data-target="#mc-horizontal-menu-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button"> 
-         <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+         <span class="sr-only">{{ __('Toggle navigation') }}</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
           </div>
           <div class="nav-bg-class">
             <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
               <div class="nav-outer">
                 <ul class="nav navbar-nav">
-                  <li class="active dropdown yamm-fw"> <a href="{{ url('/') }}" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">
-                    @if(session()->get('language') == 'polish') Strona główna @else Home @endif
-                  </a> </li>
+                  <li class="active dropdown yamm-fw"> <a href="{{ url('/') }}" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">{{ __('Home') }}</a> </li>
 
                     @php
                      $cat = App\Models\Category::orderBy('name_category', 'ASC')->get();   
@@ -169,9 +158,7 @@
                     </ul>
                   </li>
                   @endforeach
-                  <li class="dropdown  navbar-right special-menu"> <a href="#">
-                    @if(session()->get('language') == 'polish') Dzisiejsza oferta @else Todays offer @endif
-                    </a> </li>
+                  <li class="dropdown  navbar-right special-menu"> <a href="#">{{ __('Toddays offer') }}</a> </li>
                 </ul>
                 <div class="clearfix"></div>
               </div>
