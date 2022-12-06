@@ -10,7 +10,7 @@
 
       <div class="box">
        <div class="box-header with-border">
-         <h3 class="box-title">Edit brand</h3>
+         <h3 class="box-title">{{ __('Edit brand') }}</h3>
        </div>
        <div class="box-body">
          <div class="table-responsive">
@@ -20,7 +20,7 @@
             <input type="hidden" name="old_image" value="{{ $brand->brand_photos }}">	
 
                             <div class="form-group">
-                                 <h5>Name brand <span class="text-danger">*</span></h5>
+                                 <h5>{{ __('Brand name') }} <span class="text-danger">*</span></h5>
                                  <div class="controls">
                                      <input type="text" name="name_brand" class="form-control" value="{{ $brand->name_brand }}">
                                      @error('name_brand')
@@ -30,7 +30,7 @@
                              </div>
 
                              <div class="form-group">
-                                 <h5>Photos brand <span class="text-danger">*</span></h5>
+                                 <h5>{{ __('Brand photos') }} <span class="text-danger">*</span></h5>
                                  <div class="controls">
                                      <input type="file" name="brand_photos" class="form-control">
                                      @error('brand_photos')
@@ -40,7 +40,7 @@
                              </div>
 
                 <div class="text-xs-right">
-<input type="submit" class="btn btn-rounded btn-primary mb-5" value="Update">
+<input type="submit" class="btn btn-rounded btn-primary mb-5" value="{{ __('Update') }}">
              </div>
             </form>
          </div>

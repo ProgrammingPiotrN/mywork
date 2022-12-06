@@ -10,7 +10,7 @@
 
       <div class="box">
        <div class="box-header with-border">
-         <h3 class="box-title">Edit category</h3>
+         <h3 class="box-title">{{ __('Edit category') }}</h3>
        </div>
        <div class="box-body">
          <div class="table-responsive">
@@ -19,7 +19,7 @@
             <input type="hidden" name="id" value="{{ $category->id }}">	
 
                             <div class="form-group">
-                                 <h5>Name category <span class="text-danger">*</span></h5>
+                                 <h5>{{ __('Name category') }} <span class="text-danger">*</span></h5>
                                  <div class="controls">
                                      <input type="text" name="name_category" class="form-control" value="{{ $category->name_category }}">
                                      @error('name_category')
@@ -28,7 +28,7 @@
                                  </div>
                              </div>
                 <div class="text-xs-right">
-<input type="submit" class="btn btn-rounded btn-primary mb-5" value="Update">
+<input type="submit" class="btn btn-rounded btn-primary mb-5" value="{{ __('Update') }}">
              </div>
             </form>
          </div>

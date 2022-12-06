@@ -24,9 +24,9 @@
           <div class="cnt-block">
             <ul class="list-unstyled list-inline">
               <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">{{ __('Language') }}</span><b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="/lang/en">{{ __('English') }}</a></li>
-                  <li><a href="/lang/pl">{{ __('Polish') }}</a></li>
+                <ul class="dropdown-menu" style="text-align: left">
+                  <li><a href="/lang/en"><img src="{{ asset('styles_backend/images/flags/wb.jpg') }}" style="width: 25px"></a></li>
+                  <li><a href="/lang/pl"><img src="{{ asset('styles_backend/images/flags/poland.png') }}" style="width: 25px"></a></li>
                 </ul>
               </li>
             </ul>

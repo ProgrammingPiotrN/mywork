@@ -10,15 +10,15 @@
 
      <div class="box">
       <div class="box-header with-border">
-        <h3 class="box-title">Categories</h3>
+        <h3 class="box-title">{{ __('Categories') }}</h3>
       </div>
       <div class="box-body">
         <div class="table-responsive">
           <table id="example1" class="table table-bordered table-striped">
           <thead>
             <tr>
-              <th>Category</th>
-              <th>Action</th>
+              <th>{{ __('Category') }}</th>
+              <th>{{ __('Action') }}</th>
             </tr>
           </thead>
           <tbody>
@@ -26,8 +26,8 @@
             <tr>
                 <td>{{ $item->name_category }}</td>
               <td>
-                <a href="{{ route('category.edit', $item->id) }}" class="btn btn-info">Edit</a> 
-                <a href="{{ route('category.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a>
+                <a href="{{ route('category.edit', $item->id) }}" class="btn btn-info">{{ __('Edit') }}</a> 
+                <a href="{{ route('category.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">{{ __('Delete') }}</a>
 
               </td>
             </tr>
@@ -42,14 +42,14 @@
 
       <div class="box">
        <div class="box-header with-border">
-         <h3 class="box-title">Added categories</h3>
+         <h3 class="box-title">{{ __('Add categories') }}</h3>
        </div>
        <div class="box-body">
          <div class="table-responsive">
           <form method="post" action="{{ route('category.store') }}" enctype="multipart/form-data">
             @csrf					
                             <div class="form-group">
-                                 <h5>Name category <span class="text-danger">*</span></h5>
+                                 <h5>{{ __('Name category') }} <span class="text-danger">*</span></h5>
                                  <div class="controls">
                                      <input type="text" name="name_category" class="form-control">
                                      @error('name_category')
@@ -59,7 +59,7 @@
                              </div>
 
                 <div class="text-xs-right">
-<input type="submit" class="btn btn-rounded btn-primary mb-5" value="add new category">
+<input type="submit" class="btn btn-rounded btn-primary mb-5" value="{{ __('add new category') }}">
              </div>
             </form>
          </div>

@@ -114,7 +114,7 @@ class IndexController extends Controller
 
     public function TagsProduct($tag){
 
-        $products = Product::where('status', 1)->where('tags_product', $tag)->orderBy('id', 'DESC')->get();
+        $products = Product::where('status', 1)->where('tags_product', $tag)->orderBy('id', 'DESC')->paginate(1);
         $cat = Category::orderBy('name_category', 'ASC')->get();   
         return view('frontend.tags.tags_view', compact('products', 'cat'));
 

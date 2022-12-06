@@ -7,9 +7,9 @@
 
     <section class="content">
          <div class="box">
-           <div class="box-header with-border">
-             <h4 class="box-title">Edit Admin Profile</h4>
-           </div>
+          <div class="box-header with-border">
+            <h4 class="box-title">{{ __('Edit Admin Profile') }}</h4>
+          </div>
            <div class="box-body">
              <div class="row">
                <div class="col">
@@ -22,7 +22,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <h5>Admin name <span class="text-danger">*</span></h5>
+                                        <h5>{{ __('Admin name') }} <span class="text-danger">*</span></h5>
                                         <div class="controls">
                                             <input type="text" name="name" class="form-control" required="" value="{{ $editData->name }}">
                                         </div>
@@ -31,7 +31,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <h5>Admin email <span class="text-danger">*</span></h5>
+                                        <h5>{{ __('Admin email') }} <span class="text-danger">*</span></h5>
                                         <div class="controls">
                                             <input type="email" name="email" class="form-control" required="" value="{{ $editData->email }}">
                                         </div>
@@ -42,7 +42,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <h5>Profile image <span class="text-danger">*</span></h5>
+                                        <h5>{{ __('Profile image') }} <span class="text-danger">*</span></h5>
                                         <div class="controls">
                                             <input type="file" name="profile_photo_path" class="form-control" required="" id="image">
                                         </div>
@@ -55,7 +55,7 @@
                             </div>
                         <br/>
                        <div class="text-xs-right">
-<input type="submit" class="btn btn-rounded btn-primary mb-5" value="Update">
+<input type="submit" class="btn btn-rounded btn-primary mb-5" value="{{ __('Update') }}">
                     </div>
                    </form>
 

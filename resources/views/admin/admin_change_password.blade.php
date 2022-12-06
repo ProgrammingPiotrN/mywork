@@ -8,7 +8,7 @@
     <section class="content">
          <div class="box">
            <div class="box-header with-border">
-             <h4 class="box-title">Change password</h4>
+             <h4 class="box-title">{{ __('Change password') }}</h4>
            </div>
            <div class="box-body">
              <div class="row">
@@ -21,7 +21,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <h5>Current password <span class="text-danger">*</span></h5>
+                                        <h5>{{ __('Current password') }} <span class="text-danger">*</span></h5>
                                         <div class="controls">
                                             <input type="password" id="current_password" name="oldpassword" class="form-control" required="">
                                         </div>
@@ -30,7 +30,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <h5>New password <span class="text-danger">*</span></h5>
+                                        <h5>{{ __('New password') }} <span class="text-danger">*</span></h5>
                                         <div class="controls">
                                             <input type="password" id="password" name="password" class="form-control" required="">
                                         </div>
@@ -39,7 +39,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <h5>Confirm password <span class="text-danger">*</span></h5>
+                                        <h5>{{ __('Confirm password') }} <span class="text-danger">*</span></h5>
                                         <div class="controls">
                                             <input type="password" id="password_confirmation" name="password_confirmation" class="form-control" required="">
                                         </div>

@@ -23,7 +23,19 @@
 			    </a>
 			</li>
 		  </ul>
-	  </div>		
+	  </div>	
+    
+      <div class="cnt-block">
+        <ul class="list-unstyled list-inline">
+          <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">{{ __('Language') }}</span><b class="caret"></b></a>
+            <ul class="dropdown-menu" style="text-align: center">
+              <li><a href="/lang/en"><img src="{{ asset('styles_backend/images/flags/wb.jpg') }}" style="width: 25px"></a></li>
+              <li><a href="/lang/pl"><img src="{{ asset('styles_backend/images/flags/poland.png') }}" style="width: 25px"></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    
       <div class="navbar-custom-menu r-side">
         <ul class="nav navbar-nav">
 	      <li class="search-bar">		  
@@ -56,11 +68,11 @@
 			</a>
 			<ul class="dropdown-menu animated flipInX">
 			  <li class="user-body">
-				 <a class="dropdown-item" href="{{ route('admin.profile') }}"><i class="ti-user text-muted mr-2"></i> Profile</a>
-				 <a class="dropdown-item" href="{{ route('admin.change.password') }}"><i class="ti-wallet text-muted mr-2"></i> Change password</a>
-				 <a class="dropdown-item" href="#"><i class="ti-settings text-muted mr-2"></i> Settings</a>
+				 <a class="dropdown-item" href="{{ route('admin.profile') }}"><i class="ti-user text-muted mr-2"></i> {{ __('Profile') }}</a>
+				 <a class="dropdown-item" href="{{ route('admin.change.password') }}"><i class="ti-wallet text-muted mr-2"></i> {{ __('Change password') }}</a>
+				 <a class="dropdown-item" href="#"><i class="ti-settings text-muted mr-2"></i> {{ __('Settings') }}</a>
 				 <div class="dropdown-divider"></div>
-				 <a class="dropdown-item" href="{{ route('admin.logout') }}"><i class="ti-lock text-muted mr-2"></i> Logout</a>
+				 <a class="dropdown-item" href="{{ route('admin.logout') }}"><i class="ti-lock text-muted mr-2"></i> {{ __('Logout') }}</a>
 			  </li>
 			</ul>
           </li>	
