@@ -9,7 +9,7 @@
   
         <div class="box">
          <div class="box-header with-border">
-           <h3 class="box-title">Edit SubSubCategory</h3>
+           <h3 class="box-title">{{ __('Edit SubSubCategory') }}</h3>
          </div>
          <div class="box-body">
            <div class="table-responsive">
@@ -17,10 +17,10 @@
               @csrf			
               <input type="hidden" name="id" value="{{ $subsubcategories->id }}">		
                               <div class="form-group">
-                                   <h5>Select category <span class="text-danger">*</span></h5>
+                                   <h5>{{ __('Select category') }} <span class="text-danger">*</span></h5>
                                    <div class="controls">
                                     <select name="category_id" class="form-control">
-                                        <option value="">Select category</option>
+                                        <option value="">{{ __('Select category') }}</option>
                                         @foreach($categories as $category)
                                         <option value="{{ $category->id }}" {{ $category->id == $subsubcategories->category_id ? 'selected':'' }}>{{ $category->name_category }}</option>
                                         @endforeach
@@ -32,10 +32,10 @@
                                </div>
 
                                <div class="form-group">
-                                <h5>Select SubCategory <span class="text-danger">*</span></h5>
+                                <h5>{{ __("Select SubCategory") }} <span class="text-danger">*</span></h5>
                                 <div class="controls">
                                  <select name="subcategory_id" class="form-control">
-                                     <option value="">Select SubCategory</option>
+                                     <option value="">{{ __('Select SubCategory') }}</option>
                                      @foreach($subcategories as $sub)
                                         <option value="{{ $sub->id }}" {{ $sub->id == $subsubcategories->subcategory_id ? 'selected':'' }}>{{ $sub->name_subcategory }}</option>
                                         @endforeach                                  
@@ -47,7 +47,7 @@
                             </div>
 
                                <div class="form-group">
-                                <h5>Name SubSubCategory <span class="text-danger">*</span></h5>
+                                <h5>{{ __("Name SubSubCategory") }} <span class="text-danger">*</span></h5>
                                 <div class="controls">
                                  <input type="text" name="name_subsubcategory" class="form-control" value="{{ $subsubcategories->name_subsubcategory }}">
                                  @error('name_subsubcategory')
@@ -57,7 +57,7 @@
                             </div>
   
                   <div class="text-xs-right">
-  <input type="submit" class="btn btn-rounded btn-primary mb-5" value="Update">
+  <input type="submit" class="btn btn-rounded btn-primary mb-5" value="{{ __('Update') }}">
                </div>
               </form>
            </div>

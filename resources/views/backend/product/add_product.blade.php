@@ -8,7 +8,7 @@
 
         <div class="box">
           <div class="box-header with-border">
-            <h4 class="box-title">Add Product</h4>
+            <h4 class="box-title">{{ __('Add Product') }}</h4>
           </div>
           <div class="box-body">
             <div class="row">
@@ -23,10 +23,10 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Select brand <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Select brand') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                      <select name="brand_id" class="form-control" style="text-align: center" required="">
-                                         <option value="">Select brand</option>
+                                         <option value="">{{ __('Select brand') }}</option>
                                          @foreach($brands as $brand)
                                          <option value="{{ $brand->id }}">{{ $brand->name_brand }}</option>
                                          @endforeach
@@ -42,10 +42,10 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Select category <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Select category') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                      <select name="category_id" class="form-control" style="text-align: center" required="">
-                                         <option value="">Select category</option>
+                                         <option value="">{{ __('Select category') }}</option>
                                          @foreach($categories as $category)
                                          <option value="{{ $category->id }}">{{ $category->name_category }}</option>
                                          @endforeach
@@ -61,10 +61,10 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Select subcategory <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Select SubCategory') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                      <select name="subcategory_id" class="form-control" style="text-align: center" required="">
-                                         <option value="">Select subcategory</option>
+                                         <option value="">{{ __('Select SubCategory') }}</option>
                                         
                                      </select>
                                      @error('subcategory_id')
@@ -80,10 +80,10 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Select subsubcategory <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Select SubSubCategory') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                      <select name="subsubcategory_id" class="form-control" style="text-align: center" required="">
-                                         <option value="">Select subsubcategory</option>
+                                         <option value="">{{ __('Select SubSubCategory') }}</option>
                                         
                                      </select>
                                      @error('subsubcategory_id')
@@ -97,7 +97,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product name <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Name product') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="name_product" class="form-control" style="text-align: center" required=""> 
                                     </div>
@@ -111,7 +111,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product code <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Product code') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="code_product" class="form-control" style="text-align: center" required=""> 
                                     </div>
@@ -127,7 +127,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product quantity <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Product quantity') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="quantity_product" class="form-control" style="text-align: center" required=""> 
                                     </div>
@@ -141,7 +141,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product tags <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Product tags') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="tags_product" class="form-control" value="Cakes,Muffins,Pancakes" data-role="tagsinput" required=""> 
                                     </div>
@@ -155,7 +155,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product weight <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Product weight') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="weight_product" class="form-control" value="1.5 kg, 200 g, 150 dag" data-role="tagsinput" required="">
                                      </div>
@@ -171,7 +171,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product price selling <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Product  selling price') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="price_selling" class="form-control" style="text-align: center" required=""> 
                                     </div>
@@ -185,7 +185,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product price discount <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Product price discount') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="price_discount" class="form-control" style="text-align: center">
                                      </div>
@@ -199,7 +199,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Main thambnail <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Main thambnail') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="file" name="thambnail_product" class="form-control" onChange="ThamURL(this)" required=""> 
                                     </div>
@@ -216,7 +216,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Multiple image <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Multiple image') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="file" name="multi_image[]" class="form-control" multiple="" id="MultiImage" required=""> 
                                     </div>
@@ -231,9 +231,9 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Description-short <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Description-short') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <textarea name="description_short" id="descshort" class="form-control" required placeholder="Textarea text" required=""></textarea>
+                                        <textarea name="description_short" id="descshort" class="form-control" required placeholder="{{ __('Text area') }}" required=""></textarea>
                                     </div>
                                 </div>
 
@@ -242,9 +242,9 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Description-long <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Description-long') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <textarea name="description_long" id="desclong" class="form-control" required placeholder="Textarea text" required=""></textarea>
+                                        <textarea name="description_long" id="desclong" class="form-control" required placeholder="{{ __('Text area') }}" required=""></textarea>
                                     </div>
                                 </div>
 
@@ -258,11 +258,11 @@
                                     <div class="controls">
                                         <fieldset>
                                             <input type="checkbox" id="checkbox_1" name="featured"  value="1">
-                                            <label for="checkbox_1">Featured</label>
+                                            <label for="checkbox_1">{{ __('Featured') }}</label>
                                         </fieldset>
                                         <fieldset>
                                             <input type="checkbox" id="checkbox_2" name="special_deals" value="1">
-                                            <label for="checkbox_2">Special deals</label>
+                                            <label for="checkbox_2">{{ __('Special deals') }}</label>
                                         </fieldset>
                                     </div>
                                 </div>
@@ -273,11 +273,11 @@
                                     <div class="controls">
                                         <fieldset>
                                             <input type="checkbox" id="checkbox_3" name="deals"  value="1">
-                                            <label for="checkbox_3">Hot deals</label>
+                                            <label for="checkbox_3">{{ __('Hot deals') }}</label>
                                         </fieldset>
                                         <fieldset>
                                             <input type="checkbox" id="checkbox_4" name="special_offer" value="1">
-                                            <label for="checkbox_4">Special offer</label>
+                                            <label for="checkbox_4">{{ __('Special offer') }}</label>
                                         </fieldset>
                                     </div>
                                 </div>
@@ -289,7 +289,7 @@
                     </div>
                       
                       <div class="text-xs-right">
-                        <input type="submit" class="btn btn-rounded btn-primary mb-5" value="Add product">
+                        <input type="submit" class="btn btn-rounded btn-primary mb-5" value="{{ __('Add Product') }}">
                     </div>
                   </form>
 

@@ -9,7 +9,7 @@
 
         <div class="box">
           <div class="box-header with-border">
-            <h4 class="box-title">Edit product</h4>
+            <h4 class="box-title">{{ __('Edit product') }}</h4>
           </div>
           <div class="box-body">
             <div class="row">
@@ -24,10 +24,10 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Select brand <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Select brand') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                      <select name="brand_id" class="form-control" style="text-align: center" required="">
-                                         <option value="">Select brand</option>
+                                         <option value="">{{ __('Select brand') }}</option>
                                          @foreach($brands as $brand)
                                          <option value="{{ $brand->id }}" {{ $brand->id == $products->brand_id ? 'selected':''}}>{{ $brand->name_brand }}</option>
                                          @endforeach
@@ -43,10 +43,10 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Select category <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Select category') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                      <select name="category_id" class="form-control" style="text-align: center" required="">
-                                         <option value="">Select category</option>
+                                         <option value="">{{ __('Select category') }}</option>
                                          @foreach($categories as $category)
                                          <option value="{{ $category->id }}" {{ $category->id == $products->category_id ? 'selected':''}}>{{ $category->name_category }}</option>
                                          @endforeach
@@ -62,10 +62,10 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Select subcategory <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Select SubCategory') }}<span class="text-danger">*</span></h5>
                                     <div class="controls">
                                      <select name="subcategory_id" class="form-control" style="text-align: center" required="">
-                                         <option value="">Select subcategory</option>
+                                         <option value="">{{ __('Select SubCategory') }}</option>
                                          @foreach($subcategory as $sub)
                                          <option value="{{ $sub->id }}" {{ $sub->id == $products->subcategory_id ? 'selected':''}}>{{ $sub->name_subcategory }}</option>
                                          @endforeach
@@ -83,10 +83,10 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Select subsubcategory <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Select SubSubCategory') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                      <select name="subsubcategory_id" class="form-control" style="text-align: center" required="">
-                                         <option value="">Select subsubcategory</option>
+                                         <option value="">{{ __('Select SubSubCategory') }}</option>
                                          @foreach($subsubcategory as $subsub)
                                          <option value="{{ $subsub->id }}" {{ $subsub->id == $products->subsubcategory_id ? 'selected':''}}>{{ $subsub->name_subsubcategory }}</option>
                                          @endforeach
@@ -102,7 +102,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product name <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Name product') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="name_product" class="form-control" style="text-align: center" required="" value="{{ $products->name_product }}"> 
                                     </div>
@@ -116,7 +116,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product code <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Product code') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="code_product" class="form-control" style="text-align: center" required="" value="{{ $products->code_product }}"> 
                                     </div>
@@ -132,7 +132,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product quantity <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Product quantity') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="quantity_product" class="form-control" style="text-align: center" required="" value="{{ $products->quantity_product }}"> 
                                     </div>
@@ -146,7 +146,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product tags <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Product tags') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="tags_product" class="form-control" data-role="tagsinput" required="" value="{{ $products->tags_product }}"> 
                                     </div>
@@ -160,7 +160,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product weight <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Product weight') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="weight_product" class="form-control" data-role="tagsinput" required=""  value="{{ $products->weight_product }}">
                                      </div>
@@ -176,7 +176,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product price selling <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Product selling price') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="price_selling" class="form-control" style="text-align: center" required=""  value="{{ $products->price_selling }}"> 
                                     </div>
@@ -190,7 +190,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Product price discount <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Product price discount') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <input type="text" name="price_discount" class="form-control" style="text-align: center" value="{{ $products->price_discount }}">
                                      </div>
@@ -208,7 +208,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Description-short <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Description-short') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <textarea name="description_short" id="editor1" class="form-control" required placeholder="Textarea text" required="">
                                             {{ $products->description_short }}
@@ -221,7 +221,7 @@
                             <div class="col-md-12">
 
                                 <div class="form-group">
-                                    <h5>Description-long <span class="text-danger">*</span></h5>
+                                    <h5>{{ __('Description-long') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
                                         <textarea name="description_long" id="editor2" class="form-control" required placeholder="Textarea text" required="">
                                             {{ $products->description_long }}
@@ -239,11 +239,11 @@
                                     <div class="controls">
                                         <fieldset>
                                             <input type="checkbox" id="checkbox_1" name="featured"  value="1" {{ $products->featured == 1 ? 'checked': '' }}>
-                                            <label for="checkbox_1">Featured</label>
+                                            <label for="checkbox_1">{{ __('Featured') }}</label>
                                         </fieldset>
                                         <fieldset>
                                             <input type="checkbox" id="checkbox_2" name="special_deals" value="1" {{ $products->special_deals == 1 ? 'checked': '' }}>
-                                            <label for="checkbox_2">Special deals</label>
+                                            <label for="checkbox_2">{{ __('Special deals') }}</label>
                                         </fieldset>
                                     </div>
                                 </div>
@@ -254,11 +254,11 @@
                                     <div class="controls">
                                         <fieldset>
                                             <input type="checkbox" id="checkbox_3" name="deals"  value="1" {{ $products->deals == 1 ? 'checked': '' }}>
-                                            <label for="checkbox_3">Hot deals</label>
+                                            <label for="checkbox_3">{{ __('Hot deals') }}</label>
                                         </fieldset>
                                         <fieldset>
                                             <input type="checkbox" id="checkbox_4" name="special_offer" value="1" {{ $products->special_offer == 1 ? 'checked': '' }}>
-                                            <label for="checkbox_4">Special offer</label>
+                                            <label for="checkbox_4">{{ __('Special offer') }}</label>
                                         </fieldset>
                                     </div>
                                 </div>
@@ -270,7 +270,7 @@
                     </div>
                       
                       <div class="text-xs-right">
-                        <input type="submit" class="btn btn-rounded btn-primary mb-5" value="Update">
+                        <input type="submit" class="btn btn-rounded btn-primary mb-5" value="{{ __('Update') }}">
                     </div>
                   </form>
               </div>
@@ -286,7 +286,7 @@
         <div class="col-md-12">
                    <div class="box bt-4 border-info">
                      <div class="box-header">
-                        <h4 class="box-title">Product Multiple Image <strong>Update</strong></h4>
+                        <h4 class="box-title">{{ __('Multiple image') }} <strong>{{ __('Update') }}</strong></h4>
                      </div>
                      <div>
                         <form method="post" action="{{ route('product_image.update') }}" enctype="multipart/form-data" style="margin-left: 30px; margin-right: 30px">
@@ -300,11 +300,11 @@
                                  <img src="{{ asset($img->name_photo) }}" class="card-img-top" style="height: 130px; width: 280px;">
                                  <div class="card-body">
                                  <h5 class="card-title">
-                                     <a href="{{ route('productmulti.delete', $img->id) }}" class="btn btn-sm btn-danger" id="delete" title="Delete Data">Delete</a>
+                                     <a href="{{ route('productmulti.delete', $img->id) }}" class="btn btn-sm btn-danger" id="delete" title="Delete Data">{{ __('Delete') }}</a>
                                      </h5>
                                  <p class="card-text"> 
                                      <div class="form-group">
-                                         <label class="form-control-label">Change Image <span class="tx-danger">*</span></label>
+                                         <label class="form-control-label">{{ __('Change Image') }} <span class="tx-danger">*</span></label>
                                          <input class="form-control" type="file" name="multi_image[ {{ $img->id }} ]">
                                      </div> 
                                  </p>
@@ -316,7 +316,7 @@
                                 @endforeach               
                             </div>			               
                             <div class="text-xs-right">
-                               <input type="submit" class="btn btn-rounded btn-primary mb-5" value="Update">
+                               <input type="submit" class="btn btn-rounded btn-primary mb-5" value="{{ __('Update') }}">
                          </div>
                          <br><br>               
                         </form>		
@@ -336,7 +336,7 @@
         <div class="col-md-12">
                    <div class="box bt-4 border-info">
                      <div class="box-header">
-                        <h4 class="box-title">Product Thambnail Image <strong>Update</strong></h4>
+                        <h4 class="box-title">{{ __('Main thambnail') }} <strong>{{ __('Update') }}</strong></h4>
                      </div>
                      <div>
                         <form method="post" action="{{ route('product_thamb.update') }}" enctype="multipart/form-data" style="margin-left: 30px; margin-right: 30px">
@@ -354,7 +354,7 @@
                                
                                  <p class="card-text"> 
                                      <div class="form-group">
-                                         <label class="form-control-label">Change Image <span class="tx-danger">*</span></label>
+                                         <label class="form-control-label">{{ __('Change Image') }} <span class="tx-danger">*</span></label>
                                          <input type="file" name="thambnail_product" class="form-control" onChange="ThamURL(this)"> 
                                          <img src="" id="MainThmb">
                                         </div> 
@@ -366,7 +366,7 @@
                                 </div>	
                             </div>			               
                             <div class="text-xs-right">
-                               <input type="submit" class="btn btn-rounded btn-primary mb-5" value="Update">
+                               <input type="submit" class="btn btn-rounded btn-primary mb-5" value="{{ __('Update') }}">
                          </div>
                          <br><br>               
                         </form>		

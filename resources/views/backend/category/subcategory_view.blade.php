@@ -9,16 +9,16 @@
   
        <div class="box">
         <div class="box-header with-border">
-          <h3 class="box-title">SubCategories LIST</h3>
+          <h3 class="box-title">{{ __('SubCategories LIST') }}</h3>
         </div>
         <div class="box-body">
           <div class="table-responsive">
             <table id="example1" class="table table-bordered table-striped">
             <thead>
               <tr>
-                <th>Category</th>
-                <th>SubCategory</th>
-                <th>Action</th>
+                <th>{{ __('Name category') }}</th>
+                <th>{{ __('Name Subcategory') }}</th>
+                <th>{{ __('Action') }}</th>
               </tr>
             </thead>
             <tbody>
@@ -27,8 +27,8 @@
                   <td>{{ $item['CategoryCRUD']['name_category'] }}</td>
                   <td>{{ $item->name_subcategory }}</td>
                 <td>
-                  <a href="{{ route('subcategory.edit', $item->id) }}" class="btn btn-info">Edit</a> 
-                  <a href="{{ route('subcategory.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a> 
+                  <a href="{{ route('subcategory.edit', $item->id) }}" class="btn btn-info">{{ __('Edit') }}</a> 
+                  <a href="{{ route('subcategory.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">{{ __('Delete') }}</a> 
                 </td>
               </tr>
               @endforeach
@@ -42,17 +42,17 @@
   
         <div class="box">
          <div class="box-header with-border">
-           <h3 class="box-title">Added SubCategory</h3>
+           <h3 class="box-title">{{ __('Add SubCategory') }}</h3>
          </div>
          <div class="box-body">
            <div class="table-responsive">
             <form method="post" action="{{ route('subcategory.store') }}">
               @csrf					
                               <div class="form-group">
-                                   <h5>Select category <span class="text-danger">*</span></h5>
+                                   <h5>{{ __('Select category') }} <span class="text-danger">*</span></h5>
                                    <div class="controls">
                                     <select name="category_id" class="form-control">
-                                        <option value="">Select category</option>
+                                        <option value="">{{ __('Select category') }}</option>
                                         @foreach($categories as $category)
                                         <option value="{{ $category->id }}">{{ $category->name_category }}</option>
                                         @endforeach
@@ -64,7 +64,7 @@
                                </div>
 
                                <div class="form-group">
-                                <h5>Name Subcategory <span class="text-danger">*</span></h5>
+                                <h5>{{ __('Name Subcategory') }} <span class="text-danger">*</span></h5>
                                 <div class="controls">
                                  <input type="text" name="name_subcategory" class="form-control">
                                  @error('name_subcategory')
@@ -74,7 +74,7 @@
                             </div>
   
                   <div class="text-xs-right">
-  <input type="submit" class="btn btn-rounded btn-primary mb-5" value="add new subcategory">
+  <input type="submit" class="btn btn-rounded btn-primary mb-5" value="{{ __('add new subcategory') }}">
                </div>
               </form>
            </div>

@@ -10,7 +10,7 @@
 
       <div class="box">
        <div class="box-header with-border">
-         <h3 class="box-title">Edit slider</h3>
+         <h3 class="box-title">{{ __('Edit slider') }}</h3>
        </div>
        <div class="box-body">
          <div class="table-responsive">
@@ -20,21 +20,21 @@
             <input type="hidden" name="image_old" value="{{ $sliders->img_slider }}">		
 
                             <div class="form-group">
-                                 <h5>Slider title <span class="text-danger">*</span></h5>
+                                 <h5>{{ __('Slider title') }} <span class="text-danger">*</span></h5>
                                  <div class="controls">
                                      <input type="text" name="title" class="form-control" value="{{ $sliders->title }}">
                                  </div>
                              </div>
 
                              <div class="form-group">
-                                <h5>Slider description <span class="text-danger">*</span></h5>
+                                <h5>{{ __('Slider description') }} <span class="text-danger">*</span></h5>
                                 <div class="controls">
                                     <input type="text" name="description" class="form-control" value="{{ $sliders->description }}">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <h5>Slider image <span class="text-danger">*</span></h5>
+                                <h5>{{ __('Slider image') }} <span class="text-danger">*</span></h5>
                                 <div class="controls">
                                     <input type="file" name="img_slider" class="form-control" value="{{ $sliders->img_slider }}">
                                     @error('img_slider')
@@ -43,7 +43,7 @@
                                 </div>
                             </div>
                 <div class="text-xs-right">
-<input type="submit" class="btn btn-rounded btn-primary mb-5" value="Update">
+<input type="submit" class="btn btn-rounded btn-primary mb-5" value="{{ __('Update') }}">
              </div>
             </form>
          </div>

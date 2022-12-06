@@ -10,20 +10,20 @@
 
      <div class="box">
       <div class="box-header with-border">
-        <h3 class="box-title">Products</h3>
+        <h3 class="box-title">{{ __('Products') }}</h3>
       </div>
       <div class="box-body">
         <div class="table-responsive">
           <table id="example1" class="table table-bordered table-striped">
           <thead>
             <tr>
-              <th>Product Image</th>
-              <th>Name product</th>
-              <th>Product selling price</th>
-              <th>Product quantity</th>
-              <th>Product discount</th>
-              <th>Status</th>
-              <th>Action</th>
+              <th>{{ __('Product Image') }}</th>
+              <th>{{ __('Name product') }}</th>
+              <th>{{ __('Product selling price') }}</th>
+              <th>{{ __('Product quantity') }}</th>
+              <th>{{ __('Product price discount') }}</th>
+              <th>{{ __('Status') }}</th>
+              <th>{{ __('Action') }}</th>
             </tr>
           </thead>
           <tbody>
@@ -32,10 +32,10 @@
                 <td><img src="{{ asset($item->thambnail_product) }}" style="width: 80px; height: 70px"></td>
                 <td>{{ $item->name_product }}</td>
                 <td>{{ $item->price_selling }} PLN</td>
-                <td>{{ $item->quantity_product }} sztuk</td>
+                <td>{{ $item->quantity_product }} {{ __('pieces') }}</td>
                 <td>  
                   @if($item->price_discount == NULL)
-                      <span class="badge badge-pill badge-danger">No discount</span>
+                      <span class="badge badge-pill badge-danger">{{ __('No discount') }}</span>
                   @else
                   @php
                    $price = $item->price_selling - $item->price_discount;
@@ -47,16 +47,16 @@
                 <th>
 
                   @if($item->status == 1)
-                    <span class="badge badge-pill badge-success">Active</span>
+                    <span class="badge badge-pill badge-success">{{ __('Active') }}</span>
                   @else
-                    <span class="badge badge-pill badge-danger">InActive</span>
+                    <span class="badge badge-pill badge-danger">{{ __('InActive') }}</span>
                   @endif
   
                 </th>
                 <td width="30%">
-                <a href="{{ route('product.edit', $item->id) }}" class="btn btn-primary">Details</a> 
-                <a href="{{ route('product.edit', $item->id) }}" class="btn btn-info">Edit</a> 
-                <a href="{{ route('product.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">Delete</a>
+                <a href="{{ route('product.edit', $item->id) }}" class="btn btn-primary">{{ __('Details') }}</a> 
+                <a href="{{ route('product.edit', $item->id) }}" class="btn btn-info">{{ __('Edit') }}</a> 
+                <a href="{{ route('product.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">{{ __('Delete') }}</a>
                   @if($item->status == 1)
                   <a href="{{ route('product.inactive', $item->id) }}" class="btn btn-danger" title="Inactive"><i class="fa fa-arrow-down"></i></a> 
                   @else
