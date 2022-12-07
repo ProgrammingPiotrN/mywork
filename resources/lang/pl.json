@@ -27,6 +27,7 @@
 
     "Buns":"Drożdżówki",
     "Brands":"Marki",
+    "Brand":"Marka",
     "Brand photos":"Zdjęcie marki",
     "Brand name":"Nazwa marki",
 
@@ -41,6 +42,7 @@
     "Confirm password":"Potwierdź hasło",
     "Category":"Kategoria",
     "Change Image":"Zmień obraz",
+    "Choose weight":"Wybierz wagę",
 
     "DESCRIPTION":"OPIS",
     "Dashboard":"Panel główny",
@@ -116,9 +118,11 @@
     "Product price discount":"Cena wyprzedażowa produktu",
     "Product Image":"Zdjęcie produktu",
     "pieces":"sztuk",
+    "Product price":"Cena produktu",
 
     "Register":"Rejestracja",
     "REVIEW":"RECENZJA",
+    "Related products":"Produkty powiązane",
 
     "Simple product":"Jeden produkt",
     "Special offer":"Specjalna oferta",
@@ -143,6 +147,9 @@
     "Slider image":"Obraz suwaka",
     "Slider description":"Opis suwaka",
     "Slider title":"Tytuł suwaka",
+    "Subcategory product":"Podkategoria produktów",
+    "Sub Subcategory product":"Podkategoria podrzędna produktów",
+    "Sale":"Wyprzedaż",
 
     "Toddays offer":"Dzisiejsza oferta",
     "Toggle navigation":"Przełącz nawigację",

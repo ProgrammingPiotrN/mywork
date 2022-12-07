@@ -1,3 +1,7 @@
+@php
+  $hotdeals = App\Models\Product::where('deals', 1)->where('price_discount', '!=', NULL)->orderBy('id', 'DESC')->limit(6)->get();
+@endphp
+
 <div class="sidebar-widget hot-deals wow fadeInUp outer-top-vs">
     <h3 class="section-title">{{ __('Hot deals') }}</h3>
     <div class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-xs">
@@ -7,7 +11,7 @@
             <div class="products">
               <div class="hot-deal-wrapper">
                 <div class="image">
-                  <img src="{{ $product->thambnail_product }}" alt="">
+                  <img src="{{ asset($product->thambnail_product) }}" alt="">
                 </div>
 
                 @php
@@ -16,7 +20,7 @@
                 @endphp
 
                 @if($product->price_discount == NULL)
-                <div class="sale-offer-tag"><span>new<br>!!!</span></div>
+                <div class="sale-offer-tag"><span>{{ __('New') }}<br>!!!</span></div>
                 @else
                 <div class="sale-offer-tag"><span>{{ round($disc) }}%<br>!!!</span></div>
                 @endif
@@ -53,3 +57,5 @@
           @endforeach	        	                        		                      
       </div>
   </div>
+
+  

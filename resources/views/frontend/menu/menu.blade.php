@@ -19,13 +19,15 @@
 
                 @foreach($subcat as $subcategory)
                 <div class="col-sm-12 col-md-3">
-                  <h2 class="title">{{ $subcategory->name_subcategory }}</h2>   
+
+                  <a href="{{ url('product/subcategory/'.$subcategory->id.'/'.$subcategory->slug_subcategory) }}"><h2 class="title">{{ $subcategory->name_subcategory }}</h2>  </a>
+                   
                   @php
                     $subsubcat = App\Models\SubSubcategory::where('subcategory_id', $subcategory->id)->orderBy('name_subsubcategory', 'ASC')->get();   
                   @endphp   
                   @foreach($subsubcat as $subsubcategory)      
                   <ul class="links list-unstyled">
-                    <li><a href="#">{{ $subsubcategory->name_subsubcategory }}</a></li>
+                    <li><a href="{{ url('product/subsubcategory/'.$subsubcategory->id.'/'.$subsubcategory->slug_subsubcategory) }}">{{ $subsubcategory->name_subsubcategory }}</a></li>
                   </ul>
                   @endforeach
                 </div>

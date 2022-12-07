@@ -25,7 +25,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Select brand') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                     <select name="brand_id" class="form-control" style="text-align: center" required="">
+                                     <select name="brand_id" class="form-control" style="text-align: center">
                                          <option value="">{{ __('Select brand') }}</option>
                                          @foreach($brands as $brand)
                                          <option value="{{ $brand->id }}">{{ $brand->name_brand }}</option>
@@ -44,7 +44,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Select category') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                     <select name="category_id" class="form-control" style="text-align: center" required="">
+                                     <select name="category_id" class="form-control" style="text-align: center">
                                          <option value="">{{ __('Select category') }}</option>
                                          @foreach($categories as $category)
                                          <option value="{{ $category->id }}">{{ $category->name_category }}</option>
@@ -63,7 +63,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Select SubCategory') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                     <select name="subcategory_id" class="form-control" style="text-align: center" required="">
+                                     <select name="subcategory_id" class="form-control" style="text-align: center">
                                          <option value="">{{ __('Select SubCategory') }}</option>
                                         
                                      </select>
@@ -82,7 +82,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Select SubSubCategory') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                     <select name="subsubcategory_id" class="form-control" style="text-align: center" required="">
+                                     <select name="subsubcategory_id" class="form-control" style="text-align: center">
                                          <option value="">{{ __('Select SubSubCategory') }}</option>
                                         
                                      </select>
@@ -99,7 +99,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Name product') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <input type="text" name="name_product" class="form-control" style="text-align: center" required=""> 
+                                        <input type="text" name="name_product" class="form-control" style="text-align: center"> 
                                     </div>
                                         @error('name_product')
                                            <span class="text-danger">{{ $message }}</span> 
@@ -113,7 +113,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Product code') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <input type="text" name="code_product" class="form-control" style="text-align: center" required=""> 
+                                        <input type="text" name="code_product" class="form-control" style="text-align: center"> 
                                     </div>
                                         @error('code_product')
                                            <span class="text-danger">{{ $message }}</span> 
@@ -129,7 +129,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Product quantity') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <input type="text" name="quantity_product" class="form-control" style="text-align: center" required=""> 
+                                        <input type="text" name="quantity_product" class="form-control" style="text-align: center"> 
                                     </div>
                                         @error('quantity_product')
                                            <span class="text-danger">{{ $message }}</span> 
@@ -143,7 +143,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Product tags') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <input type="text" name="tags_product" class="form-control" value="Cakes,Muffins,Pancakes" data-role="tagsinput" required=""> 
+                                        <input type="text" name="tags_product" class="form-control" value="Cakes,Muffins,Pancakes" data-role="tagsinput"> 
                                     </div>
                                         @error('tags_product')
                                            <span class="text-danger">{{ $message }}</span> 
@@ -157,7 +157,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Product weight') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <input type="text" name="weight_product" class="form-control" value="1.5 kg, 200 g, 150 dag" data-role="tagsinput" required="">
+                                        <input type="text" name="weight_product" class="form-control" value="1.5 kg, 200 g, 150 dag" data-role="tagsinput">
                                      </div>
                                         @error('weight_product')
                                            <span class="text-danger">{{ $message }}</span> 
@@ -173,7 +173,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Product  selling price') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <input type="text" name="price_selling" class="form-control" style="text-align: center" required=""> 
+                                        <input type="text" name="price_selling" class="form-control" style="text-align: center"> 
                                     </div>
                                         @error('price_selling')
                                            <span class="text-danger">{{ $message }}</span> 
@@ -201,7 +201,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Main thambnail') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <input type="file" name="thambnail_product" class="form-control" onChange="ThamURL(this)" required=""> 
+                                        <input type="file" name="thambnail_product" class="form-control" onChange="ThamURL(this)"> 
                                     </div>
                                         @error('thambnail_product')
                                            <span class="text-danger">{{ $message }}</span> 
@@ -218,7 +218,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Multiple image') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <input type="file" name="multi_image[]" class="form-control" multiple="" id="MultiImage" required=""> 
+                                        <input type="file" name="multi_image[]" class="form-control" multiple="" id="MultiImage"> 
                                     </div>
                                         @error('multi_image')
                                            <span class="text-danger">{{ $message }}</span> 
@@ -233,7 +233,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Description-short') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <textarea name="description_short" id="descshort" class="form-control" required placeholder="{{ __('Text area') }}" required=""></textarea>
+                                        <textarea name="description_short" id="descshort" class="form-control"></textarea>
                                     </div>
                                 </div>
 
@@ -244,7 +244,7 @@
                                 <div class="form-group">
                                     <h5>{{ __('Description-long') }} <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <textarea name="description_long" id="desclong" class="form-control" required placeholder="{{ __('Text area') }}" required=""></textarea>
+                                        <textarea name="description_long" id="desclong" class="form-control"></textarea>
                                     </div>
                                 </div>
 

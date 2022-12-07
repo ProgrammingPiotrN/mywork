@@ -164,6 +164,37 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+
+        'brand_id' => 'brand',
+        'name_brand' => 'name brand',
+        'brand_photos' => 'brand photos',
+
+        'name_category' => 'name category',
+        'category_id' => 'category',
+
+        'subcategory_id'=> 'subcategory',
+        'name_subcategory' => 'name subcategory',
+
+        'subsubcategory_id' => 'subsubcategory',
+        'name_subsubcategory' => 'name subsubcategory',
+
+        'name_product' => 'name product',
+        'code_product' => 'code product',
+        'quantity_product' => 'quantity product',
+        'tags_product' => 'tags product',
+        'weight_product' => 'weight product',
+
+        'price_selling' => 'price selling',
+        'price_discount' => 'price discount',
+
+        'description_short' => 'description short',
+        'description_long' => 'description long',
+
+        'img_slider' => 'img slider',
+        'title' => 'title',
+        'description' => 'description'
+
+    ],
 
 ];

@@ -21,12 +21,10 @@ class SliderController extends Controller
     public function SliderStore(Request $request){
 
         $request->validate([
-
-            'img_slider' => 'required',[
-                'img_slider.required' => 'Please select one image',
-            ]
-
-            ]);
+            'img_slider' => 'required',
+            'title' => 'required',
+            'description' => 'required'
+        ]);
 
             $img = $request->file('img_slider');
             $gen_name = hexdec(uniqid()).'.'.$img->getClientOriginalExtension();

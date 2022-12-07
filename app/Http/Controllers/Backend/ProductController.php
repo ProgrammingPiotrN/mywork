@@ -30,6 +30,21 @@ class ProductController extends Controller
 
     public function ProductStore(Request $request){
 
+        $request->validate([
+            'brand_id' => 'required',
+            'category_id' => 'required',
+            'subcategory_id' => 'required',
+            'subsubcategory_id' => 'required',
+            'name_product' => 'required',
+            'code_product' => 'required',
+            'quantity_product' => 'required',
+            'tags_product' => 'required',
+            'weight_product' => 'required',
+            'price_selling' => 'required',
+            'description_short' => 'required',
+            'description_long' => 'required',
+        ]);
+
         $imageprod = $request->file('thambnail_product');
         $nameprod_generate = hexdec(uniqid()).''.$imageprod->getClientOriginalExtension();
         Image::make($imageprod)->resize(900,1000)->save('upload/product/thamb/'.$nameprod_generate);

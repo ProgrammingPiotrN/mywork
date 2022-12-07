@@ -27,6 +27,7 @@
 
     "Buns":"Buns",
     "Brands":"Brands",
+    "Brand":"Brand",
     "Brand photos":"Brand photos",
     "Brand name":"Brand name",
 
@@ -41,6 +42,7 @@
     "Confirm password":"Confirm password",
     "Category":"Category",
     "Change Image":"Change Image",
+    "Choose weight":"Choose weight",
 
     "DESCRIPTION":"DESCRIPTION",
     "Dashboard":"Dashboard",
@@ -116,9 +118,12 @@
     "Product price discount":"Product price discount",
     "Product Image":"Product Image",
     "pieces":"pieces",
+    "Product price":"Product price",
+
 
     "Register":"Register",
     "REVIEW":"REVIEW",
+    "Related products":"Related products",
 
     "Simple product":"Simple product",
     "Special offer":"Special offer",
@@ -142,6 +147,11 @@
     "Slider image":"Slider image",
     "Slider description":"Slider description",
     "Slider title":"Slider title",
+    "Subcategory product":"Subcategory product",
+    "Sub Subcategory product":"Sub Subcategory product",
+    "Sale":"Sale",
+
+
 
     "Toddays offer":"Toddays offer",
     "Toggle navigation":"oggle navigation",

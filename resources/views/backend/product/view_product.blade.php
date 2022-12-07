@@ -32,7 +32,7 @@
                 <td><img src="{{ asset($item->thambnail_product) }}" style="width: 80px; height: 70px"></td>
                 <td>{{ $item->name_product }}</td>
                 <td>{{ $item->price_selling }} PLN</td>
-                <td>{{ $item->quantity_product }} {{ __('pieces') }}</td>
+                <td>{{ $item->quantity_product }}</td>
                 <td>  
                   @if($item->price_discount == NULL)
                       <span class="badge badge-pill badge-danger">{{ __('No discount') }}</span>

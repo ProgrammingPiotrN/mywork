@@ -26,10 +26,6 @@ class SubcategoryController extends Controller
         $request->validate([
             'category_id' => 'required',
             'name_subcategory' => 'required',
-        ],
-        [
-            'category_id.required' => 'Please select option',
-            'name_subcategory.required' => 'Please enter the name of the subcategory',
         ]);
 
         Subcategory::insert([
@@ -117,10 +113,6 @@ class SubcategoryController extends Controller
             'category_id' => 'required',
             'subcategory_id' => 'required',
             'name_subsubcategory' => 'required',
-        ],
-        [
-            'category_id.required' => 'Please select option',
-            'name_subsubcategory.required' => 'Please enter the name of the subsubcategory',
         ]);
 
         SubSubcategory::insert([

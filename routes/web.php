@@ -199,6 +199,15 @@ Route::prefix('slider')->group(function(){
 // Product tags frontend    
     Route::get('/product/tags/{tag}', [IndexController::class, 'TagsProduct']);    
 
+// Subcategory frontend    
+    Route::get('/product/subcategory/{subc_id}/{slug}', [IndexController::class, 'SubCategoryProduct']);  
+
+// SubSubcategory frontend    
+    Route::get('/product/subsubcategory/{subsubc_id}/{slug}', [IndexController::class, 'SubSubCategoryProduct']);
+
+// Product model frontend    
+    Route::get('/product/view/model/{id}', [IndexController::class, 'ModelProductAjax']);
+
 
 
 

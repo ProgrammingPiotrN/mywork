@@ -24,9 +24,6 @@ class CategoryController extends Controller
         $request->validate([
             'name_category' => 'required'
 
-        ],
-        [
-            'name_category.required' => 'Please enter the name of the category',
         ]);
 
         Category::insert([

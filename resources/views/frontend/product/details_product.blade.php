@@ -15,21 +15,21 @@
 	</div>
 </div>
 <div class="body-content outer-top-xs">
+
 	<div class='container'>
+    
 		<div class='row single-product'>
 			<div class='col-md-3 sidebar'>
 				<div class="sidebar-module-container">
-				<div class="home-banner outer-top-n">
-          </div>		
+          @include('frontend.deals.hot_deals')		
 				</div>
 			</div>
 			<div class='col-md-9'>
             <div class="detail-block">
 				<div class="row  wow fadeInUp">
-                
 					     <div class="col-xs-12 col-sm-6 col-md-5 gallery-holder">
-    <div class="product-item-holder size-big single-product-gallery small-gallery">
 
+    <div class="product-item-holder size-big single-product-gallery small-gallery">
         <div id="owl-single-product">
           @foreach($multiImg as $img)
           <div class="single-product-gallery-item" id="slide{{ $img->id }}">
@@ -39,10 +39,11 @@
           </div>
           @endforeach
         </div>
-
+			
         <div class="single-product-gallery-thumbs gallery-thumbs">
 
             <div id="owl-single-product-thumbnails">
+
               @foreach($multiImg as $img)
               <div class="item">
                     <a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="1" href="#slide{{ $img->id }}">
@@ -53,7 +54,8 @@
             </div>
         </div>
     </div>
-</div>      			
+</div>      
+
 					<div class='col-sm-6 col-md-7 product-info-block'>
 						<div class="product-info">
 							<h1 class="name">{{ $product->name_product }}</h1>
@@ -120,6 +122,21 @@
 									</div>
 								</div>
 							</div>
+
+              <div class="row">
+									
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="info-title control-label">{{ __('Choose weight') }} <span></span></label>
+                    <select class="form-control unicase-form-control selectpicker">
+                      <option>{{ __('Choose weight') }}</option>
+                      @foreach($weight_product as $weight)
+                      <option value="{{ $weight }}">{{ ucwords($weight) }}</option>
+                      @endforeach
+                    </select>
+                  </div>
+                </div>
+              </div>
 
 							<div class="quantity-container info-container">
 								<div class="row">
@@ -284,6 +301,7 @@
 						</div>
 					</div>
 				</div>	
+        @include('frontend.related_products.related_products')
 			</div>
 			<div class="clearfix"></div>
 		</div>
