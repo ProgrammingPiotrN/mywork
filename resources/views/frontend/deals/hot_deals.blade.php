@@ -43,7 +43,7 @@
                 <div class="action">
                   
                   <div class="add-cart-button btn-group">
-                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+                    <button class="btn btn-primary icon" type="button" data-toggle="modal" data-target="#exampleModal" onclick="productView(this.id)" id="{{ $product->id }}">
                       <i class="fa fa-shopping-cart"></i>													
                     </button>
                     <button class="btn btn-primary cart-btn" type="button">{{ __('ADD TO CART') }}</button>
@@ -57,5 +57,7 @@
           @endforeach	        	                        		                      
       </div>
   </div>
+
+
 
   

@@ -14,7 +14,7 @@ use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\SliderController;
 
 use App\Http\Controllers\Frontend\IndexController;
-use App\Http\Controllers\Frontend\TransController;
+use App\Http\Controllers\Frontend\CartController;
 
 
 
@@ -207,6 +207,15 @@ Route::prefix('slider')->group(function(){
 
 // Product model frontend    
     Route::get('/product/view/model/{id}', [IndexController::class, 'ModelProductAjax']);
+
+// Add to cart frontend    
+    Route::post('/cart/data/store/{id}', [CartController::class, 'AddToCartAjax']);
+
+// Small cart frontend    
+    Route::get('/product/small/cart/', [CartController::class, 'AddToSmallCartAjax']);
+
+// Removing the product from the cart frontend    
+    Route::get('/smallcart/product-remove/{rowId}', [CartController::class, 'RemoveProductAjax']);
 
 
 

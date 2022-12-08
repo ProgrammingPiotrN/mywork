@@ -34,6 +34,9 @@
           @include('frontend.category_skip.category_two')
 
           @include('frontend.category_skip.category_three')
+
+          @include('frontend.product_model.product_model')
+
         </div>
       </div>
     </div>     

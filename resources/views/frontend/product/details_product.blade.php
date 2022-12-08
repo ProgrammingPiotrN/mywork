@@ -58,7 +58,7 @@
 
 					<div class='col-sm-6 col-md-7 product-info-block'>
 						<div class="product-info">
-							<h1 class="name">{{ $product->name_product }}</h1>
+							<h1 class="name" id="namep">{{ $product->name_product }}</h1>
 							
 							<div class="rating-reviews m-t-20">
 								<div class="row">
@@ -127,38 +127,32 @@
 									
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <label class="info-title control-label">{{ __('Choose weight') }} <span></span></label>
-                    <select class="form-control unicase-form-control selectpicker">
-                      <option>{{ __('Choose weight') }}</option>
-                      @foreach($weight_product as $weight)
-                      <option value="{{ $weight }}">{{ ucwords($weight) }}</option>
-                      @endforeach
-                    </select>
+					@if($product->weight_product == NULL)
+
+					@else				
+            <label class="info-title control-label">{{ __('Choose weight') }} <span></span></label>
+            <select class="form-control unicase-form-control selectpicker" id="weight">
+              <option>{{ __('Choose weight') }}</option>
+              @foreach($weight_product as $weight)
+              <option value="{{ $weight }}">{{ ucwords($weight) }}</option>
+              @endforeach
+            </select>
+					@endif
                   </div>
                 </div>
               </div>
-
+                  <div class="form-group" style="width: 100px">
+                    <label for="quantity">{{ __('Quantity') }}</label>
+                    <input type="number" class="form-control" id="quantity" value="1" min="1">
+                  </div>
 							<div class="quantity-container info-container">
 								<div class="row">
 									
-									<div class="col-sm-2">
-										<span class="label">{{ __('Quantity') }} :</span>
-									</div>
 									
-									<div class="col-sm-2">
-										<div class="cart-quantity">
-											<div class="quant-input">
-								                <div class="arrows">
-								                  <div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>
-								                  <div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>
-								                </div>
-								                <input type="text" value="1">
-							              </div>
-							            </div>
-									</div>
 
+                  <input type="hidden" id="product_id" value="{{ $product->id }}" min="1">
 									<div class="col-sm-7">
-										<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> {{ __('ADD TO CART') }}</a>
+										<button type="submit" onclick="AddToCart()" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> {{ __('ADD TO CART') }}</button>
 									</div>								
 								</div>
 							</div>				
