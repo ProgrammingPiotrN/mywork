@@ -9,6 +9,12 @@ use App\Models\Product;
 
 use Gloudemans\Shoppingcart\Facades\Cart;
 
+use Auth;
+
+use App\Models\Wishlist;
+
+use Carbon\Carbon;
+
 class CartController extends Controller
 {
     
@@ -72,6 +78,39 @@ class CartController extends Controller
       Cart::remove($rowId);
 
       return response()->json(['success' => 'Product remove from cart / Produkt usunięty z koszyka']);
+
+    }
+
+    public function WishlistAjax(Request $request, $product_id){
+
+      if(Auth::check()){
+
+        $wishlist = Wishlist::where('user_id', Auth::id())->where('product_id', $product_id)->first();
+
+        if(!$wishlist){
+          Wishlist::insert([
+
+            'user_id' => Auth::id(),
+            'product_id' => $product_id,
+            'created_at' => Carbon::now(),
+
+          ]);
+
+          return response()->json(['success' => 'Successfully added on your wishlist / Dodano produkt do listy życzeń']);
+
+        }else{
+
+          return response()->json(['error' => 'This product has already on your wishlist / Ten produkt jest już na Twojej liście życzeń']);
+
+        }
+
+        
+
+      }else{
+
+        return response()->json(['error' => 'At first login a your account / Najpierw zaloguj się na swoje konto']);
+
+      }
 
     }
 

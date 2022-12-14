@@ -16,8 +16,7 @@ use App\Http\Controllers\Backend\SliderController;
 use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Frontend\CartController;
 
-
-
+use App\Http\Controllers\Client\WishlistController;
 
 
 /*
@@ -216,6 +215,9 @@ Route::prefix('slider')->group(function(){
 
 // Removing the product from the cart frontend    
     Route::get('/smallcart/product-remove/{rowId}', [CartController::class, 'RemoveProductAjax']);
+
+// Wishlist frontend    
+    Route::post('/wishlist/{product_id}', [CartController::class, 'WishlistAjax']);
 
 
 
