@@ -6,7 +6,7 @@
           <div class="cnt-account">
             <ul class="list-unstyled">
               <li><a href="#"><i class="icon fa fa-user"></i>{{ __('My Account') }}</a></li>
-              <li><a href="#"><i class="icon fa fa-heart"></i>{{ __('Wishlist') }}</a></li>
+              <li><a href="{{ route('wishlist') }}"><i class="icon fa fa-heart"></i>{{ __('Wishlist') }}</a></li>
               <li><a href="#"><i class="icon fa fa-shopping-cart"></i>{{ __('My cart') }}</a></li>
               <li><a href="#"><i class="icon fa fa-check"></i>{{ __('Checkout') }}</a></li>
               

@@ -218,6 +218,25 @@ Route::prefix('slider')->group(function(){
 
 // Wishlist frontend    
     Route::post('/wishlist/{product_id}', [CartController::class, 'WishlistAjax']);
+    
+
+    
+  
+    // Wishlist frontend site   
+        Route::get('/wishlist', [WishlistController::class, 'WishlistSite'])->name('wishlist');
+
+        Route::get('/wishlist/my-wishlist', [WishlistController::class, 'WishlistAjax']);
+
+        Route::get('/wishlist/remove/{id}', [WishlistController::class, 'WishlistRemoveAjax']);
+
+   
+  
+    
+    
+
+
+
+
 
 
 
