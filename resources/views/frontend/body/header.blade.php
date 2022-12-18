@@ -5,9 +5,8 @@
         <div class="header-top-inner">
           <div class="cnt-account">
             <ul class="list-unstyled">
-              <li><a href="#"><i class="icon fa fa-user"></i>{{ __('My Account') }}</a></li>
               <li><a href="{{ route('wishlist') }}"><i class="icon fa fa-heart"></i>{{ __('Wishlist') }}</a></li>
-              <li><a href="#"><i class="icon fa fa-shopping-cart"></i>{{ __('My cart') }}</a></li>
+              <li><a href="{{ route('cart-page') }}"><i class="icon fa fa-shopping-cart"></i>{{ __('My cart') }}</a></li>
               <li><a href="#"><i class="icon fa fa-check"></i>{{ __('Checkout') }}</a></li>
               
               <li>
@@ -21,16 +20,6 @@
             </ul>
           </div>
           
-          <div class="cnt-block">
-            <ul class="list-unstyled list-inline">
-              <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">{{ __('Language') }}</span><b class="caret"></b></a>
-                <ul class="dropdown-menu" style="text-align: left">
-                  <li><a href="/lang/en"><img src="{{ asset('styles_backend/images/flags/wb.jpg') }}" style="width: 25px"></a></li>
-                  <li><a href="/lang/pl"><img src="{{ asset('styles_backend/images/flags/poland.png') }}" style="width: 25px"></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
           <div class="clearfix"></div>
         </div>
       </div>
@@ -38,6 +27,16 @@
     <div class="main-header">
       <div class="container">
         <div class="row">
+          <div class="cnt-block">
+            <ul class="list-unstyled list-inline">
+              <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">{{ __('Language') }}</span><b class="caret"></b></a>
+                <ul class="dropdown-menu" style="text-align: left">
+                  <li><a href="/lang/en"><img src="{{ asset('styles_backend/images/flags/wb.jpg') }}" style="width: 25px"> {{ __('English') }}</a></li>
+                  <li><a href="/lang/pl"><img src="{{ asset('styles_backend/images/flags/poland.png') }}" style="width: 25px"> {{ __('Polish') }}</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
           <div class="col-xs-12 col-sm-12 col-md-3 logo-holder"> 
             <div class="logo"> <a href="{{ url('/') }}"> <img src="{{ asset('styles_backend/images/logo/logo.svg') }}" style="width: 200px; height: 200px;" alt="logo"> </a> </div>
           </div>

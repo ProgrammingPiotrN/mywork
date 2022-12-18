@@ -2,7 +2,7 @@
 @section('content')
 
 @section('title')
-    {{ __('Wishlist') }}
+    {{ __('My cart') }}
 @endsection
 
 <div class="breadcrumb">
@@ -10,7 +10,7 @@
 		<div class="breadcrumb-inner">
 			<ul class="list-inline list-unstyled">
 				<li><a href="{{ '/' }}">{{ __('Home') }}</a></li><br>
-				<li class='active'>{{ __('Wishlist') }}</li>
+				<li class='active'>{{ __('My cart') }}</li>
 			</ul>
 		</div>
 	</div>
@@ -25,10 +25,10 @@
 		<table class="table">
 			<thead>
 				<tr>
-					<th colspan="4" class="heading-title">{{ __('My Wishlist') }}</th>
+					<th colspan="4" class="heading-title">{{ __('My cart') }}</th>
 				</tr>
 			</thead>
-			<tbody id="Wishlist">
+			<tbody id="cartPage">
 				
 			</tbody>
 		</table>

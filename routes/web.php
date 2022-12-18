@@ -17,6 +17,7 @@ use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Frontend\CartController;
 
 use App\Http\Controllers\Client\WishlistController;
+use App\Http\Controllers\Client\CartPageController;
 
 
 /*
@@ -218,16 +219,32 @@ Route::prefix('slider')->group(function(){
 
 // Wishlist frontend    
     Route::post('/wishlist/{product_id}', [CartController::class, 'WishlistAjax']);
-    
 
-    
-  
-    // Wishlist frontend site   
+
+// Wishlist and Cart in header    
+    Route::group(['prefix'=>'user','middleware' => ['user','auth'],'namespace'=>'User'],function(){
+
         Route::get('/wishlist', [WishlistController::class, 'WishlistSite'])->name('wishlist');
 
         Route::get('/wishlist/my-wishlist', [WishlistController::class, 'WishlistAjax']);
 
         Route::get('/wishlist/remove/{id}', [WishlistController::class, 'WishlistRemoveAjax']);
+        
+        });
+    
+        Route::get('/cart', [CartPageController::class, 'CartPageView'])->name('cart-page');
+
+        Route::get('/user/product/cart', [CartPageController::class, 'CartPageAjax']);
+
+        Route::get('/user/cart/remove/{rowId}', [CartPageController::class, 'CartRemoveAjax']);
+
+        Route::get('/cart/increment/{rowId}', [CartPageController::class, 'CartInc']);
+
+        Route::get('/cart/decrement/{rowId}', [CartPageController::class, 'CartDec']);
+
+
+  
+    
 
    
   
