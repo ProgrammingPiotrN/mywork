@@ -194,7 +194,11 @@ return [
 
         'img_slider' => 'zdjęcie suwaka',
         'title' => 'tytuł',
-        'description' => 'opis'
+        'description' => 'opis',
+
+        'name_coupon' => 'nazwa kuponu',
+        'discount_coupon' => 'rabat',
+        'validity_coupon' => 'ważność kuponu'
 
     ],
 

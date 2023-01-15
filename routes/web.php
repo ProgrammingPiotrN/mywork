@@ -12,6 +12,7 @@ use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\SubcategoryController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\SliderController;
+use App\Http\Controllers\Backend\CouponController;
 
 use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Frontend\CartController;
@@ -185,6 +186,21 @@ Route::prefix('slider')->group(function(){
     Route::get('/active/{id}', [SliderController::class, 'SliderActive'])->name('slider.active');
         
         });
+
+
+Route::prefix('coupons')->group(function(){
+
+    Route::get('/view', [CouponController::class, 'Coupon'])->name('coupon.view');
+      
+    Route::post('/store', [CouponController::class, 'StoreCoupon'])->name('coupon.store');
+
+    Route::get('/edit/{id}', [CouponController::class, 'EditCoupon'])->name('coupon.edit');
+
+    Route::post('/update/{id}', [CouponController::class, 'UpdateCoupon'])->name('coupon.update');
+
+    Route::get('/delete/{id}', [CouponController::class, 'DeleteCoupon'])->name('coupon.delete');
+              
+        });        
 
 //Language
 

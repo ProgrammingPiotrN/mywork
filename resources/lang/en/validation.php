@@ -193,7 +193,11 @@ return [
 
         'img_slider' => 'img slider',
         'title' => 'title',
-        'description' => 'description'
+        'description' => 'description',
+
+        'name_coupon' => 'name coupon',
+        'discount_coupon' => 'discount coupon',
+        'validity_coupon' => 'validity coupon'
 
     ],
 

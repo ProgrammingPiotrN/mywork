@@ -73,6 +73,18 @@ $route = Route::current()->getName();
             <li class="{{ ($route == 'slider.view')? 'active':'' }}"><a href="{{ route('slider.view') }}"><i class="ti-more"></i>{{ __('Add slider') }}</a></li>
           </ul>
         </li> 
+        <li class="treeview {{ ($prefix == '/coupons')?'active':'' }}">
+          <a href="#">
+            <i data-feather="package"></i>
+            <span>{{ __('Coupons') }}</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="{{ ($route == 'coupon.view')? 'active':'' }}"><a href="{{ route('coupon.view') }}"><i class="ti-more"></i>{{ __('Add coupon') }}</a></li>
+          </ul>
+        </li> 
 	<div class="sidebar-footer">
 		<a href="#" class="link" data-toggle="tooltip" title="" data-original-title="Settings" aria-describedby="tooltip92529"><i class="ti-settings"></i></a>
 		<a href="#" class="link" data-toggle="tooltip" title="" data-original-title="Email"><i class="ti-email"></i></a>

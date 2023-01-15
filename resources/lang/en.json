@@ -24,6 +24,8 @@
     "Add Product":"Add Product",
     "Active":"Active",
     "add new slider":"add new slider",
+    "Add coupon":"Add coupon",
+    "add new coupon":"add new coupon",
 
     "Buns":"Buns",
     "Brands":"Brands",
@@ -43,6 +45,10 @@
     "Category":"Category",
     "Change Image":"Change Image",
     "Choose weight":"Choose weight",
+    "Coupons":"Coupons",
+    "Coupon list":"Coupon list",
+    "Coupon name":"Coupon name",
+    "Coupon discount":"Coupon discount",
 
     "DESCRIPTION":"DESCRIPTION",
     "Dashboard":"Dashboard",
@@ -63,6 +69,7 @@
     "Edit SubSubCategory":"Edit SubSubCategory",
     "Edit product":"Edit product",
     "Edit slider":"Edit slider",
+    "Edit coupon":"Edit coupon",
 
     "Featured products":"Featured products",
     "Featured":"Featured",
@@ -74,6 +81,7 @@
 
     "In Stock":"In Stock",
     "InActive":"InActive",
+    "Invalid":"Invalid",
 
     "Language":"Language",
     "Login":"Login",
@@ -152,8 +160,6 @@
     "Sub Subcategory product":"Sub Subcategory product",
     "Sale":"Sale",
 
-
-
     "Toddays offer":"Toddays offer",
     "Toggle navigation":"oggle navigation",
     "TAGS":"TAGS",
@@ -171,6 +177,9 @@
     "Quality":"Quality",
 
     "Value":"Value",
+    "Validity":"Validity",
+    "Validity Date":"Validity Date",
+    "Valid":"Valid",
 
     "Wishlist":"Wishlist",
     "WELCOME":"Welcome",

@@ -24,6 +24,8 @@
     "Add Product":"Dodaj produkt",
     "Active":"Aktywny",
     "add new slider":" Dodaj nowy suwak",
+    "Add coupon":"Dodaj kupon",
+    "add new coupon":"Dodaj nowy kupon",
 
     "Buns":"Drożdżówki",
     "Brands":"Marki",
@@ -43,6 +45,10 @@
     "Category":"Kategoria",
     "Change Image":"Zmień obraz",
     "Choose weight":"Wybierz wagę",
+    "Coupons":"Kupony",
+    "Coupon list":"Lista kuponów",
+    "Coupon name":"Nazwa kuponu",
+    "Coupon discount":"Rabat",
 
     "DESCRIPTION":"OPIS",
     "Dashboard":"Panel główny",
@@ -63,6 +69,7 @@
     "Edit SubSubCategory":"Edycja podkategorii podrzędnej",
     "Edit product":"Edytuj produkt",
     "Edit slider":"Edytuj suwak",
+    "Edit coupon":"Edycja kuponu",
 
     "Featured products":"Wyróżnione produkty",
     "Featured":"Wyróżnione",
@@ -74,6 +81,7 @@
 
     "In Stock":"w magazynie",
     "InActive":"Nieaktywny",
+    "Invalid":"Nieważne",
 
     "Language":"język",
     "Login":"Logowanie",
@@ -168,6 +176,9 @@
     "Quality":"Jakość",
 
     "Value":"Wartość",
+    "Validity":"Ważność",
+    "Validity Date":"Data ważności",
+    "Valid":"Ważne",
 
     "Wishlist":"Lista życzeń",
     "WELCOME":"Witaj",
