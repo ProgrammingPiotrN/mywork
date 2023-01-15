@@ -30,8 +30,7 @@
 							<p class="text-white-50" style="color: blue">Sign in to start your session</p>							
 						</div>
 						<div class="p-30 rounded30 box-shadowed b-2 b-dashed">
-
-							<form method="POST" action="{{ isset($guard) ? url($guard.'/login') : route('login') }}">
+						<form method="POST" action="{{ isset($guard) ? url($guard.'/login') : route('login') }}">
 								@csrf
 								<div class="form-group">
 									<div class="input-group mb-3">
@@ -49,6 +48,7 @@
 										<input type="password" id="password" name="password" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Password">
 									</div>
 								</div>
+
 								  <div class="row">
 									<div class="col-6">
 									  <div class="checkbox text-white">

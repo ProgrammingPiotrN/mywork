@@ -62,7 +62,7 @@ class AdminController extends Controller
      */
     public function store(LoginRequest $request)
     {
-        return $this->loginPipeline($request)->then(function ($request) {
+            return $this->loginPipeline($request)->then(function ($request) {
             return app(LoginResponse::class);
         });
     }
@@ -75,24 +75,26 @@ class AdminController extends Controller
      */
     protected function loginPipeline(LoginRequest $request)
     {
+
         if (Fortify::$authenticateThroughCallback) {
             return (new Pipeline(app()))->send($request)->through(array_filter(
                 call_user_func(Fortify::$authenticateThroughCallback, $request)
             ));
         }
-
+        
         if (is_array(config('fortify.pipelines.login'))) {
             return (new Pipeline(app()))->send($request)->through(array_filter(
                 config('fortify.pipelines.login')
             ));
         }
-
+        
         return (new Pipeline(app()))->send($request)->through(array_filter([
             config('fortify.limiters.login') ? null : EnsureLoginIsNotThrottled::class,
             Features::enabled(Features::twoFactorAuthentication()) ? RedirectIfTwoFactorAuthenticatable::class : null,
             AttemptToAuthenticate::class,
             PrepareAuthenticatedSession::class,
         ]));
+
     }
 
     /**

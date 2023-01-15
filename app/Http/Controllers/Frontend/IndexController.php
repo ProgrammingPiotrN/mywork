@@ -96,13 +96,13 @@ class IndexController extends Controller
     }
 
     public function UserLogin(array $input)
-    {
+    {dd($input);
         Validator::make($input, [
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => $this->passwordRules(),
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['accepted', 'required'] : '',
         ])->validate();
-
+        
     }
 
     public function DetailsProduct($id,$slug){
