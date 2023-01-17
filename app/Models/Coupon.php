@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Coupon extends Model
 {
@@ -15,4 +16,11 @@ class Coupon extends Model
         'validity_coupon',
         'status',
     ];
+
+
+    public function getIsValidAttribute(): bool
+    {
+        return Carbon::parse($this->getAttribute('validity_coupon'))->timestamp > now()->timestamp;
+    }
+    
 }

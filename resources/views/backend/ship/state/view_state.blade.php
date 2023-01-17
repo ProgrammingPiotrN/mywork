@@ -27,7 +27,9 @@
             @foreach($state as $item)
             
             <tr>
-              <td>{{ $item['area']['area_name'] }}</td> 
+              {{-- <td>{{ $item['area']['area_name'] }}</td>  --}}
+              <td>{{ $item->area->area_name }}</td> 
+
               <td>{{ $item['district']['district_name'] }}</td>   
               <td>{{ $item->state_name }}</td>             
               <td width="25%">
