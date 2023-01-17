@@ -28,6 +28,9 @@
     "add new coupon":"dodaj nowy kupon",
     "Add shipping":"Dodaj wysyłkę",
     "add new shipping":"dodaj nową wysyłkę",
+    "Add district":"Dodaj dzielnicę",
+    "Add":"Dodaj",
+    "Add state":"Dodaj stan",
 
     "Buns":"Drożdżówki",
     "Brands":"Marki",
@@ -59,6 +62,9 @@
     "Description-long":"Długi opis",
     "Details":"Detale",
     "Description":"Opis",
+    "District list":"Lista dzielnic",
+    "District name":"Nazwa dzielnicy",
+    "District select":"Wybór dzielnicy",
 
     "English":"angielski",
     "Email":"Email",
@@ -72,6 +78,9 @@
     "Edit product":"Edytuj produkt",
     "Edit slider":"Edytuj suwak",
     "Edit coupon":"Edycja kuponu",
+    "Edit shipping":"Edytuj wysyłkę",
+    "Edit district":"Edytuj dzielnicę",
+    "Edit state":"Edytuj stan",
 
     "Featured products":"Wyróżnione produkty",
     "Featured":"Wyróżnione",
@@ -164,6 +173,9 @@
     "Shipping area":"Miejsce wysyłki",
     "Shipping list":"Lista wysyłkowa",
     "Shipping areas name":"Nazwa przesyłki",
+    "Select shipping area":"Wybierz rodzaj przesyłki",
+    "State list":"Lista stanów",
+    "State name":"Nazwa stanu",
 
     "Toddays offer":"Dzisiejsza oferta",
     "Toggle navigation":"Przełącz nawigację",

@@ -27,8 +27,8 @@
             <tr>
               <td>{{ $item->area_name }}</td>               
               <td width="25%">
-                <a href="{{ route('coupon.edit', $item->id) }}" class="btn btn-info">{{ __('Edit') }}</a> 
-                <a href="{{ route('coupon.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">{{ __('Delete') }}</a>
+                <a href="{{ route('area.edit', $item->id) }}" class="btn btn-info">{{ __('Edit') }}</a> 
+                <a href="{{ route('area.delete', $item->id) }}" class="btn btn-danger" data-id="{{ $item->id }}" id="delete">{{ __('Delete') }}</a>
               </td>
             </tr>
             @endforeach

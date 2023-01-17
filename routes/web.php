@@ -214,8 +214,30 @@ Route::prefix('shipping')->group(function(){
     Route::post('/areasshipping/update/{id}', [ShippingAreaController::class, 'UpdateArea'])->name('area.update');
         
     Route::get('/areasshipping/delete/{id}', [ShippingAreaController::class, 'DeleteArea'])->name('area.delete');
+
+
+    Route::get('/areasdistrict/view', [ShippingAreaController::class, 'ViewDistrict'])->name('district.view');
+
+    Route::post('/areasdareasdistrictivision/store', [ShippingAreaController::class, 'StoreDistrict'])->name('district.store');
+
+    Route::get('/areasdistrict/edit/{id}', [ShippingAreaController::class, 'EditDistrict'])->name('district.edit');
+
+    Route::post('/areasdistrict/update/{id}', [ShippingAreaController::class, 'UpdateDistrict'])->name('district.update');
+
+    Route::get('/areasdistrict/delete/{id}', [ShippingAreaController::class, 'DeleteDistrict'])->name('district.delete');
+
+
+    Route::get('/state/view', [ShippingAreaController::class, 'ViewState'])->name('state.view');
+
+    Route::post('/state/store', [ShippingAreaController::class, 'StoreState'])->name('state.store');
+
+    Route::get('/state/edit/{id}', [ShippingAreaController::class, 'EditState'])->name('state.edit');
+
+    Route::post('/state/update/{id}', [ShippingAreaController::class, 'UpdateState'])->name('state.update');
+
+    Route::get('/state/delete/{id}', [ShippingAreaController::class, 'DeleteState'])->name('state.delete');
                       
-                });         
+        });         
 
 //Language
 

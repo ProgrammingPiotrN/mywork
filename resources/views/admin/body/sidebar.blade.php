@@ -96,6 +96,12 @@ $route = Route::current()->getName();
           <ul class="treeview-menu">
             <li class="{{ ($route == 'area.view')? 'active':'' }}"><a href="{{ route('area.view') }}"><i class="ti-more"></i>{{ __('Add shipping') }}</a></li>
           </ul>
+          <ul class="treeview-menu">
+            <li class="{{ ($route == 'district.view')? 'active':'' }}"><a href="{{ route('district.view') }}"><i class="ti-more"></i>{{ __('Add district') }}</a></li>
+          </ul>
+          <ul class="treeview-menu">
+            <li class="{{ ($route == 'state.view')? 'active':'' }}"><a href="{{ route('state.view') }}"><i class="ti-more"></i>{{ __('Add state') }}</a></li>
+          </ul>
         </li> 
 	<div class="sidebar-footer">
 		<a href="#" class="link" data-toggle="tooltip" title="" data-original-title="Settings" aria-describedby="tooltip92529"><i class="ti-settings"></i></a>

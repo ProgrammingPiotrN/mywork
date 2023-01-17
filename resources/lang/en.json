@@ -28,6 +28,9 @@
     "add new coupon":"add new coupon",
     "Add shipping":"Add shipping",
     "add new shipping":"add new shipping",
+    "Add district":"Add district",
+    "Add":"Add",
+    "Add state":"Add state",
 
     "Buns":"Buns",
     "Brands":"Brands",
@@ -59,6 +62,9 @@
     "Description-long":"Description-long",
     "Details":"Details",
     "Description":"Description",
+    "District list":"District list",
+    "District name":"District name",
+    "District select":"District select",
 
     "English":"english",
     "Email":"Email",
@@ -72,6 +78,9 @@
     "Edit product":"Edit product",
     "Edit slider":"Edit slider",
     "Edit coupon":"Edit coupon",
+    "Edit shipping":"Edit shipping",
+    "Edit district":"Edit district",
+    "Edit state":"Edit state",
 
     "Featured products":"Featured products",
     "Featured":"Featured",
@@ -164,6 +173,9 @@
     "Shipping area":"Shipping area",
     "Shipping list":"Shipping list",
     "Shipping areas name":"Shipping areas name",
+    "Select shipping area":"Select shipping area",
+    "State list":"State list",
+    "State name":"State name",
 
     "Toddays offer":"Toddays offer",
     "Toggle navigation":"oggle navigation",
