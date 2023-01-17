@@ -13,6 +13,7 @@ use App\Http\Controllers\Backend\SubcategoryController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\SliderController;
 use App\Http\Controllers\Backend\CouponController;
+use App\Http\Controllers\Backend\ShippingAreaController;
 
 use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Frontend\CartController;
@@ -200,7 +201,21 @@ Route::prefix('coupons')->group(function(){
 
     Route::get('/delete/{id}', [CouponController::class, 'DeleteCoupon'])->name('coupon.delete');
               
-        });        
+        });   
+        
+Route::prefix('shipping')->group(function(){
+
+    Route::get('/areasshipping/view', [ShippingAreaController::class, 'ViewArea'])->name('area.view');
+              
+    Route::post('/areasshipping/store', [ShippingAreaController::class, 'StoreArea'])->name('area.store');
+        
+    Route::get('/areasshipping/edit/{id}', [ShippingAreaController::class, 'EditArea'])->name('area.edit');
+        
+    Route::post('/areasshipping/update/{id}', [ShippingAreaController::class, 'UpdateArea'])->name('area.update');
+        
+    Route::get('/areasshipping/delete/{id}', [ShippingAreaController::class, 'DeleteArea'])->name('area.delete');
+                      
+                });         
 
 //Language
 

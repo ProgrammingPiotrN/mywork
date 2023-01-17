@@ -26,6 +26,8 @@
     "add new slider":"add new slider",
     "Add coupon":"Add coupon",
     "add new coupon":"add new coupon",
+    "Add shipping":"Add shipping",
+    "add new shipping":"add new shipping",
 
     "Buns":"Buns",
     "Brands":"Brands",
@@ -159,6 +161,9 @@
     "Subcategory product":"Subcategory product",
     "Sub Subcategory product":"Sub Subcategory product",
     "Sale":"Sale",
+    "Shipping area":"Shipping area",
+    "Shipping list":"Shipping list",
+    "Shipping areas name":"Shipping areas name",
 
     "Toddays offer":"Toddays offer",
     "Toggle navigation":"oggle navigation",

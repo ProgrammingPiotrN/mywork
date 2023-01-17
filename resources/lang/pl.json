@@ -23,9 +23,11 @@
     "add new SubSubCategory":"Dodaj nową podkategorię podrzędną",
     "Add Product":"Dodaj produkt",
     "Active":"Aktywny",
-    "add new slider":" Dodaj nowy suwak",
+    "add new slider":" dodaj nowy suwak",
     "Add coupon":"Dodaj kupon",
-    "add new coupon":"Dodaj nowy kupon",
+    "add new coupon":"dodaj nowy kupon",
+    "Add shipping":"Dodaj wysyłkę",
+    "add new shipping":"dodaj nową wysyłkę",
 
     "Buns":"Drożdżówki",
     "Brands":"Marki",
@@ -159,6 +161,9 @@
     "Subcategory product":"Podkategoria produktów",
     "Sub Subcategory product":"Podkategoria podrzędna produktów",
     "Sale":"Wyprzedaż",
+    "Shipping area":"Miejsce wysyłki",
+    "Shipping list":"Lista wysyłkowa",
+    "Shipping areas name":"Nazwa przesyłki",
 
     "Toddays offer":"Dzisiejsza oferta",
     "Toggle navigation":"Przełącz nawigację",
