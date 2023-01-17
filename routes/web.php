@@ -296,6 +296,14 @@ Route::prefix('shipping')->group(function(){
         Route::get('/cart/decrement/{rowId}', [CartPageController::class, 'CartDec']);
 
 
+
+        Route::post('/apply/coupon', [CartController::class, 'ApplyCoupon']);
+
+        Route::get('/calculation/coupon', [CartController::class, 'CalculationCoupon']);
+
+
+
+
   
     
 

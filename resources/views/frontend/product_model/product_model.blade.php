@@ -344,11 +344,11 @@
           <td class="col-md-5">
             <td class="col-md-5">
               ${value.qty > 1
-            ? `<button type="submit" class="btn btn-danger btn-sm" id="${value.rowId}" onclick="cartDec(this.id)" >-</button> `
+            ? `<button type="submit" class="btn btn-danger btn-sm" id="${value.rowId}" onclick="cartDec(this.id)" style="padding: 15px 15px; margin: 10px;">-</button> `
             : `<button type="submit" class="btn btn-danger btn-sm" disabled >-</button> `
             }            
-            <input type="text" value="${value.qty}" min="1" max="100" disabled="" style="height:30px; width:35px;" ><br>     
-            <button type="submit" class="btn btn-success btn-sm" id="${value.rowId}" onclick="cartInc(this.id)" >+</button>    
+            <input type="text" value="${value.qty}" min="1" max="100" disabled="" style="height:30px; width:35px; margin: 10px" ><br>     
+            <button type="submit" class="btn btn-success btn-sm" id="${value.rowId}" onclick="cartInc(this.id)" style="padding: 15px 15px; margin: 10px;">+</button>    
             </td>					
           </td>
           <td class="col-md-2">
@@ -424,4 +424,18 @@
     }
 
   </script>
+
+<script type="text/javascript">
+  function applyCoupon(){
+    var coupon_name = $('#name_coupon').val();
+    $.ajax({
+        type: 'POST',
+        dataType: 'json',
+        data: {coupon_name:coupon_name},
+        url: "{{ url('/apply/coupon') }}",
+        success:function(data){
+        }
+    })
+  }  
+</script>
 

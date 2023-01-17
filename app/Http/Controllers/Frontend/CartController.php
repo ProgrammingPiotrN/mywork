@@ -12,6 +12,7 @@ use Gloudemans\Shoppingcart\Facades\Cart;
 use Auth;
 
 use App\Models\Wishlist;
+use App\Models\Coupon;
 
 use Carbon\Carbon;
 
@@ -111,6 +112,10 @@ class CartController extends Controller
         return response()->json(['error' => 'At first login a your account / Najpierw zaloguj się na swoje konto']);
 
       }
+
+    }
+
+    public function ApplyCoupon(Request $request){
 
     }
 
