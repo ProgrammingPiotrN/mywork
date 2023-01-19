@@ -303,6 +303,9 @@ Route::prefix('shipping')->group(function(){
 
         Route::get('/remove/coupon', [CartController::class, 'RemoveCoupon']);
 
+        Route::get('/checkout', [CartController::class, 'CreateCheckout'])->name('checkout');
+
+
 
 
 

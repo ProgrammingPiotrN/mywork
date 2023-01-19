@@ -32,12 +32,14 @@
     "Add":"Add",
     "Add state":"Add state",
     "APPLY COUPON":"APPLY COUPON",
+    "Already registered":"Already registered",
 
     "Buns":"Buns",
     "Brands":"Brands",
     "Brand":"Brand",
     "Brand photos":"Brand photos",
     "Brand name":"Brand name",
+    "Billing information":"Billing information",
 
     "Checkout":"Checkout",
     "Categories":"Categories",
@@ -55,6 +57,9 @@
     "Coupon list":"Coupon list",
     "Coupon name":"Coupon name",
     "Coupon discount":"Coupon discount",
+    "Checkout method":"Checkout method",
+    "Checkout as guest":"Checkout as guest",
+    "Continue":"Continue",
 
     "DESCRIPTION":"DESCRIPTION",
     "Dashboard":"Dashboard",
@@ -84,12 +89,16 @@
     "Edit district":"Edit district",
     "Edit state":"Edit state",
     "Enter your coupon code if you have one..":"Enter your coupon code if you have one..",
+    "Easy access to your order history and status":"Easy access to your order history and status",
 
     "Featured products":"Featured products",
     "Featured":"Featured",
+    "Fast and easy check out":"Fast and easy check out",
+    "Forgot your Password":"Forgot your Password",
 
     "Grid":"Grid",
     "Grand total":"Grand total",
+    "Guest or Register Login":"Guest or Register Login",
 
     "Home":"Home",
     "Hot deals":"Hot deals",
@@ -97,6 +106,7 @@
     "In Stock":"In Stock",
     "InActive":"InActive",
     "Invalid":"Invalid",
+    "Image":"Image",
 
     "Language":"Language",
     "Login":"Login",
@@ -144,11 +154,15 @@
     "pieces":"pieces",
     "Product price":"Product price",
     "PROCCED TO CHEKOUT":"PROCCED TO CHEKOUT",
+    "Please log in below":"Please log in below",
+    "Password":"Password",
 
 
     "Register":"Register",
     "REVIEW":"REVIEW",
     "Related products":"Related products",
+    "Register with us for future convenience:":"Register with us for future convenience:",
+    "Register and save time":"Register and save time",
 
     "Simple product":"Simple product",
     "Special offer":"Special offer",
@@ -206,7 +220,9 @@
     "Wishlist":"Wishlist",
     "WELCOME":"Welcome",
     "Write your own review":"Write your own review",
+    "Weight":"Weight",
 
     "Your Name":"Your Name",
-    "You Coupon":"You Coupon"
+    "You Coupon":"You Coupon",
+    "Your checkout progress":"Your checkout progress"
 }

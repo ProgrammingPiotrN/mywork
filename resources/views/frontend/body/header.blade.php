@@ -7,7 +7,7 @@
             <ul class="list-unstyled">
               <li><a href="{{ route('wishlist') }}"><i class="icon fa fa-heart"></i>{{ __('Wishlist') }}</a></li>
               <li><a href="{{ route('cart-page') }}"><i class="icon fa fa-shopping-cart"></i>{{ __('My cart') }}</a></li>
-              <li><a href="#"><i class="icon fa fa-check"></i>{{ __('Checkout') }}</a></li>
+              <li><a href="{{ route('checkout') }}"><i class="icon fa fa-check"></i>{{ __('Checkout') }}</a></li>
               
               <li>
               @auth

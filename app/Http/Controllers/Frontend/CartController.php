@@ -23,6 +23,10 @@ class CartController extends Controller
     
     public function AddToCartAjax(Request $request, $id){
 
+      if (Session::has('coupon')) {
+        Session::forget('coupon');
+      }
+
         $product = Product::findOrFail($id);
 
         if($product->price_discount == NULL){
@@ -159,8 +163,47 @@ class CartController extends Controller
     }
 
     public function RemoveCoupon(){
+
       Session::forget('coupon');
       return response()->json(['success' => 'Coupon remove successfully / Usunięto kupon']);
+
+    }
+
+    public function CreateCheckout(){
+
+      if (Auth::check()) {
+          if (Cart::total() > 0) {
+
+      $cart = Cart::content();
+      $qtyCart = Cart::count();
+      $totalCart = Cart::total();
+
+
+      return view('frontend.checkout.view_checkout',compact('cart','qtyCart','totalCart'));
+
+          }else{
+
+          $notification = array(
+          'message' => 'Shopping at list one product / Na liście może znajdować się tylko jeden produkt',
+          'alert-type' => 'error'
+      );
+
+      return redirect()->to('/')->with($notification);
+
+          }
+
+
+      }else{
+
+           $notification = array(
+          'message' => 'You need to login first / Najpierw musisz się zalogować',
+          'alert-type' => 'error'
+      );
+
+      return redirect()->route('login')->with($notification);
+
+      }
+
   }
 
 }

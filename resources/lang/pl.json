@@ -32,12 +32,14 @@
     "Add":"Dodaj",
     "Add state":"Dodaj stan",
     "APPLY COUPON":"Dodaj kupon",
+    "Already registered":"Czy jesteś zatejestrowany",
 
     "Buns":"Drożdżówki",
     "Brands":"Marki",
     "Brand":"Marka",
     "Brand photos":"Zdjęcie marki",
     "Brand name":"Nazwa marki",
+    "Billing information":"Informacje rozliczeniowe",
 
     "Checkout":"Sprawdź status",
     "Categories":"Kategorie",
@@ -55,6 +57,9 @@
     "Coupon list":"Lista kuponów",
     "Coupon name":"Nazwa kuponu",
     "Coupon discount":"Rabat",
+    "Checkout method":"Metoda płatności",
+    "Checkout as guest":"Zamów jako gość",
+    "Continue":"Kontynuuj",
 
     "DESCRIPTION":"OPIS",
     "Dashboard":"Panel główny",
@@ -84,12 +89,16 @@
     "Edit district":"Edytuj dzielnicę",
     "Edit state":"Edytuj stan",
     "Enter your coupon code if you have one..":"Jeśli posiadasz kupon rabatowy wpisz go",
+    "Easy access to your order history and status":"Łatwy dostęp do historii i statusu zamówień",
 
     "Featured products":"Wyróżnione produkty",
     "Featured":"Wyróżnione",
+    "Fast and easy check out":"Szybkie i łatwe sprawdzenie",
+    "Forgot your Password":"Zapomniałeś hasła",
 
     "Grid":"Kratka",
     "Grand total":"Łączna suma",
+    "Guest or Register Login":"Gość lub zarejestruj się / zaloguj się",
 
     "Home":"Strona główna",
     "Hot deals":"Gorące okazje",
@@ -97,6 +106,7 @@
     "In Stock":"w magazynie",
     "InActive":"Nieaktywny",
     "Invalid":"Nieważne",
+    "Image":"Zdjęcie",
 
     "Language":"język",
     "Login":"Logowanie",
@@ -144,10 +154,14 @@
     "pieces":"sztuk",
     "Product price":"Cena produktu",
     "PROCCED TO CHEKOUT":"Przejdź do kasy",
+    "Please log in below":"Zaloguj się poniżej",
+    "Password":"Hasło",
 
     "Register":"Rejestracja",
     "REVIEW":"RECENZJA",
     "Related products":"Produkty powiązane",
+    "Register with us for future convenience:":"Zarejestruj się u nas, aby uzyskać zgodę:",
+    "Register and save time":"Zarejestruj się i zaoszczędź czas",
 
     "Simple product":"Jeden produkt",
     "Special offer":"Specjalna oferta",
@@ -205,7 +219,9 @@
     "Wishlist":"Lista życzeń",
     "WELCOME":"Witaj",
     "Write your own review":"Napisz swoją własną recenzję",
+    "Weight":"Waga",
 
     "Your Name":"Twoje imię",
-    "You Coupon":"Twój kupon"
+    "You Coupon":"Twój kupon",
+    "Your checkout progress":"Twój postęp realizacji transakcji"
 }

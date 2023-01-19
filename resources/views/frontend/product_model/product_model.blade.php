@@ -374,6 +374,10 @@
             success:function(data){
               cart(); 
               miniCart();
+              Calculationcoupon();
+              $('#fieldCoupon').show();
+              $('#name_coupon').val('');
+
             
                 const Toast = Swal.mixin({
                       toast: true,
@@ -407,7 +411,7 @@
             success:function(data){
                 cart();
                 miniCart();
-                Calculationcoupon();
+                Calculationcoupon();              
             }
         });
     }
@@ -419,7 +423,7 @@
             dataType:'json',
             success:function(data){
                 cart();
-                miniCart();
+                miniCart();               
                 Calculationcoupon();
             }
         });
@@ -465,7 +469,7 @@
 
   function Calculationcoupon(){
     $.ajax({
-        type: 'GET',
+        type:'GET',
         url: "{{ url('/calculation/coupon') }}",
         dataType: 'json',
         success:function(data){
