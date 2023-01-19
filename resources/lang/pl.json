@@ -31,6 +31,7 @@
     "Add district":"Dodaj dzielnicę",
     "Add":"Dodaj",
     "Add state":"Dodaj stan",
+    "APPLY COUPON":"Dodaj kupon",
 
     "Buns":"Drożdżówki",
     "Brands":"Marki",
@@ -65,6 +66,7 @@
     "District list":"Lista dzielnic",
     "District name":"Nazwa dzielnicy",
     "District select":"Wybór dzielnicy",
+    "Discount code":"Kod rabatowy",
 
     "English":"angielski",
     "Email":"Email",
@@ -81,11 +83,13 @@
     "Edit shipping":"Edytuj wysyłkę",
     "Edit district":"Edytuj dzielnicę",
     "Edit state":"Edytuj stan",
+    "Enter your coupon code if you have one..":"Jeśli posiadasz kupon rabatowy wpisz go",
 
     "Featured products":"Wyróżnione produkty",
     "Featured":"Wyróżnione",
 
     "Grid":"Kratka",
+    "Grand total":"Łączna suma",
 
     "Home":"Strona główna",
     "Hot deals":"Gorące okazje",
@@ -139,6 +143,7 @@
     "Product Image":"Zdjęcie produktu",
     "pieces":"sztuk",
     "Product price":"Cena produktu",
+    "PROCCED TO CHEKOUT":"Przejdź do kasy",
 
     "Register":"Rejestracja",
     "REVIEW":"RECENZJA",
@@ -201,5 +206,6 @@
     "WELCOME":"Witaj",
     "Write your own review":"Napisz swoją własną recenzję",
 
-    "Your Name":"Twoje imię"
+    "Your Name":"Twoje imię",
+    "You Coupon":"Twój kupon"
 }

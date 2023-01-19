@@ -14,6 +14,8 @@ use Auth;
 use App\Models\Wishlist;
 use App\Models\Coupon;
 
+use Illuminate\Support\Facades\Session;
+
 use Carbon\Carbon;
 
 class CartController extends Controller
@@ -117,6 +119,48 @@ class CartController extends Controller
 
     public function ApplyCoupon(Request $request){
 
+          $coupon = Coupon::where('name_coupon',$request->name_coupon)->where('validity_coupon','>=',Carbon::now()->format('Y-m-d'))->first();
+            if ($coupon) {
+
+                Session::put('coupon',[
+                    'name_coupon' => $coupon->name_coupon,
+                    'discount_coupon' => $coupon->discount_coupon,
+                    'discount_amount' => round(Cart::total() * $coupon->discount_coupon/100), 
+                    'total_amount' => round(Cart::total() - Cart::total() * $coupon->discount_coupon/100) 
+                  ]);
+
+              return response()->json(array(
+  
+                  'success' => 'Coupon applied successfully / Kupon jest poprawny'
+              ));
+  
+          }else{
+              return response()->json(['error' => 'Invalid coupon / Nieważny kupon']);
+          }
+  
+      }
+
+      public function CalculationCoupon(){
+
+        if (Session::has('coupon')) {
+            return response()->json(array(
+                'subtotal' => Cart::total(),
+                'name_coupon' => session()->get('coupon')['name_coupon'],
+                'discount_coupon' => session()->get('coupon')['discount_coupon'],
+                'discount_amount' => session()->get('coupon')['discount_amount'],
+                'total_amount' => session()->get('coupon')['total_amount'],
+            ));
+        }else{
+            return response()->json(array(
+                'total' => Cart::total(),
+            ));
+
+        }
     }
+
+    public function RemoveCoupon(){
+      Session::forget('coupon');
+      return response()->json(['success' => 'Coupon remove successfully / Usunięto kupon']);
+  }
 
 }

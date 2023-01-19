@@ -301,6 +301,9 @@ Route::prefix('shipping')->group(function(){
 
         Route::get('/calculation/coupon', [CartController::class, 'CalculationCoupon']);
 
+        Route::get('/remove/coupon', [CartController::class, 'RemoveCoupon']);
+
+
 
 
 

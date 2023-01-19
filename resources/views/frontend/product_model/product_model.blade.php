@@ -407,6 +407,7 @@
             success:function(data){
                 cart();
                 miniCart();
+                Calculationcoupon();
             }
         });
     }
@@ -419,6 +420,7 @@
             success:function(data){
                 cart();
                 miniCart();
+                Calculationcoupon();
             }
         });
     }
@@ -427,15 +429,122 @@
 
 <script type="text/javascript">
   function applyCoupon(){
-    var coupon_name = $('#name_coupon').val();
+    var name_coupon = $('#name_coupon').val();
     $.ajax({
         type: 'POST',
         dataType: 'json',
-        data: {coupon_name:coupon_name},
+        data: {name_coupon:name_coupon},
         url: "{{ url('/apply/coupon') }}",
         success:function(data){
+          Calculationcoupon();
+          $('#fieldCoupon').hide();
+
+          const Toast = Swal.mixin({
+                      toast: true,
+                      position: 'top-end',
+                      
+                      showConfirmButton: false,
+                      timer: 3000
+                    })
+                if ($.isEmptyObject(data.error)) {
+                    Toast.fire({
+                        type: 'success',
+                        icon: 'success',
+                        title: data.success
+                    })
+                }else{
+                    Toast.fire({
+                        type: 'error',
+                        icon: 'error',
+                        title: data.error
+                    })
+                }
         }
     })
   }  
+
+  function Calculationcoupon(){
+    $.ajax({
+        type: 'GET',
+        url: "{{ url('/calculation/coupon') }}",
+        dataType: 'json',
+        success:function(data){
+          if(data.total){
+            $('#couponCalField').html(`
+            <tr>
+				<th>
+					<div class="cart-sub-total">
+						Sub total / Podsumowanie<span class="inner-left-md">${data.total} PLN</span>
+					</div>
+					<div class="cart-grand-total">
+						Grand total / Cena łączna<span class="inner-left-md">${data.total} PLN</span>
+					</div>
+				</th>
+			</tr>
+            `)
+          }else{
+            $('#couponCalField').html(`
+            <tr>
+				<th>
+					<div class="cart-sub-total">
+						Sub total / Podsumowanie <span class="inner-left-md" style="color:red"><br>${data.subtotal} PLN</span>
+					</div>
+          <div class="cart-sub-total">
+						Coupon name / Nazwa kuponu <span class="inner-left-md" style="color:red"><br>${data.name_coupon}</span>
+            <button type="submit" onclick="removeCoupon()"><i class="fa fa-times"></i></button>
+					</div>
+          <div class="cart-sub-total">
+						Discount amount / Kwota rabatu <span class="inner-left-md" style="color:red"><br>${data.discount_amount} PLN</span>
+					</div>
+					<div class="cart-grand-total">
+						Grand total / Cena łączna<span class="inner-left-md" style="color:red"><br>${data.total_amount} PLN</span>
+					</div>
+				</th>
+			</tr>
+            `)
+          }
+        }
+    });
+  }
+  Calculationcoupon();
+</script>
+
+<script type="text/javascript">
+     
+  function removeCoupon(){
+     $.ajax({
+         type:'GET',
+         url: "{{ url('/remove/coupon') }}",
+         dataType: 'json',
+         success:function(data){
+          Calculationcoupon();
+             $('#fieldCoupon').show();
+             $('#name_coupon').val('');
+              // Start Message 
+             const Toast = Swal.mixin({
+                   toast: true,
+                   position: 'top-end',
+                   
+                   showConfirmButton: false,
+                   timer: 3000
+                 })
+             if ($.isEmptyObject(data.error)) {
+                 Toast.fire({
+                     type: 'success',
+                     icon: 'success',
+                     title: data.success
+                 })
+             }else{
+                 Toast.fire({
+                     type: 'error',
+                     icon: 'error',
+                     title: data.error
+                 })
+             }
+             // End Message 
+<!--  //////////////// =========== End Coupon Apply Start ================= ////  -->
+         }
+     });
+  }
 </script>
 

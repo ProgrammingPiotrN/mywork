@@ -31,6 +31,7 @@
     "Add district":"Add district",
     "Add":"Add",
     "Add state":"Add state",
+    "APPLY COUPON":"APPLY COUPON",
 
     "Buns":"Buns",
     "Brands":"Brands",
@@ -65,6 +66,7 @@
     "District list":"District list",
     "District name":"District name",
     "District select":"District select",
+    "Discount code":"Discount code",
 
     "English":"english",
     "Email":"Email",
@@ -81,11 +83,13 @@
     "Edit shipping":"Edit shipping",
     "Edit district":"Edit district",
     "Edit state":"Edit state",
+    "Enter your coupon code if you have one..":"Enter your coupon code if you have one..",
 
     "Featured products":"Featured products",
     "Featured":"Featured",
 
     "Grid":"Grid",
+    "Grand total":"Grand total",
 
     "Home":"Home",
     "Hot deals":"Hot deals",
@@ -139,6 +143,7 @@
     "Product Image":"Product Image",
     "pieces":"pieces",
     "Product price":"Product price",
+    "PROCCED TO CHEKOUT":"PROCCED TO CHEKOUT",
 
 
     "Register":"Register",
@@ -202,5 +207,6 @@
     "WELCOME":"Welcome",
     "Write your own review":"Write your own review",
 
-    "Your Name":"Your Name"
+    "Your Name":"Your Name",
+    "You Coupon":"You Coupon"
 }
