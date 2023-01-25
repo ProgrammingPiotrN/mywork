@@ -39,51 +39,31 @@
 	    <div class="panel-body">
 			<div class="row">		
 
-					<form class="register-form" role="form" action="{{ route('checkout.store') }}" method="POST">
-            @csrf
+			<form class="register-form" role="form" action="{{ route('checkout.store') }}" method="POST">
+        @csrf
 
 					 
 				</div>
 
-				<div class="col-md-6 col-sm-6 already-registered-login">
-					<h4 class="checkout-subtitle"><b>{{ __('Shipping address') }}</b><span class="text-danger">*</span></h4>
-					<form class="register-form" role="form">
-						<div class="form-group">
-					    <input type="text" name="shipping_name" class="form-control unicase-form-control text-input" id="exampleInputEmail1" 
-              placeholder="{{ __('Full name') }}" value="{{ Auth::user()->name }}" required="">
-					  </div>
-					</form>
-				</div>	
+				<div class="form-group">
+          <label class="info-title" for="exampleInputEmail1">{{ __('Select shipping area') }} <span>*</span></label>
+          <input type="text" name="shipping_name" class="form-control unicase-form-control text-input" id="exampleInputEmail1" placeholder="Full Name" value="{{ Auth::user()->name }}" required="">
+        </div>	
 
-        <div class="col-md-6 col-sm-6 already-registered-login">
-					<h4 class="checkout-subtitle"><b>{{ __('Email') }}</b><span class="text-danger">*</span></h4>
-					<form class="register-form" role="form">
-						<div class="form-group">
-					    <input type="email" name="shipping_email" name="shipping_name" class="form-control unicase-form-control text-input" id="exampleInputEmail1" 
-              placeholder="{{ __('Email') }}" value="{{ Auth::user()->email }}" required="">
-					  </div>
-					</form>
-				</div>	
+        <div class="form-group">
+          <label class="info-title" for="exampleInputEmail1">{{ __('Email') }} <span>*</span></label>
+          <input type="email" name="shipping_email" class="form-control unicase-form-control text-input" id="exampleInputEmail1" placeholder="Email" value="{{ Auth::user()->email }}" required="">
+        </div> 	
 
-        <div class="col-md-6 col-sm-6 already-registered-login">
-					<h4 class="checkout-subtitle"><b>{{ __('Phone') }}</b><span class="text-danger">*</span></h4>
-					<form class="register-form" role="form">
-						<div class="form-group">
-					    <input type="text" name="shipping_phone" class="form-control unicase-form-control text-input" id="exampleInputEmail1" 
-              placeholder="{{ __('Phone') }}" value="{{ Auth::user()->phone }}" required="">
-					  </div>
-					</form>
-				</div>	
+        <div class="form-group">
+          <label class="info-title" for="exampleInputEmail1">{{ __('Phone') }} <span>*</span></label>
+          <input type="number" name="shipping_phone" class="form-control unicase-form-control text-input" id="exampleInputEmail1" placeholder="Phone" value="{{ Auth::user()->phone }}" required="">
+        </div>	
 
-        <div class="col-md-6 col-sm-6 already-registered-login">
-					<h4 class="checkout-subtitle"><b>{{ __('Post code') }}</b><span class="text-danger">*</span></h4>
-					<form class="register-form" role="form">
-						<div class="form-group">
-					    <input type="text" name="post_code" class="form-control unicase-form-control text-input" id="exampleInputEmail1" 
-              placeholder="{{ __('Post code') }}" required="">
-					  </div>
-					</form>
-				</div>	
+        <div class="form-group">
+          <label class="info-title" for="exampleInputEmail1">{{ __('Post code') }}<span>*</span></label>
+          <input type="text" name="post_code" class="form-control unicase-form-control text-input" id="exampleInputEmail1" placeholder="Post Code" required="">
+        </div>
 
         <div class="col-md-6 col-sm-6 already-registered-login">
 					
@@ -132,75 +112,100 @@
             <h4 class="checkout-subtitle"><b>{{ __('Notes') }}</b><span class="text-danger">*</span></h4>
             <textarea class="form-control" cols="30" rows="5" placeholder="{{ __('Notes') }}" name="notes"></textarea>
           </div>	
-
-					</form>
 				</div>	
 			</div>			
 		</div>
-<div class="checkout-progress-sidebar ">
-	<div class="panel-group">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-		    	<h4 class="unicase-checkout-title">{{ __('Select payment method') }}</h4>
-		    </div>
-		    <div class="">
-				<ul class="nav nav-checkout-progress list-unstyled">
-
-                    @foreach($cart as $item)
-					<li> 
-						<strong>{{ __('Image') }}: </strong>
-						<img src="{{ asset($item->options->image) }}" style="height: 50px; width: 50px;">
-					</li>
-
-					<li> 
-						<strong>{{ __('Quantity') }}: </strong>
-						 ( {{ $item->qty }} )
-
-						 <strong>{{ __('Weight') }}: </strong>
-						 {{ $item->options->weight }}
-
-					</li>
-                    @endforeach 
-					<li>
-                        @if(Session::has('coupon'))
-
-                        <strong>{{ __('Sub total') }}: </strong> {{ $totalCart }} PLN<hr>
-
-                        <strong>{{ __('Coupon name') }}: </strong> {{ session()->get('coupon')['name_coupon'] }}
-                        ( {{ session()->get('coupon')['discount_coupon'] }} % )
-                        <hr>
-
-                        <strong>{{ __('Coupon discount') }}: </strong> {{ session()->get('coupon')['discount_amount'] }} PLN
-                        <hr>
-
-                        <strong>{{ __('Grand total') }}: </strong> {{ session()->get('coupon')['total_amount'] }} PLN
-                        <hr>
-
-
-                        @else
-
-            <strong>{{ __('Sub total') }}: </strong> {{ $totalCart }} PLN<hr>
-
-            <strong>{{ __('Grand total') }}: </strong> {{ $totalCart }} PLN<hr>
-
-
-                        @endif 
-                    </li>
-				</ul>		
-			</div>
-		</div>
-	</div>
-</div> 
 	</div>
 </div>
 					</div>
+          <div class="checkout-progress-sidebar ">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="unicase-checkout-title">{{ __('Your checkout progress') }}</h4>
+                  </div>
+                  <div class="">
+                  <ul class="nav nav-checkout-progress list-unstyled">
+          
+                              @foreach($cart as $item)
+                    <li> 
+                      <strong>{{ __('Image') }}: </strong>
+                      <img src="{{ asset($item->options->image) }}" style="height: 50px; width: 50px;">
+                    </li>
+          
+                    <li> 
+                      <strong>{{ __('Quantity') }}: </strong>
+                       ( {{ $item->qty }} )
+          
+                       <strong>{{ __('Weight') }}: </strong>
+                       {{ $item->options->weight }}
+          
+                    </li>
+                              @endforeach 
+                    <li>
+                                  @if(Session::has('coupon'))
+          
+                                  <strong>{{ __('Sub total') }}: </strong> {{ $totalCart }} PLN<hr>
+          
+                                  <strong>{{ __('Coupon name') }}: </strong> {{ session()->get('coupon')['name_coupon'] }}
+                                  ( {{ session()->get('coupon')['discount_coupon'] }} % )
+                                  <hr>
+          
+                                  <strong>{{ __('Coupon discount') }}: </strong> {{ session()->get('coupon')['discount_amount'] }} PLN
+                                  <hr>
+          
+                                  <strong>{{ __('Grand total') }}: </strong> {{ session()->get('coupon')['total_amount'] }} PLN
+                                  <hr>
+          
+          
+                                  @else
+          
+                      <strong>{{ __('Sub total') }}: </strong> {{ $totalCart }} PLN<hr>
+          
+                      <strong>{{ __('Grand total') }}: </strong> {{ $totalCart }} PLN<hr>
+          
+          
+                                  @endif 
+                              </li>
+                  </ul>		
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout-progress-sidebar ">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="unicase-checkout-title">{{ __('Select payment method') }}</h4>
+                  </div>
+                  <div class="">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label for="">Card</label> 		
+                   <input type="radio" name="payment_method" value="card">	
+                <img src="{{ asset('styles_frontend/assets/images/payments/3.png') }}">    		
+                      </div> <!-- end col md 4 -->
+                      
+                      <div class="col-md-4">
+                        <label for="">Cash</label> 		
+                   <input type="radio" name="payment_method" value="cash">	
+                  <img src="{{ asset('styles_frontend/assets/images/payments/2.png') }}">  		
+                      </div> <!-- end col md 4 -->
+                  </div>
+                  <br>
+                  <button type="submit" class="btn-upper btn btn-primary checkout-page-button">{{ __('Payment') }}</button>	
+
+                </div>
+              </div>
+            </div>
+          </div> 
+        </form> 
 				</div>
 				<div class="col-md-4">
-
-
 </div>
 			</div>
 		</div>
+
 
 </div>
 
