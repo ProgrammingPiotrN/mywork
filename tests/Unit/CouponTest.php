@@ -11,7 +11,7 @@ class CouponTest extends TestCase
     {
         $coupon = new Coupon();
 
-        $coupon->setAttribute('validity_coupon', now()->addDays(3));
+        $coupon->setAttribute('validity_coupon', now()->addDays(25));
 
         $this->assertTrue($coupon->getIsValidAttribute());
 

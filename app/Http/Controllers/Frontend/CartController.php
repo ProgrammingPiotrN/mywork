@@ -13,6 +13,7 @@ use Auth;
 
 use App\Models\Wishlist;
 use App\Models\Coupon;
+use App\Models\ShipArea;
 
 use Illuminate\Support\Facades\Session;
 
@@ -177,14 +178,14 @@ class CartController extends Controller
       $cart = Cart::content();
       $qtyCart = Cart::count();
       $totalCart = Cart::total();
+      $areas = ShipArea::orderBy('area_name','ASC')->get();
 
-
-      return view('frontend.checkout.view_checkout',compact('cart','qtyCart','totalCart'));
+      return view('frontend.checkout.view_checkout',compact('cart','qtyCart','totalCart','areas'));
 
           }else{
 
           $notification = array(
-          'message' => 'Shopping at list one product / Na liście może znajdować się tylko jeden produkt',
+          'message' => 'Shopping at list one product / Na liście musi znajdować się przynajmniej jeden produkt',
           'alert-type' => 'error'
       );
 

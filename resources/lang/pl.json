@@ -95,6 +95,7 @@
     "Featured":"Wyróżnione",
     "Fast and easy check out":"Szybkie i łatwe sprawdzenie",
     "Forgot your Password":"Zapomniałeś hasła",
+    "Full name":"Pełna nazwa",
 
     "Grid":"Kratka",
     "Grand total":"Łączna suma",
@@ -130,6 +131,7 @@
     "Name product":"Nazwa produktu",
     "No discount":"Bez rabatu",
     "No title":"Bez tytułu",
+    "Notes":"Notatki",
 
     "Polish":"polski",
     "Profile update":"Aktualizacja profilu",
@@ -156,6 +158,7 @@
     "PROCCED TO CHEKOUT":"Przejdź do kasy",
     "Please log in below":"Zaloguj się poniżej",
     "Password":"Hasło",
+    "Post code":"Kod pocztowy",
 
     "Register":"Rejestracja",
     "REVIEW":"RECENZJA",
@@ -194,7 +197,10 @@
     "Shipping areas name":"Nazwa przesyłki",
     "Select shipping area":"Wybierz rodzaj przesyłki",
     "State list":"Lista stanów",
-    "State name":"Nazwa stanu",
+    "State name":"Nazwa statusu",
+    "Shipping address":"Adres wysyłki",
+    "State select":"Wybierz status",
+    "Select payment method":"Wybierz metodę płatności",
 
     "Toddays offer":"Dzisiejsza oferta",
     "Toggle navigation":"Przełącz nawigację",

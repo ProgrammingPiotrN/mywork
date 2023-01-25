@@ -20,6 +20,7 @@ use App\Http\Controllers\Frontend\CartController;
 
 use App\Http\Controllers\Client\WishlistController;
 use App\Http\Controllers\Client\CartPageController;
+use App\Http\Controllers\Client\CheckoutController;
 
 
 /*
@@ -304,6 +305,13 @@ Route::prefix('shipping')->group(function(){
         Route::get('/remove/coupon', [CartController::class, 'RemoveCoupon']);
 
         Route::get('/checkout', [CartController::class, 'CreateCheckout'])->name('checkout');
+
+        Route::get('/district-get/ajax/{area_id}', [CheckoutController::class, 'GetDistrictAjax']);
+
+        Route::get('/state-get/ajax/{district_id}', [CheckoutController::class, 'GetStateAjax']);
+
+        Route::post('/checkout/store', [CheckoutController::class, 'StoreCheckout'])->name('checkout.store');
+
 
 
 

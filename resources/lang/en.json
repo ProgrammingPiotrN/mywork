@@ -95,6 +95,7 @@
     "Featured":"Featured",
     "Fast and easy check out":"Fast and easy check out",
     "Forgot your Password":"Forgot your Password",
+    "Full name":"Full name",
 
     "Grid":"Grid",
     "Grand total":"Grand total",
@@ -130,6 +131,7 @@
     "Name product":"Name product",
     "No discount":"No discount",
     "No title":"No title",
+    "Notes":"Notes",
 
     "Polish":"polish",
     "Profile update":"Profile update",
@@ -156,6 +158,7 @@
     "PROCCED TO CHEKOUT":"PROCCED TO CHEKOUT",
     "Please log in below":"Please log in below",
     "Password":"Password",
+    "Post code":"Post code",
 
 
     "Register":"Register",
@@ -195,6 +198,9 @@
     "Select shipping area":"Select shipping area",
     "State list":"State list",
     "State name":"State name",
+    "Shipping address":"Shipping address",
+    "State select":"State select",
+    "Select payment method":"Select payment method",
 
     "Toddays offer":"Toddays offer",
     "Toggle navigation":"oggle navigation",
