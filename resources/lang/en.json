@@ -60,6 +60,9 @@
     "Checkout method":"Checkout method",
     "Checkout as guest":"Checkout as guest",
     "Continue":"Continue",
+    "Cash":"Cash",
+    "Card":"Card",
+    "Credit or debit card":"Credit or debit card",
 
     "DESCRIPTION":"DESCRIPTION",
     "Dashboard":"Dashboard",
@@ -202,6 +205,9 @@
     "Shipping address":"Shipping address",
     "State select":"State select",
     "Select payment method":"Select payment method",
+    "Stripe payment":"Stripe payment page",
+    "Stripe":"Stripe",
+    "Submit Payment":"Submit Payment",
 
     "Toddays offer":"Toddays offer",
     "Toggle navigation":"oggle navigation",
@@ -231,5 +237,6 @@
 
     "Your Name":"Your Name",
     "You Coupon":"You Coupon",
-    "Your checkout progress":"Your checkout progress"
+    "Your checkout progress":"Your checkout progress",
+    "Your shopping amount":"Your shopping amount"
 }

@@ -21,7 +21,7 @@ use App\Http\Controllers\Frontend\CartController;
 use App\Http\Controllers\Client\WishlistController;
 use App\Http\Controllers\Client\CartPageController;
 use App\Http\Controllers\Client\CheckoutController;
-
+use App\Http\Controllers\Client\StripeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -311,6 +311,9 @@ Route::prefix('shipping')->group(function(){
         Route::get('/state-get/ajax/{district_id}', [CheckoutController::class, 'GetStateAjax']);
 
         Route::post('/checkout/store', [CheckoutController::class, 'StoreCheckout'])->name('checkout.store');
+
+        Route::post('/stripe/order', [StripeController::class, 'OrderStripe'])->name('stripe.order');
+
 
 
 

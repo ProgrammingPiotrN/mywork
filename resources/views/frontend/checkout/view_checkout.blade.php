@@ -181,13 +181,18 @@
                   <div class="">
                     <div class="row">
                       <div class="col-md-4">
-                        <label for="">Card</label> 		
+                        <label for="">{{ __('Stripe') }}</label> 		
+                        <input type="radio" name="payment_method" value="stripe">
+                        <img src="{{ asset('styles_frontend/assets/images/payments/4.png') }}">		    		
+                      </div>
+                      <div class="col-md-4">
+                        <label for="">{{ __('Card') }}</label> 		
                    <input type="radio" name="payment_method" value="card">	
                 <img src="{{ asset('styles_frontend/assets/images/payments/3.png') }}">    		
                       </div> <!-- end col md 4 -->
                       
                       <div class="col-md-4">
-                        <label for="">Cash</label> 		
+                        <label for="">{{ __('Cash') }}</label> 		
                    <input type="radio" name="payment_method" value="cash">	
                   <img src="{{ asset('styles_frontend/assets/images/payments/2.png') }}">  		
                       </div> <!-- end col md 4 -->

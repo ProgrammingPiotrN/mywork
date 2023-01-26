@@ -60,6 +60,9 @@
     "Checkout method":"Metoda płatności",
     "Checkout as guest":"Zamów jako gość",
     "Continue":"Kontynuuj",
+    "Cash":"Gotówka",
+    "Card":"Karta",
+    "Credit or debit card":"Karta kredytowa lub debetowa",
 
     "DESCRIPTION":"OPIS",
     "Dashboard":"Panel główny",
@@ -202,6 +205,9 @@
     "Shipping address":"Adres wysyłki",
     "State select":"Wybierz status",
     "Select payment method":"Wybierz metodę płatności",
+    "Stripe payment":"Strona płatności",
+    "Stripe":"Płatność",
+    "Submit Payment":"Podsumowanie płatności",
 
     "Toddays offer":"Dzisiejsza oferta",
     "Toggle navigation":"Przełącz nawigację",
@@ -230,5 +236,6 @@
 
     "Your Name":"Twoje imię",
     "You Coupon":"Twój kupon",
-    "Your checkout progress":"Twój postęp realizacji transakcji"
+    "Your checkout progress":"Twój postęp realizacji transakcji",
+    "Your shopping amount":"Twoja kwota zakupów"
 }
