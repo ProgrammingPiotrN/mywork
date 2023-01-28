@@ -14,7 +14,6 @@ use Auth;
 use Carbon\Carbon;
 
 use Illuminate\Support\Facades\Mail;
-use App\Mail\OrderMail;
 
 class StripeController extends Controller
 {
@@ -64,16 +63,6 @@ class StripeController extends Controller
           'created_at' => Carbon::now(),	 
    
         ]);
-
-          $invoice = Order::findOrFail($order_id);
-          $data = [
-            'invoice_no' => $invoice->invoice_no,
-            'amount' => $total_amount,
-            'name' => $invoice->name,
-              'email' => $invoice->email,
-          ];
-  
-          Mail::to($request->email)->send(new OrderMail($data));
 
           $carts = Cart::content();
           foreach ($carts as $cart) {

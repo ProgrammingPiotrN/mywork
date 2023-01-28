@@ -39,4 +39,19 @@ class Order extends Model
         'return_reason',    
         'status',    
     ];
+    public function area(){
+    	return $this->belongsTo(ShipArea::class,'area_id','id');
+    }
+
+      public function district(){
+    	return $this->belongsTo(ShipDistrict::class,'district_id','id');
+    }
+
+      public function state(){
+    	return $this->belongsTo(ShipState::class,'state_id','id');
+    }
+
+      public function user(){
+    	return $this->belongsTo(User::class,'user_id','id');
+    }
 }

@@ -441,7 +441,9 @@
         url: "{{ url('/apply/coupon') }}",
         success:function(data){
           Calculationcoupon();
-          $('#fieldCoupon').hide();
+          if(data.validity == true){
+            $('#fieldCoupon').hide();
+          }
 
           const Toast = Swal.mixin({
                       toast: true,

@@ -33,6 +33,7 @@
     "Add state":"Add state",
     "APPLY COUPON":"APPLY COUPON",
     "Already registered":"Already registered",
+    "Area":"Area",
 
     "Buns":"Buns",
     "Brands":"Brands",
@@ -63,6 +64,7 @@
     "Cash":"Cash",
     "Card":"Card",
     "Credit or debit card":"Credit or debit card",
+    "Cash on delivery":"Cash on delivery",
 
     "DESCRIPTION":"DESCRIPTION",
     "Dashboard":"Dashboard",
@@ -75,6 +77,8 @@
     "District name":"District name",
     "District select":"District select",
     "Discount code":"Discount code",
+    "Date":"Date",
+    "District":"District",
 
     "English":"english",
     "Email":"Email",
@@ -111,6 +115,7 @@
     "InActive":"InActive",
     "Invalid":"Invalid",
     "Image":"Image",
+    "Invoice":"Invoice",
 
     "Language":"Language",
     "Login":"Login",
@@ -135,6 +140,12 @@
     "No discount":"No discount",
     "No title":"No title",
     "Notes":"Notes",
+
+    "Orders":"Orders",
+    "Order":"Order",
+    "Order date":"Order date",
+    "Order details":"Order details",
+    "Order total":"Order total",
 
     "Polish":"polish",
     "Profile update":"Profile update",
@@ -163,6 +174,7 @@
     "Password":"Password",
     "Post code":"Post code",
     "Payment":"Payment",
+    "Payment type":"Payment type",
 
 
     "Register":"Register",
@@ -208,6 +220,9 @@
     "Stripe payment":"Stripe payment page",
     "Stripe":"Stripe",
     "Submit Payment":"Submit Payment",
+    "Shipping details":"Shipping details",
+    "Shipping phone":"Shipping phone",
+    "Shipping email":"Shipping email",
 
     "Toddays offer":"Toddays offer",
     "Toggle navigation":"oggle navigation",
@@ -215,6 +230,8 @@
     "Tags Product":"Tags Product",
     "Text area":"Text area",
     "Title":"Title",
+    "Total":"Total",
+    "Transaction ID":"Transaction ID",
 
     "User profile":"User profile",
     "Update":"Update",
@@ -229,6 +246,7 @@
     "Validity":"Validity",
     "Validity Date":"Validity Date",
     "Valid":"Valid",
+    "View":"View",
 
     "Wishlist":"Wishlist",
     "WELCOME":"Welcome",
