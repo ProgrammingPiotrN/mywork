@@ -34,6 +34,9 @@
     "APPLY COUPON":"APPLY COUPON",
     "Already registered":"Already registered",
     "Area":"Area",
+    "Address":"Address",
+    "Authority Signature":"Authority Signature",
+    "Address delivery":"Address delivery",
 
     "Buns":"Buns",
     "Brands":"Brands",
@@ -79,6 +82,7 @@
     "Discount code":"Discount code",
     "Date":"Date",
     "District":"District",
+    "Delivery date":"Delivery date",
 
     "English":"english",
     "Email":"Email",
@@ -232,11 +236,13 @@
     "Title":"Title",
     "Total":"Total",
     "Transaction ID":"Transaction ID",
+    "Thanks For Buying Products..":"Thanks For Buying Products..",
 
     "User profile":"User profile",
     "Update":"Update",
     "Update your profile":"Update your profile",
     "User photos":"User photos",
+    "Unit price":"Unit price",
 
 
     "Quantity":"Quantity",

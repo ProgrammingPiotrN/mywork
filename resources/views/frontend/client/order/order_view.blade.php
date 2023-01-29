@@ -18,28 +18,28 @@
        
                      <tr style="background: #e2e2e2;">
                        <td class="col-md-1">
-                         <label for=""> {{ __('Date') }}</label>
+                         <h4><label for=""> {{ __('Date') }}</label></h4>
                        </td>
        
                        <td class="col-md-3">
-                         <label for=""> {{ __('Total') }}</label>
+                         <h4><label for=""> {{ __('Total') }}</label></h4>
                        </td>
        
                        <td class="col-md-3">
-                         <label for=""> {{ __('Payment') }}</label>
+                         <h4><label for=""> {{ __('Payment') }}</label></h4>
                        </td>
        
        
                        <td class="col-md-2">
-                         <label for=""> {{ __('Invoice') }}</label>
+                         <h4><label for=""> {{ __('Invoice') }}</label></h4>
                        </td>
        
                         <td class="col-md-2">
-                         <label for=""> {{ __('Order') }}</label>
+                         <h4><label for=""> {{ __('Order') }}</label></h4>
                        </td>
        
                         <td class="col-md-1">
-                         <label for=""> {{ __('Action') }} </label>
+                         <h4><label for=""> {{ __('Action') }} </label></h4>
                        </td>
        
                      </tr>
@@ -51,7 +51,7 @@
                        </td>
        
                        <td class="col-md-3">
-                         <label for=""> ${{ $order->amount }}</label>
+                         <label for=""> {{ $order->amount }} PLN</label>
                        </td>
        
        
@@ -73,7 +73,7 @@
                 <td class="col-md-1">
                  <a href="{{ url('user/order/details/'.$order->id ) }}" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i>{{ __('View') }}</a>
        
-                  <a href="{{ url('/invoice/download/'.$order->id ) }}" class="btn btn-sm btn-danger" style="margin-top:5px"><i class="fa fa-download" style="color: white;"></i> {{ __('Invoice') }} </a>
+                  <a  href="{{ url('user/invoice/download/'.$order->id ) }}" class="btn btn-sm btn-danger" style="margin-top:5px"><i class="fa fa-download" style="color: white;"></i> {{ __('Invoice') }} </a>
        
                </td>
        

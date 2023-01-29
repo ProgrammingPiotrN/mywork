@@ -6,47 +6,47 @@
 		<div class="row">
       <hr>
       <div class="card">
-        <div class="card-header"><h4>{{ __('Shipping details') }}</h4></div>
+        <div class="card-header"><h2>{{ __('Shipping details') }}</h2></div>
        <hr>
        <div class="card-body" style="background: #E9EBEC;">
          <table class="table">
         <tr>
-          <th> {{ __('Shipping areas name') }} : </th>
+          <th> <h4>{{ __('Shipping areas name') }} </h4> </th>
            <th> {{ $order->name }} </th>
         </tr>
     
          <tr>
-          <th> {{ __('Shipping phone') }} : </th>
+          <th> <h4>{{ __('Shipping phone') }} </h4> </th>
            <th> {{ $order->phone }} </th>
         </tr>
     
          <tr>
-          <th> {{ __('Shipping email') }} : </th>
+          <th> <h4>{{ __('Shipping email') }} </h4> </th>
            <th> {{ $order->email }} </th>
         </tr>
     
          <tr>
-          <th> {{ __('Area') }} : </th>
+          <th> <h4>{{ __('Area') }} </h4> </th>
            <th> {{ $order->area->area_name }} </th>
         </tr>
     
          <tr>
-          <th> {{ __('District') }} : </th>
+          <th> <h4>{{ __('District') }} </h4> </th>
            <th> {{ $order->district->district_name }} </th>
         </tr>
     
          <tr>
-          <th> {{ __('State name') }} : </th>
+         <th> <h4>{{ __('State name') }} </h4> </th>
            <th>{{ $order->state->state_name }} </th>
         </tr>
     
         <tr>
-          <th> {{ __('Post code') }} : </th>
+          <th> <h4>{{ __('Post code') }} </h4> </th>
            <th> {{ $order->post_code }} </th>
         </tr>
     
         <tr>
-          <th> {{ __('Order date') }} : </th>
+          <th> <h4>{{ __('Order date') }} </h4> </th>
            <th> {{ $order->order_date }} </th>
         </tr>
     
@@ -56,44 +56,44 @@
        </div> 
        <div class="col-md-5">
         <div class="card">
-          <div class="card-header"><h4>{{ __('Order details') }}
+          <div class="card-header"><h2>{{ __('Order details') }}</h2>
         <span class="text-danger"> {{ __('Invoice') }} : {{ $order->invoice_no }}</span></h4>
           </div>
          <hr>
          <div class="card-body" style="background: #E9EBEC;">
            <table class="table">
             <tr>
-              <th>  {{ __('Name') }} : </th>
+              <th>  <h4>{{ __('Name') }} </h4> </th>
                <th> {{ $order->user->name }} </th>
             </tr>
       
              <tr>
-              <th>  {{ __('Phone') }} : </th>
+              <th>  <h4>{{ __('Phone') }} </h4> </th>
                <th> {{ $order->user->phone }} </th>
             </tr>
       
              <tr>
-              <th> {{ __('Payment type') }} : </th>
+              <th> <h4>{{ __('Payment type') }} </h4> </th>
                <th> {{ $order->payment_method }} </th>
             </tr>
       
              <tr>
-              <th> {{ __('Transaction ID') }} : </th>
+              <th> <h4>{{ __('Transaction ID') }} </h4> </th>
                <th> {{ $order->transaction_id }} </th>
             </tr>
       
              <tr>
-              <th> {{ __('Invoice') }}  : </th>
+              <th> <h4>{{ __('Invoice') }}  </h4> </th>
                <th class="text-danger"> {{ $order->invoice_no }} </th>
             </tr>
       
              <tr>
-              <th> {{ __('Order total') }} : </th>
+              <th> <h4>{{ __('Order total') }} </h4> </th>
                <th>{{ $order->amount }} </th>
             </tr>
       
             <tr>
-              <th> {{ __('Order') }} : </th>
+              <th> <h4>{{ __('Order') }} </h4> </th>
                <th>   
                 <span class="badge badge-pill badge-warning" style="background: #418DB9;">{{ $order->status }} </span> </th>
             </tr>
@@ -127,27 +127,27 @@
 
         <tr style="background: #e2e2e2;">
           <td class="col-md-1">
-            <label for=""> {{ __('Image') }}</label>
+            <h4><label for=""> {{ __('Image') }}</label></h4>
           </td>
 
           <td class="col-md-3">
-            <label for=""> {{ __('Name product') }} </label>
+            <h4><label for=""> {{ __('Name product') }} </label></h4>
           </td>
 
           <td class="col-md-3">
-            <label for=""> {{ __('Product code') }}</label>
+            <h4><label for=""> {{ __('Product code') }}</label></h4>
           </td>
 
            <td class="col-md-2">
-            <label for=""> {{ __('Weight') }} </label>
+            <h4><label for=""> {{ __('Weight') }} </label></h4>
           </td>
 
            <td class="col-md-1">
-            <label for=""> {{ __('Quantity') }} </label>
+            <h4><label for=""> {{ __('Quantity') }} </label></h4>
           </td>
 
           <td class="col-md-1">
-            <label for=""> {{ __('Price') }} </label>
+            <h4><label for=""> {{ __('Price') }} </label></h4>
           </td>
 
         </tr>

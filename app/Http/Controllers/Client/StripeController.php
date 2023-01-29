@@ -19,7 +19,7 @@ class StripeController extends Controller
 {
     public function OrderStripe(Request $request){
 
-      \Stripe\Stripe::setApiKey('sk_test_51MUboxIRJ8ix16XZzDJ9a4YmMxrhYmwhut1HJ3PfnrPNKcqFImx6sIryuA9gV61RYFkIBz4mfBYf7PizT95NN11K00Yfg09OGw');
+      \Stripe\Stripe::setApiKey('sk_test_51MUboxIRJ8ix16XZg4H9IkGbE2dwt7DkJB1q1s7oUzDBbRqjm7hVF56IuuQOiYdhDs48uUIs1ySvfVbTWVgzrdB000uBFBExwQ');
 
       if (Session::has('coupon')) {
     		$total_amount = Session::get('coupon')['total_amount'];

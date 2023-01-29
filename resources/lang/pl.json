@@ -34,6 +34,9 @@
     "APPLY COUPON":"Dodaj kupon",
     "Already registered":"Czy jesteś zatejestrowany",
     "Area":"Obszar",
+    "Address":"Adres zamieszkania",
+    "Authority Signature":"Podpis",
+    "Address delivery":"Adres dostawy",
 
     "Buns":"Drożdżówki",
     "Brands":"Marki",
@@ -79,6 +82,7 @@
     "Discount code":"Kod rabatowy",
     "Date":"Data",
     "District":"Dzielnica",
+    "Delivery date":"Data dostarczenia",
 
     "English":"angielski",
     "Email":"Email",
@@ -232,11 +236,13 @@
     "Title":"Tytuł",
     "Total":"Podsumowanie",
     "Transaction ID":"ID transakcji",
+    "Thanks For Buying Products..":"Dziękujemy za zakup produktów..",
 
     "User profile":"Profil użytkownika",
     "Update":"Zaktualizuj",
     "Update your profile":"Zaktualizuj swój profil",
     "User photos":"Zdjęcie użytkownika",
+    "Unit price":"Cena jednostkowa",
 
     "Quantity":"Ilość",
     "Quality":"Jakość",
