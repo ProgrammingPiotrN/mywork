@@ -71,6 +71,9 @@
     "Cash on delivery":"Cash on delivery",
     "Confirm order":"Confirm order",
     "Confirmed orders":"Confirmed orders",
+    "Confirmed orders list":"Confirmed orders list",
+    "Canceled orders":"Canceled orders",
+    "Canceled orders list":"Canceled orders list",
 
     "DESCRIPTION":"DESCRIPTION",
     "Dashboard":"Dashboard",
@@ -87,6 +90,8 @@
     "District":"District",
     "Delivery date":"Delivery date",
     "Delivered order":"Delivered order",
+    "Delivered orders":"Delivered orders",
+    "Delivered orders list":"Delivered orders list",
 
     "English":"english",
     "Email":"Email",
@@ -189,6 +194,10 @@
     "Pending order list":"Pending order list",
     "Processing order":"Processing order",
     "Picked order":"Picked order",
+    "Processing orders":"Processing orders",
+    "Processing orders list":"Processing orders list",
+    "Picked orders":"Picked orders",
+    "Picked orders list":"Picked orders list",
 
 
     "Register":"Register",
@@ -239,6 +248,8 @@
     "Shipping phone":"Shipping phone",
     "Shipping email":"Shipping email",
     "Shipped order":"Shipped order",
+    "Shipped orders":"Shipped orders",
+    "Shipped orders list":"Shipped orders list",
 
     "Toddays offer":"Toddays offer",
     "Toggle navigation":"oggle navigation",

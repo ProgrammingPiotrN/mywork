@@ -334,6 +334,26 @@ Route::prefix('shipping')->group(function(){
             Route::get('/pending/order/details/{order_id}', [OrderController::class, 'OrdersPendingDetalis'])->name('pending.orders.details');
 
             Route::get('/confirmed/order', [OrderController::class, 'OrdersConfirmed'])->name('confirmed.orders');
+
+            Route::get('/processing/orders', [OrderController::class, 'OrdersProcessing'])->name('processing.orders');
+
+            Route::get('/picked/orders', [OrderController::class, 'OrdersPicked'])->name('picked.orders');
+
+            Route::get('/shipped/orders', [OrderController::class, 'ShippedOrders'])->name('shipped.orders');
+
+            Route::get('/delivered/orders', [OrderController::class, 'DeliveredOrders'])->name('delivered.orders');
+
+            Route::get('/cancel/orders', [OrderController::class, 'CancelOrders'])->name('cancel.orders');
+
+            Route::get('/pending/confirm/{order_id}', [OrderController::class, 'PendingConfirm'])->name('pending.confirm');
+
+            Route::get('/processing/confirm/{order_id}', [OrderController::class, 'ProcessingConfirm'])->name('confirm.processing');
+
+            Route::get('/processing/picked/{order_id}', [OrderController::class, 'ProcessingPicked'])->name('processing.picked');
+
+            Route::get('/picked/shipped/{order_id}', [OrderController::class, 'PickedShipped'])->name('picked.shipped');
+
+            Route::get('/shipped/delivered/{order_id}', [OrderController::class, 'ShippedDelivered'])->name('shipped.delivered');
                       
             }); 
 

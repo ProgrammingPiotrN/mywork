@@ -117,6 +117,11 @@ $route = Route::current()->getName();
           <ul class="treeview-menu">
             <li class="{{ ($route == 'pending.orders')? 'active':'' }}"><a href="{{ route('pending.orders') }}"><i class="ti-more"></i>{{ __('Pending orders') }}</a></li>
             <li class="{{ ($route == 'confirmed.orders')? 'active':'' }}"><a href="{{ route('confirmed.orders') }}"><i class="ti-more"></i>{{ __('Confirmed orders') }}</a></li>
+            <li class="{{ ($route == 'processing.orders')? 'active':'' }}"><a href="{{ route('processing.orders') }}"><i class="ti-more"></i>{{ __('Processing orders') }}</a></li>
+            <li class="{{ ($route == 'picked.orders')? 'active':'' }}"><a href="{{ route('picked.orders') }}"><i class="ti-more"></i>{{ __('Picked orders') }}</a></li>
+            <li class="{{ ($route == 'shipped.orders')? 'active':'' }}"><a href="{{ route('shipped.orders') }}"><i class="ti-more"></i>{{ __('Shipped orders') }}</a></li>
+            <li class="{{ ($route == 'delivered.orders')? 'active':'' }}"><a href="{{ route('delivered.orders') }}"><i class="ti-more"></i>{{ __('Delivered orders') }}</a></li>
+            <li class="{{ ($route == 'cancel.orders')? 'active':'' }}"><a href="{{ route('cancel.orders') }}"><i class="ti-more"></i>{{ __('Canceled orders') }}</a></li>
           </ul>
         </li>  
 	<div class="sidebar-footer">

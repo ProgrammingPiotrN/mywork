@@ -71,6 +71,10 @@
     "Cash on delivery":"Płatność gotówką przy odbiorze",
     "Confirm order":"Potwierdzenie zamówienia",
     "Confirmed orders":"Potwierdzone zamówienia",
+    "Confirmed orders list":"Lista potwierdzonych zamówień",
+    "Canceled orders":"Anulowane zamówienia",
+    "Canceled orders list":"Lista anulowanych zamówień",
+
 
     "DESCRIPTION":"OPIS",
     "Dashboard":"Panel główny",
@@ -87,6 +91,8 @@
     "District":"Dzielnica",
     "Delivery date":"Data dostarczenia",
     "Delivered order":"Doręczone zamówienie",
+    "Delivered orders":"Dostraczone zamówienia",
+    "Delivered orders list":"Lista dostarczonych zamówień",
 
     "English":"angielski",
     "Email":"Email",
@@ -189,6 +195,10 @@
     "Pending order list":"Lista oczekujących zamówień",
     "Processing order":"Ptzetwarzanie zamówienia",
     "Picked order":"Wybrane zamówienie",
+    "Processing orders":"Przetwarzanie zamówień",
+    "Processing orders list":"Lista przetwarzanych zamówień",
+    "Picked orders":"Spakowane zamówienia",
+    "Picked orders list":"Lista spakowanych paczek",
 
     "Register":"Rejestracja",
     "REVIEW":"RECENZJA",
@@ -239,6 +249,8 @@
     "Shipping phone":"Telefon do zamówienia",
     "Shipping email":"Email do zamówienia",
     "Shipped order":"Wysłane zamówienie",
+    "Shipped orders":"Wysłane zamówienia",
+    "Shipped orders list":"Lista wysłanych paczek",
 
     "Toddays offer":"Dzisiejsza oferta",
     "Toggle navigation":"Przełącz nawigację",
