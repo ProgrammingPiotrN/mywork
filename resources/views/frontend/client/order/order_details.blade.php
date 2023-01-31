@@ -185,6 +185,18 @@
       </tbody>
     </table>
   </div>
+
+  @if($order->status !== "delivered")
+      
+  @else
+      
+  @endif
+
+  <div class="form-group">
+    <label for="label">{{ __('Order return reason') }}:</label>
+    <textarea name="return_reason" id="" class="form-control" cols="20" rows="4">{{ __('Return reason') }}</textarea>    
+  </div>
+
   @include('frontend.user_menu.user_menu')
 
  </div>

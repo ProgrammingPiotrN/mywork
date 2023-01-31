@@ -103,6 +103,22 @@ $route = Route::current()->getName();
             <li class="{{ ($route == 'state.view')? 'active':'' }}"><a href="{{ route('state.view') }}"><i class="ti-more"></i>{{ __('Add state') }}</a></li>
           </ul>
         </li> 
+
+        <li class="header nav-small-cap">{{ __('User interface') }}</li>
+
+        <li class="treeview {{ ($prefix == '/orders')?'active':'' }}  ">
+          <a href="#">
+            <i data-feather="file"></i>
+            <span>{{ __('Orders') }}</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="{{ ($route == 'pending.orders')? 'active':'' }}"><a href="{{ route('pending.orders') }}"><i class="ti-more"></i>{{ __('Pending orders') }}</a></li>
+            <li class="{{ ($route == 'confirmed.orders')? 'active':'' }}"><a href="{{ route('confirmed.orders') }}"><i class="ti-more"></i>{{ __('Confirmed orders') }}</a></li>
+          </ul>
+        </li>  
 	<div class="sidebar-footer">
 		<a href="#" class="link" data-toggle="tooltip" title="" data-original-title="Settings" aria-describedby="tooltip92529"><i class="ti-settings"></i></a>
 		<a href="#" class="link" data-toggle="tooltip" title="" data-original-title="Email"><i class="ti-email"></i></a>

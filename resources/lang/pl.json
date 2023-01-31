@@ -37,6 +37,7 @@
     "Address":"Adres zamieszkania",
     "Authority Signature":"Podpis",
     "Address delivery":"Adres dostawy",
+    "Amount":"Cena",
 
     "Buns":"Drożdżówki",
     "Brands":"Marki",
@@ -68,6 +69,8 @@
     "Card":"Karta",
     "Credit or debit card":"Karta kredytowa lub debetowa",
     "Cash on delivery":"Płatność gotówką przy odbiorze",
+    "Confirm order":"Potwierdzenie zamówienia",
+    "Confirmed orders":"Potwierdzone zamówienia",
 
     "DESCRIPTION":"OPIS",
     "Dashboard":"Panel główny",
@@ -83,6 +86,7 @@
     "Date":"Data",
     "District":"Dzielnica",
     "Delivery date":"Data dostarczenia",
+    "Delivered order":"Doręczone zamówienie",
 
     "English":"angielski",
     "Email":"Email",
@@ -150,6 +154,8 @@
     "Order date":"Data zamówienia",
     "Order details":"Szczegóły zamówienia",
     "Order total":"Podsumowanie zamówienia",
+    "Order return reason":"Powód zwrotu zamówienia",
+    "optional":"opcjonalne",
 
     "Polish":"polski",
     "Profile update":"Aktualizacja profilu",
@@ -179,12 +185,17 @@
     "Post code":"Kod pocztowy",
     "Payment":"Płatność",
     "Payment type":"Rodzaj płatności",
+    "Pending orders":"Oczekujące zamówienia",
+    "Pending order list":"Lista oczekujących zamówień",
+    "Processing order":"Ptzetwarzanie zamówienia",
+    "Picked order":"Wybrane zamówienie",
 
     "Register":"Rejestracja",
     "REVIEW":"RECENZJA",
     "Related products":"Produkty powiązane",
     "Register with us for future convenience:":"Zarejestruj się u nas, aby uzyskać zgodę:",
     "Register and save time":"Zarejestruj się i zaoszczędź czas",
+    "Return reason":"Zwrot zamówienia",
 
     "Simple product":"Jeden produkt",
     "Special offer":"Specjalna oferta",
@@ -212,9 +223,9 @@
     "Subcategory product":"Podkategoria produktów",
     "Sub Subcategory product":"Podkategoria podrzędna produktów",
     "Sale":"Wyprzedaż",
-    "Shipping area":"Miejsce wysyłki",
+    "Shipping area":"Rodzaj wysyłki",
     "Shipping list":"Lista wysyłkowa",
-    "Shipping areas name":"Nazwa przesyłki",
+    "Shipping areas name":"Nazwa miasta przesyłki",
     "Select shipping area":"Wybierz rodzaj przesyłki",
     "State list":"Lista stanów",
     "State name":"Nazwa statusu",
@@ -227,6 +238,7 @@
     "Shipping details":"Szczegóły zakupów",
     "Shipping phone":"Telefon do zamówienia",
     "Shipping email":"Email do zamówienia",
+    "Shipped order":"Wysłane zamówienie",
 
     "Toddays offer":"Dzisiejsza oferta",
     "Toggle navigation":"Przełącz nawigację",
@@ -243,6 +255,7 @@
     "Update your profile":"Zaktualizuj swój profil",
     "User photos":"Zdjęcie użytkownika",
     "Unit price":"Cena jednostkowa",
+    "User interface":"Interfejs użytkownika",
 
     "Quantity":"Ilość",
     "Quality":"Jakość",

@@ -7,7 +7,7 @@
 
 <style type="text/css">
     * {
-        font-family: Verdana, Arial, sans-serif;
+        font-family: DejaVu Sans, sans-serif;
     }
     table{
         font-size: x-small;
@@ -145,9 +145,6 @@
       </td>
   </tr>
 </table>
-<div class="thanks mt-3">
-  <p>{{ __('Thanks For Buying Products..') }}!!</p>
-</div>
 <div class="authority float-right mt-5">
     <p>-----------------------------------</p>
     <h5>{{ __('Authority Signature') }}:</h5>

@@ -14,6 +14,7 @@ use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\SliderController;
 use App\Http\Controllers\Backend\CouponController;
 use App\Http\Controllers\Backend\ShippingAreaController;
+use App\Http\Controllers\Backend\OrderController;
 
 use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Frontend\CartController;
@@ -323,6 +324,18 @@ Route::prefix('shipping')->group(function(){
         Route::get('/state-get/ajax/{district_id}', [CheckoutController::class, 'GetStateAjax']);
 
         Route::post('/checkout/store', [CheckoutController::class, 'StoreCheckout'])->name('checkout.store');
+
+        //Admmin order
+
+        Route::prefix('orders')->group(function(){
+
+            Route::get('/pending', [OrderController::class, 'OrdersPending'])->name('pending.orders');
+
+            Route::get('/pending/order/details/{order_id}', [OrderController::class, 'OrdersPendingDetalis'])->name('pending.orders.details');
+
+            Route::get('/confirmed/order', [OrderController::class, 'OrdersConfirmed'])->name('confirmed.orders');
+                      
+            }); 
 
 
 

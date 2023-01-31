@@ -37,6 +37,7 @@
     "Address":"Address",
     "Authority Signature":"Authority Signature",
     "Address delivery":"Address delivery",
+    "Amount":"Amount",
 
     "Buns":"Buns",
     "Brands":"Brands",
@@ -68,6 +69,8 @@
     "Card":"Card",
     "Credit or debit card":"Credit or debit card",
     "Cash on delivery":"Cash on delivery",
+    "Confirm order":"Confirm order",
+    "Confirmed orders":"Confirmed orders",
 
     "DESCRIPTION":"DESCRIPTION",
     "Dashboard":"Dashboard",
@@ -83,6 +86,7 @@
     "Date":"Date",
     "District":"District",
     "Delivery date":"Delivery date",
+    "Delivered order":"Delivered order",
 
     "English":"english",
     "Email":"Email",
@@ -150,6 +154,8 @@
     "Order date":"Order date",
     "Order details":"Order details",
     "Order total":"Order total",
+    "Order return reason":"Order return reason",
+    "optional":"optional",
 
     "Polish":"polish",
     "Profile update":"Profile update",
@@ -179,6 +185,10 @@
     "Post code":"Post code",
     "Payment":"Payment",
     "Payment type":"Payment type",
+    "Pending orders":"Pending orders",
+    "Pending order list":"Pending order list",
+    "Processing order":"Processing order",
+    "Picked order":"Picked order",
 
 
     "Register":"Register",
@@ -186,6 +196,7 @@
     "Related products":"Related products",
     "Register with us for future convenience:":"Register with us for future convenience:",
     "Register and save time":"Register and save time",
+    "Return reason":"Return reason",
 
     "Simple product":"Simple product",
     "Special offer":"Special offer",
@@ -227,6 +238,7 @@
     "Shipping details":"Shipping details",
     "Shipping phone":"Shipping phone",
     "Shipping email":"Shipping email",
+    "Shipped order":"Shipped order",
 
     "Toddays offer":"Toddays offer",
     "Toggle navigation":"oggle navigation",
@@ -243,6 +255,7 @@
     "Update your profile":"Update your profile",
     "User photos":"User photos",
     "Unit price":"Unit price",
+    "User interface":"User interface",
 
 
     "Quantity":"Quantity",
