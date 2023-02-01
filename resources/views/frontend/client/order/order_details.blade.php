@@ -183,18 +183,31 @@
         </tr>
         @endforeach
       </tbody>
-    </table>
-  </div>
 
   @if($order->status !== "delivered")
       
   @else
-      
-  @endif
 
-  <div class="form-group">
-    <label for="label">{{ __('Order return reason') }}:</label>
-    <textarea name="return_reason" id="" class="form-control" cols="20" rows="4">{{ __('Return reason') }}</textarea>    
+  @php 
+  $order = App\Models\Order::where('id', $order->id)->where('return_reason', '=', NULL)->first();
+  @endphp
+
+      @if($order)
+          <form action="{{ route('return.order', $order->id) }}" method="post" >
+            @csrf
+            <div class="form-group">
+              <label for="label">{{ __('Order return reason') }}:</label>
+              <textarea name="return_reason" id="" class="form-control" cols="20" rows="4">{{ __('Return reason') }}</textarea>    
+            </div>
+            <button type="submit" class="btn btn-danger">{{ __('Submit') }}</button><br><br>
+          </form>
+      @else
+          <span class="badge badge-pill badge-warning" style="background:red;"> 
+            {{ __('You have send return request for this product') }}</span><br><br>
+      @endif
+    
+  @endif
+    </table>
   </div>
 
   @include('frontend.user_menu.user_menu')

@@ -74,6 +74,7 @@
     "Confirmed orders list":"Confirmed orders list",
     "Canceled orders":"Canceled orders",
     "Canceled orders list":"Canceled orders list",
+    "Cancel orders":"Cancel orders",
 
     "DESCRIPTION":"DESCRIPTION",
     "Dashboard":"Dashboard",
@@ -206,6 +207,8 @@
     "Register with us for future convenience:":"Register with us for future convenience:",
     "Register and save time":"Register and save time",
     "Return reason":"Return reason",
+    "Return orders":"Return orders",
+    "Return requested":"Return requested",
 
     "Simple product":"Simple product",
     "Special offer":"Special offer",
@@ -250,6 +253,7 @@
     "Shipped order":"Shipped order",
     "Shipped orders":"Shipped orders",
     "Shipped orders list":"Shipped orders list",
+    "Submit":"Submit",
 
     "Toddays offer":"Toddays offer",
     "Toggle navigation":"oggle navigation",
@@ -286,5 +290,6 @@
     "Your Name":"Your Name",
     "You Coupon":"You Coupon",
     "Your checkout progress":"Your checkout progress",
-    "Your shopping amount":"Your shopping amount"
+    "Your shopping amount":"Your shopping amount",
+    "You have send return request for this product":"You have send return request for this product"
 }

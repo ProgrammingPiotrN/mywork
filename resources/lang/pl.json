@@ -74,6 +74,7 @@
     "Confirmed orders list":"Lista potwierdzonych zamówień",
     "Canceled orders":"Anulowane zamówienia",
     "Canceled orders list":"Lista anulowanych zamówień",
+    "Cancel orders":"Anulowane zakupy",
 
 
     "DESCRIPTION":"OPIS",
@@ -206,6 +207,8 @@
     "Register with us for future convenience:":"Zarejestruj się u nas, aby uzyskać zgodę:",
     "Register and save time":"Zarejestruj się i zaoszczędź czas",
     "Return reason":"Zwrot zamówienia",
+    "Return orders":"Zwrócone zamówienia",
+    "Prośba o zwrot":"Prośba o zwrot",
 
     "Simple product":"Jeden produkt",
     "Special offer":"Specjalna oferta",
@@ -251,6 +254,7 @@
     "Shipped order":"Wysłane zamówienie",
     "Shipped orders":"Wysłane zamówienia",
     "Shipped orders list":"Lista wysłanych paczek",
+    "Submit":"Złóż",
 
     "Toddays offer":"Dzisiejsza oferta",
     "Toggle navigation":"Przełącz nawigację",
@@ -286,5 +290,6 @@
     "Your Name":"Twoje imię",
     "You Coupon":"Twój kupon",
     "Your checkout progress":"Twój postęp realizacji transakcji",
-    "Your shopping amount":"Twoja kwota zakupów"
+    "Your shopping amount":"Twoja kwota zakupów",
+    "You have send return request for this product":"Wysłałeś prośbę o zwrot tego produktu"
 }

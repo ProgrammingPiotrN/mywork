@@ -13,5 +13,7 @@
        <a href="{{ route('user.profile') }}" class="btn btn-primary btn-sm btn-block">{{ __('Profile update') }}</a>
        <a href="{{ route('change.password') }}" class="btn btn-primary btn-sm btn-block">{{ __('Change password') }}</a>
        <a href="{{ route('user.orders') }}" class="btn btn-primary btn-sm btn-block">{{ __('Orders') }}</a>
+       <a href="{{ route('return.orders.list') }}" class="btn btn-primary btn-sm btn-block">{{ __('Return orders') }}</a>
+       <a href="{{ route('cancel.orders') }}" class="btn btn-primary btn-sm btn-block">{{ __('Cancel orders') }}</a>
        <a href="{{ route('user.logout') }}" class="btn btn-danger btn-sm btn-block">{{ __('Logout') }}</a>
      </ul>

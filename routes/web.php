@@ -296,6 +296,10 @@ Route::prefix('shipping')->group(function(){
         Route::get('/order/details/{order_id}', [AllUserController::class, 'DetailsOrder']);
 
         Route::get('/invoice/download/{order_id}', [AllUserController::class, 'Invoice']);
+
+        Route::post('/return/order/{order_id}', [AllUserController::class, 'ReturnOrder'])->name('return.order');
+
+        Route::get('/return/order/list', [AllUserController::class, 'ReturnOrderList'])->name('return.orders.list');
         
         });
     
@@ -354,6 +358,8 @@ Route::prefix('shipping')->group(function(){
             Route::get('/picked/shipped/{order_id}', [OrderController::class, 'PickedShipped'])->name('picked.shipped');
 
             Route::get('/shipped/delivered/{order_id}', [OrderController::class, 'ShippedDelivered'])->name('shipped.delivered');
+
+            Route::get('/download/invoice/{order_id}', [OrderController::class, 'DownloadInvoiceAdmin'])->name('invoice.download');
                       
             }); 
 
