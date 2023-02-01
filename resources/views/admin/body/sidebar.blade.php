@@ -124,6 +124,30 @@ $route = Route::current()->getName();
             <li class="{{ ($route == 'cancel.orders')? 'active':'' }}"><a href="{{ route('cancel.orders') }}"><i class="ti-more"></i>{{ __('Canceled orders') }}</a></li>
           </ul>
         </li>  
+        <li class="treeview {{ ($prefix == '/reports')?'active':'' }}  ">
+          <a href="#">
+            <i data-feather="file"></i>
+            <span>{{ __('All reports') }}</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="{{ ($route == 'all.reports')? 'active':'' }}"><a href="{{ route('all.reports') }}"><i class="ti-more"></i>{{ __('All reports') }}</a></li>
+          </ul>
+        </li>
+        <li class="treeview {{ ($prefix == '/alluser')?'active':'' }}  ">
+          <a href="#">
+            <i data-feather="file"></i>
+            <span>{{ __('All users') }}</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="{{ ($route == 'all.users')? 'active':'' }}"><a href="{{ route('all.users') }}"><i class="ti-more"></i>{{ __('All users') }}</a></li>
+          </ul>
+        </li>
 	<div class="sidebar-footer">
 		<a href="#" class="link" data-toggle="tooltip" title="" data-original-title="Settings" aria-describedby="tooltip92529"><i class="ti-settings"></i></a>
 		<a href="#" class="link" data-toggle="tooltip" title="" data-original-title="Email"><i class="ti-email"></i></a>

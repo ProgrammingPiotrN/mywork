@@ -38,6 +38,11 @@
     "Authority Signature":"Authority Signature",
     "Address delivery":"Address delivery",
     "Amount":"Amount",
+    "All reports":"All reports",
+    "April":"April",
+    "August":"August",
+    "All users":"All users",
+    "All user list":"All user list",
 
     "Buns":"Buns",
     "Brands":"Brands",
@@ -75,6 +80,7 @@
     "Canceled orders":"Canceled orders",
     "Canceled orders list":"Canceled orders list",
     "Cancel orders":"Cancel orders",
+    "Choose one":"Choose one",
 
     "DESCRIPTION":"DESCRIPTION",
     "Dashboard":"Dashboard",
@@ -93,6 +99,7 @@
     "Delivered order":"Delivered order",
     "Delivered orders":"Delivered orders",
     "Delivered orders list":"Delivered orders list",
+    "December":"December",
 
     "English":"english",
     "Email":"Email",
@@ -117,6 +124,7 @@
     "Fast and easy check out":"Fast and easy check out",
     "Forgot your Password":"Forgot your Password",
     "Full name":"Full name",
+    "February":"February",
 
     "Grid":"Grid",
     "Grand total":"Grand total",
@@ -131,6 +139,10 @@
     "Image":"Image",
     "Invoice":"Invoice",
 
+    "January":"January",
+    "June":"June",
+    "July":"July",
+
     "Language":"Language",
     "Login":"Login",
     "Logout":"Logout",
@@ -141,6 +153,8 @@
     "Main thambnail":"Main thambnail",
     "Multiple image":"Multiple image",
     "My Wishlist":"My Wishlist",
+    "March":"March",
+    "May":"May",
 
     "New products":"New products",
     "New password":"New password",
@@ -154,6 +168,7 @@
     "No discount":"No discount",
     "No title":"No title",
     "Notes":"Notes",
+    "November":"November",
 
     "Orders":"Orders",
     "Order":"Order",
@@ -162,6 +177,9 @@
     "Order total":"Order total",
     "Order return reason":"Order return reason",
     "optional":"optional",
+    "Order not found":"Order not found",
+    "October":"October",
+    "Orders list":"Orders list",
 
     "Polish":"polish",
     "Profile update":"Profile update",
@@ -254,6 +272,14 @@
     "Shipped orders":"Shipped orders",
     "Shipped orders list":"Shipped orders list",
     "Submit":"Submit",
+    "Search by date":"Search by date",
+    "Select date":"Select date",
+    "Search by month":"Search by month",
+    "Select month":"Select month",
+    "September":"September",
+    "Search":"Search",
+    "Select year":"Select year",
+    "Search by year":"Search by year",
 
     "Toddays offer":"Toddays offer",
     "Toggle navigation":"oggle navigation",

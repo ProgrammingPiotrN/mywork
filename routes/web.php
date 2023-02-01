@@ -15,6 +15,7 @@ use App\Http\Controllers\Backend\SliderController;
 use App\Http\Controllers\Backend\CouponController;
 use App\Http\Controllers\Backend\ShippingAreaController;
 use App\Http\Controllers\Backend\OrderController;
+use App\Http\Controllers\Backend\ReportController;
 
 use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Frontend\CartController;
@@ -299,6 +300,8 @@ Route::prefix('shipping')->group(function(){
 
         Route::post('/return/order/{order_id}', [AllUserController::class, 'ReturnOrder'])->name('return.order');
 
+        Route::get('/cancel/orders', [AllUserController::class, 'CancelOrders'])->name('canceled.orders');
+
         Route::get('/return/order/list', [AllUserController::class, 'ReturnOrderList'])->name('return.orders.list');
         
         });
@@ -363,6 +366,23 @@ Route::prefix('shipping')->group(function(){
                       
             }); 
 
+            Route::prefix('reports')->group(function(){
+
+                Route::get('/view', [ReportController::class, 'ViewReport'])->name('all.reports');
+
+                Route::post('/search/date', [ReportController::class, 'SearchDate'])->name('search.date');
+
+                Route::post('/search/month', [ReportController::class, 'SearchMonth'])->name('search.month');
+
+                Route::post('/search/year', [ReportController::class, 'SearchYear'])->name('search.year');
+                          
+                }); 
+
+                Route::prefix('alluser')->group(function(){
+
+                    Route::get('/view', [AdminProfileController::class, 'AllUser'])->name('all.users');
+                              
+                    }); 
 
 
 

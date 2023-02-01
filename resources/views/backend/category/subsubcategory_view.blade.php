@@ -11,7 +11,8 @@
   
        <div class="box">
         <div class="box-header with-border">
-          <h3 class="box-title">{{ __('SubSubCategories LIST') }}</h3>
+          <h3 class="box-title">{{ __('SubSubCategories LIST') }} <span class="badge badge-pill badge-danger">
+            {{ count($subsubcategory) }}</span></h3>
         </div>
         <div class="box-body">
           <div class="table-responsive">

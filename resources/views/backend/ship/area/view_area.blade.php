@@ -10,7 +10,8 @@
 
      <div class="box">
       <div class="box-header with-border">
-        <h3 class="box-title">{{ __('Shipping list') }}</h3>
+        <h3 class="box-title">{{ __('Shipping list') }} <span class="badge badge-pill badge-danger">
+					{{ count($areas) }}</span></h3>
       </div>
       <div class="box-body">
         <div class="table-responsive">

@@ -38,6 +38,11 @@
     "Authority Signature":"Podpis",
     "Address delivery":"Adres dostawy",
     "Amount":"Cena",
+    "All reports":"Wszystkie raporty",
+    "April":"Kwiecień",
+    "August":"Sierpień",
+    "All users":"Wszyscy klienci",
+    "All user list":"Lista wszystkich klientów",
 
     "Buns":"Drożdżówki",
     "Brands":"Marki",
@@ -75,6 +80,7 @@
     "Canceled orders":"Anulowane zamówienia",
     "Canceled orders list":"Lista anulowanych zamówień",
     "Cancel orders":"Anulowane zakupy",
+    "Choose one":"Wybierz jeden",
 
 
     "DESCRIPTION":"OPIS",
@@ -94,6 +100,7 @@
     "Delivered order":"Doręczone zamówienie",
     "Delivered orders":"Dostraczone zamówienia",
     "Delivered orders list":"Lista dostarczonych zamówień",
+    "December":"Grudzień",
 
     "English":"angielski",
     "Email":"Email",
@@ -118,6 +125,7 @@
     "Fast and easy check out":"Szybkie i łatwe sprawdzenie",
     "Forgot your Password":"Zapomniałeś hasła",
     "Full name":"Pełna nazwa",
+    "February":"Luty",
 
     "Grid":"Kratka",
     "Grand total":"Łączna suma",
@@ -132,6 +140,10 @@
     "Image":"Zdjęcie",
     "Invoice":"Faktura",
 
+    "January":"Styczeń",
+    "June":"Czerwiec",
+    "July":"Lipiec",
+
     "Language":"język",
     "Login":"Logowanie",
     "Logout":"Wyloguj",
@@ -142,6 +154,8 @@
     "Main thambnail":"Miniaturka",
     "Multiple image":"Karuzela obrazów",
     "My Wishlist":"Moja lista życzeń",
+    "March":"Marzec",
+    "May":"Maj",
 
     "New products":"Nowe produkty",
     "New password":"Nowe hasło",
@@ -155,6 +169,7 @@
     "No discount":"Bez rabatu",
     "No title":"Bez tytułu",
     "Notes":"Notatki",
+    "November":"Listopad",
 
     "Orders":"Zamówienia",
     "Order":"Zamówienie",
@@ -163,6 +178,9 @@
     "Order total":"Podsumowanie zamówienia",
     "Order return reason":"Powód zwrotu zamówienia",
     "optional":"opcjonalne",
+    "Order not found":"Nie znaleziono zamówień",
+    "October":"Pażdziernik",
+    "Orders list":"Lista zamówień",
 
     "Polish":"polski",
     "Profile update":"Aktualizacja profilu",
@@ -255,6 +273,14 @@
     "Shipped orders":"Wysłane zamówienia",
     "Shipped orders list":"Lista wysłanych paczek",
     "Submit":"Złóż",
+    "Search by date":"Szukaj po dacie",
+    "Select date":"Wybierz datę",
+    "Search by month":"Szukaj po miesiącu",
+    "Select month":"Wybierz miesiąc",
+    "September":"Wrzesień",
+    "Search":"Szukaj",
+    "Select year":"Wybierz rok",
+    "Search by year":"Szukaj po roku",
 
     "Toddays offer":"Dzisiejsza oferta",
     "Toggle navigation":"Przełącz nawigację",
